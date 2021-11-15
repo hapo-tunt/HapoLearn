@@ -1,0 +1,411 @@
+.align-courses {
+  margin-top: 65px;
+}
+
+.align-other-courses {
+  margin-top: 60px;
+}
+
+.text-other-courses {
+  font-family: $font_utm_bryantlg;
+  font-size: 80px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 98px;
+  letter-spacing: -0.02em;
+  text-align: center; 
+  color: $color-text-other-courses;
+  margin-top: 150px; 
+}
+
+.hr-other-courses {
+  height: 6px;
+  width: 480px;
+  border-radius: 3px;
+  background-color: $color-bg-hr-other-courses;
+}
+
+.text-short {
+  display: none;
+}
+
+.courses {
+  .bg-html {
+    background-color: $color-bg-html;
+  
+    .size-img-card {
+      width: 226px;
+      height: 125px;
+      border-radius: 0px;
+    }
+  }
+  
+  .bg-laravel {
+    background-color: $color-bg-laravel;
+  
+    .size-img-card {
+      width: 183px;
+      height: 125px;
+      border-radius: 0px;
+    }
+  }
+  
+  .bg-php {
+    background: $color-bg-php;
+  
+    .size-img-card {
+      width: 226px;
+      height: 125px;
+      border-radius: 0px;
+    }
+  }
+  
+  .bg-css {
+    background-color: $color-bg-css;
+  
+    .size-img-card {
+      width: 180px;
+      height: 120px;
+      border-radius: 0px;
+    }
+  }
+  
+  .bg-ruby {
+    background-color: $color-bg-ruby;
+  
+    .size-vector {
+      width: 136px;
+      height: 82px;
+      border-radius: 0px;
+      position: absolute;
+      top: 60px;
+      left: 63px;
+    }
+  
+    .size-rails {
+      width: 166px;
+      height: 44px;
+      border-radius: 0px;
+      position: absolute;
+      top: 100px;
+      left: 135px;
+    }
+  }
+  
+  .bg-java {
+    background-color: $color-bg-java;
+  
+    .size-img-card {
+      width: 258px;
+      height: 150px;
+      border-radius: 0px;
+    }
+  }
+
+  .card {
+    width: 370px;
+    box-shadow: 0px 0px 10px 0px $color-shadow-card;
+    border-radius: 20px;
+  }
+
+  .card-img-top {
+    height: 215px;
+    border-radius: 20px 20px 0px 0px;
+  }
+  
+  .card-body {
+    height: 255px;
+    border-radius: 0px 0px 20px 20px ;
+  }
+  
+  .card-title {
+    font-family: $font_utm_bryantlg; 
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 37px;
+    letter-spacing: -0.05em;
+    text-align: left;
+    text-shadow: 1px 1px 2px $color-shadow-title-card;
+    color: $color-title-card;
+  }
+  
+  .card-text {
+    font-family: $font_utm_bryantlg;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    margin-top: 10px;
+    line-height: 20px;
+    letter-spacing: -0.05em;
+    text-align: center;
+    color: $color-text-card;
+  }
+  
+  .card-button {
+    height: 42px;
+    width: 200px;;
+    border-radius: 22px;
+    border: none;
+    box-shadow: 0px 1.5px 2px 0px $color-shadow-btn-card inset;
+    background-color: $color-bg-btn-card;
+    font-family: $font_utm_bryantlg;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: -0.05em;
+    text-align: center;
+    margin-top: 10px;
+    color: $color-text-btn-card;
+  }  
+}
+
+@media (max-width: 768px) and (min-width: 376px) {
+  .text-other-courses {
+    font-size: 50px;
+    line-height: 50px;
+    margin-top: 80px;
+  }
+  
+  .align-other-courses {
+    margin-top: 20px;
+  }
+
+  .hr-other-courses {
+    height: 4px;
+    width: 303px;
+  }
+  
+  .courses {
+    .card {
+      width: 225.86px;
+    }
+
+    .bg-html {
+      background-color: $color-bg-html;
+    
+      .size-img-card {
+        width: 152px;
+        height: 84px;
+      }
+    }
+    
+    .bg-laravel {
+      background-color: $color-bg-laravel;
+    
+      .size-img-card {
+        width: 112px;
+        height: 76px;
+      }
+    }
+    
+    .bg-php {
+      background: $color-bg-php;
+    
+      .size-img-card {
+        width: 150px;
+        height: 83px;
+      }
+    }
+    
+    .bg-css {
+      background-color: $color-bg-css;
+    
+      .size-img-card {
+        width: 110px;
+        height: 40px;
+      }
+    }
+    
+    .bg-ruby {
+      background-color: $color-bg-ruby;
+    
+      .size-vector {
+        width: 74px;
+        height: 58px;
+        position: absolute;
+        top: 35px;
+        left: 32px;
+      }
+    
+      .size-rails {
+        width: 115px;
+        height: 30px;
+        position: absolute;
+        top: 62px;
+        left: 75px;
+      }
+    }
+    
+    .bg-java {
+      background-color: $color-bg-java;
+    
+      .size-img-card {
+        width: 169px;
+        height: 105px;
+      }
+    }
+
+    .card-img-top {
+      height: 131px;
+    }
+    
+    .card-body {
+      height: 171px;
+    }
+    
+    .card-title {
+      font-size: 20px;
+      line-height: 5px;
+    }
+
+    .card-text {
+      font-size: 13px;
+      line-height: 17px;
+      margin-top: 8px;
+    }
+
+    .card-button {
+      height: 24px;
+      width: 116px;;
+      font-size: 10px; 
+      margin-top: 0px;
+    }
+    
+    .text-short {
+      display: block;
+    }
+  }
+
+  .text-long {
+    display: none;
+  }
+}
+
+@media (max-width: 375px) {
+  .align-other-courses {
+    margin-top: 10px;
+  }
+  
+  .align-courses {
+    margin-top: 240px;
+  }
+
+  .text-other-courses {
+    font-size: 40px;
+    line-height: 49px;
+    margin-top: 70px; 
+  }
+  
+  .hr-other-courses {
+    height: 3px;
+    width: 245px;
+  }  
+
+  .courses {
+    flex-direction: column;
+    align-items: center;
+    
+    .card {
+      width: 280px;
+      margin-top: 30px;
+    }
+    
+    .bg-html {
+      background-color: $color-bg-html;
+    
+      .size-img-card {
+        width: 171px;
+        height: 95px;
+      }
+    }
+    
+    .bg-laravel {
+      background-color: $color-bg-laravel;
+    
+      .size-img-card {
+        width: 139px;
+        height: 94px;
+      }
+    }
+    
+    .bg-php {
+      background: $color-bg-php;
+    
+      .size-img-card {
+        width: 174px;
+        height: 97px;
+      }
+    }
+    
+    .bg-css {
+      background-color: $color-bg-css;
+    
+      .size-img-card {
+        width: 150px;
+        height: 90px;
+      }
+    }
+    
+    .bg-ruby {
+      background-color: $color-bg-ruby;
+    
+      .size-vector {
+        width: 107px;
+        height: 64px;
+        position: absolute;
+        top: 50px;
+        left: 40px;
+      }
+    
+      .size-rails {
+        width: 130px;
+        height: 34px;
+        position: absolute;
+        top: 80px;
+        left: 100px;
+      }
+    }
+    
+    .bg-java {
+      background-color: $color-bg-java;
+    
+      .size-img-card {
+        width: 193px;
+        height: 119px;
+      }
+    }
+
+    .size-img-card {
+      width: 171px;
+      height: 95px;
+    }
+    
+    .card-img-top {
+      height: 163px;
+    }
+    
+    .card-body {
+      height: 226px;
+    }
+    
+    .card-title {
+      font-size: 20px;
+      line-height: 24px;
+    }
+
+    .card-text {
+      font-size: 14px;
+      line-height: 20px;
+      margin-top: 8px;
+    }
+
+    .card-button {
+      height: 42px;
+      width: 200px;;
+      font-size: 18px; 
+      margin-top: 0px;
+    }
+  }
+}

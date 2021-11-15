@@ -1,0 +1,180 @@
+.bg-banner {
+  background-image: url(/assets/img/hapo_banner.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.size-banner {
+  height: 655px;
+}
+
+.size-img-banner {
+  height: 655px;
+}
+
+.size-icon-banner {
+  height: 44px;
+  width: 48px;
+}
+
+.line-height-banner {
+  line-height: 25px;
+}
+
+.bg-linear-banner {
+  background: linear-gradient(180deg, $color-linear-start-banner 50%, $color-linear-end-banner 100%);
+  height: 161px;
+}
+
+.text-learnany-banner {
+  font-family: $font_utm_bryantlg;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: -0.05em;
+  text-align: left;
+  margin-top: 190px;
+  margin-left: 59px;
+  color: $color-text-learnany;
+}
+  
+.text-athapo-banner {
+  font-family: $font_utm_bryantlg;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-top: 30px;
+  margin-left: 59px;
+  color: $color-text-athapo;
+}
+  
+.text-onthego-banner {
+  font-family: $font_utm_bryantlg;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: -0.05em;
+  text-align: left;
+  margin-top: 15px;
+  margin-left: 59px;
+  color: $color-text-onthego;
+}
+    
+.text-btn-banner {
+  font-family: $font_utm_bryantlg;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: -0.05em;
+  text-align: center;
+  color: $color-text-btn-banner;
+}
+      
+.btn-banner {
+  height: 70px;
+  width: 377px;
+  left: 60px;
+  border-radius: 35px;
+  box-shadow: inset 0px 4px 4px $color-shadow-btn-banner;
+  background-color: $color-bg-btn-banner;
+  margin-top: 15px;
+  margin-left: 59px;
+  border: none;
+}
+     
+@media (max-width: 768px) and (min-width: 376px) {
+  .size-banner {
+    height: 350px;
+  }
+
+  .size-img-banner {
+    height: 350px;
+  }
+
+  .line-height-banner {
+    line-height: 20px;
+  }
+
+  .bg-linear-banner {
+    height: 122px;
+  }
+
+  .text-learnany-banner {
+    font-size: 30px;
+    margin-top: 55px;
+    margin-left: 27px;
+  }
+
+  .text-athapo-banner {
+    font-size: 30px;
+    margin-left: 27px;
+  }
+  
+  .text-onthego-banner {
+    font-size: 17px;
+    margin-top: 15px;
+    margin-left: 27px;
+  }
+
+  .text-btn-banner {
+    font-size: 16px;
+  }
+        
+  .btn-banner {
+    height: 37px;
+    width: 200px;
+    margin-left: 27px;
+  }
+}
+
+@media (max-width: 375px) {
+  .size-banner {
+    height: 200px;
+  }
+
+  .size-img-banner {
+    height: 200px;
+    width: 469px;
+    position: relative;
+    left: -94px;
+  }
+
+  .line-height-banner {
+    line-height: 20px;
+  }
+
+  .bg-linear-banner {
+    height: 350px;
+  }
+
+  .text-learnany-banner {
+    font-size: 30px;
+    margin-top: 215px;
+    margin-left: 135px;
+  }
+
+  .text-athapo-banner {
+    font-size: 30px;
+    margin-left: 135px;
+  }
+  
+  .text-onthego-banner {
+    font-size: 17px;
+    margin-top: 15px;
+    margin-left: 135px;
+    color: $color-text-onthego;
+  }
+
+  .text-btn-banner {  
+    font-size: 18px;
+  }
+        
+  .btn-banner {
+    height: 46px;
+    width: 250px;
+    margin-top: 10px;
+    margin-left: 155px;
+  }
+}

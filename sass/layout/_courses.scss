@@ -18,6 +18,23 @@
   margin-top: 150px; 
 }
 
+.text-allour-courses {
+  font-family: $font_utm_bryantlg;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 59px;
+  letter-spacing: -0.02em;
+  margin-top: 45px;
+  text-align: center;  
+  color: $color-text-all-courses;
+  align-items: center;
+
+  span {
+    top: 5px;
+  }
+}
+
 .hr-other-courses {
   height: 6px;
   width: 480px;
@@ -168,6 +185,16 @@
     margin-top: 80px;
   }
   
+  .text-allour-courses {
+    font-size: 28px;
+    line-height: 34px;
+    margin-top: 30px;
+
+    span {
+      top: 3.5px;
+    }
+  }
+
   .align-other-courses {
     margin-top: 20px;
   }
@@ -296,6 +323,16 @@
     font-size: 40px;
     line-height: 49px;
     margin-top: 70px; 
+  }
+
+  .text-allour-courses {
+    font-size: 22px;
+    line-height: 26px;
+    margin-top: 20px;
+
+    span {
+      top: 2.2px;
+    }
   }
   
   .hr-other-courses {

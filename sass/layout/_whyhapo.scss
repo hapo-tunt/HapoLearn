@@ -1,0 +1,145 @@
+.bg-why-hapo {
+  background-image: url(../../assets/img/rectangle_17.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  height: 740px;
+}
+
+.align-why-hapo {
+  margin-top: 120px;
+}
+
+.title-why-hapo {
+  font-family: $font_utm_bryantlg;
+  font-size: 70px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 86px;
+  letter-spacing: -0.02em;
+  color: $color-text-why-hapo;
+  position: relative;
+  left: -20px;
+}
+
+.text-why-hapo {
+  font-family: $font_utm_bryantlg;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 50px;
+  letter-spacing: -0.05em;
+  color: $color-text-why-hapo;
+  position: relative;
+
+  img {
+    height: 35px;
+    width: 30px;
+  }
+}  
+
+.img-keyboard {
+  height: 452px;
+  width: 317px;
+  position: relative;
+  top: -220px
+}
+
+.img-laptop {
+  height: 494px;
+  width: 742px;
+  position: relative;
+  top: 112px
+}
+
+.section-text-why-hapo {
+  position: relative;
+  top: -195px;
+  left: 150px;
+}
+
+@media (max-width: 768px) and (min-width: 376px) {
+  .bg-why-hapo {
+    height: 395px;
+  }
+
+  .title-why-hapo {
+    font-size: 50px;
+    line-height: 61px;
+    left: 50px;
+    top: -50px;
+    width: 404px;
+  }
+  
+  .text-why-hapo {
+    font-size: 16px;
+    line-height: 40px;
+    width: 400px;
+    left: -120px;
+
+    img {
+      height: 20px;
+      width: 18px;
+    }
+  }  
+  
+  .img-keyboard {
+    height: 285px;
+    width: 207px;
+    top: -134px;
+  }
+  
+  .img-laptop {
+    height: 204px;
+    width: 342px;
+    top: 160px;
+  }
+}
+
+@media (max-width: 375px) {
+  .align-why-hapo {
+    margin-top: 60px;
+  }
+
+  .bg-why-hapo {
+    height: 569px;
+  }
+
+  .title-why-hapo {
+    font-size: 40px;
+    line-height: 40px;
+    width: 228px;
+    top: -26px;
+    left: 136px;
+  }
+  
+  .text-why-hapo {
+    font-size: 15px;
+    line-height: 35px;
+    width: 350px;
+    left: 13px;
+    top: -5px;
+   
+    img {
+      height: 18px;
+      width: 14px;
+    }
+  }  
+  
+  .img-keyboard {
+    height: 277px;
+    width: 207px;
+    top: -118px;
+  }
+
+  .img-laptop {
+    height: 204px;
+    width: 316px;
+    top: -205px;
+    left: -27px;
+  }
+
+  .section-text-why-hapo {
+    top: -220px;
+    left: 0px;
+  }
+}

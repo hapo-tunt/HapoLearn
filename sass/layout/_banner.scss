@@ -26,12 +26,16 @@
   height: 161px;
 }
 
-.text-learnany-banner {
+%style_text_banner {
   font-family: $font_utm_bryantlg;
-  font-size: 50px;
   font-style: normal;
+}
+
+.text-learnany-banner {
+  @extend %style_text_banner;
+  font-size: 50px;
   font-weight: 400;
-  letter-spacing: -0.05em;
+  letter-spacing: -0.8px;
   text-align: left;
   margin-top: 190px;
   margin-left: 59px;
@@ -39,11 +43,10 @@
 }
   
 .text-athapo-banner {
-  font-family: $font_utm_bryantlg;
+  @extend %style_text_banner;
   font-size: 50px;
-  font-style: normal;
   font-weight: 700;
-  letter-spacing: 0em;
+  letter-spacing: 0px;
   text-align: left;
   margin-top: 30px;
   margin-left: 59px;
@@ -51,11 +54,10 @@
 }
   
 .text-onthego-banner {
-  font-family: $font_utm_bryantlg;
+  @extend %style_text_banner;
   font-size: 20px;
-  font-style: normal;
   font-weight: 400;
-  letter-spacing: -0.05em;
+  letter-spacing: -0.8px;
   text-align: left;
   margin-top: 15px;
   margin-left: 59px;
@@ -63,11 +65,10 @@
 }
     
 .text-btn-banner {
-  font-family: $font_utm_bryantlg;
+  @extend %style_text_banner;
   font-size: 30px;
-  font-style: normal;
   font-weight: 700;
-  letter-spacing: -0.05em;
+  letter-spacing: -0.8px;
   text-align: center;
   color: $color-text-btn-banner;
 }

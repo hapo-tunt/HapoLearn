@@ -1,5 +1,5 @@
-$(document).ready(function(){
-  $("#togglerClick").click(function(){
+$(function () {
+  $("#togglerClick").click(function () {
     $("#togglerClose").toggle();
     $("#togglerOpen").toggle();
   });

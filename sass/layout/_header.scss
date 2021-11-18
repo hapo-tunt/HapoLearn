@@ -1,0 +1,78 @@
+.a-disable {
+  font-family: $font_opensans;
+  font-size: 14px;
+  font-style: Bold;
+  font-weight: 700;
+  color: $color-text-a-disable;
+}
+
+.icon-hide { 
+  display: none;
+}
+
+.logo-size {
+  height: 70px;
+  width: 340.16px;
+  border-radius: 0px;
+}
+
+.a-active {
+  font-family: $font_opensans;
+  font-size: 14px;
+  font-style: Bold;
+  font-weight: 700;
+  color: $color-text-a-active;
+}
+
+.a-bg-active {
+  height: 34px;
+  border-radius: 17px;
+  background-color: $color-bg-a-active;
+  text-align: center;
+  padding: 7px 20px 7px 20px;
+  border: 0px;
+}
+
+@media (min-width: 769px){
+  .ul-width-pc {
+    .container-fluid {
+      width: 60%;
+    }
+  }
+}
+
+@media (max-width: 768px) and (min-width: 376px) {
+  .logo-size {
+    height: 61px;
+    width: 300px;
+    border-radius: 0px;
+  }
+
+  .header-responsive {
+    flex-direction: column;
+  } 
+} 
+
+@media (max-width: 375px) {
+  .logo-size {
+    height: 26px;
+    width: 150px;
+    border-radius: 0px;
+  }
+
+  .nav-item {
+    text-align: center;
+  }
+
+  .logo-align {
+    margin-right: 120px;
+  }
+
+  .a-active {
+    color: $color-text-a-active-iphonex;
+  }
+  
+  .a-bg-active {
+    background-color: transparent;
+  }
+}

@@ -27,19 +27,19 @@
 }
 
 .text-learnany-banner {
-  @include style_text_banner(50, $color-text-learnany, 400, -0.8px, left, 190px, 59px);
+  @include style_text_banner(50px, $color-text-learnany, 400, -0.8px, left, 190px, 59px);
 }
   
 .text-athapo-banner {
-  @include style_text_banner(50, $color-text-athapo, 700, 0px, left, 30px, 59px);
+  @include style_text_banner(50px, $color-text-athapo, 700, 0px, left, 30px, 59px);
 }
   
 .text-onthego-banner {
-  @include style_text_banner(20, $color-text-onthego, 400, -0.8px, left, 15px, 59px);
+  @include style_text_banner(20px, $color-text-onthego, 400, -0.8px, left, 15px, 59px);
 }
     
 .text-btn-banner {
-  @include style_text_banner(30, $color-text-btn-banner, 700, -0.8px, center, 0px, 0px);
+  @include style_text_banner(30px, $color-text-btn-banner, 700, -0.8px, center, 0px, 0px);
 }
       
 .btn-banner {

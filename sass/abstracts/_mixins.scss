@@ -1,0 +1,11 @@
+@mixin style_text_banner($size, $color, $weight, $letter-spacing, $align, $m-t, $m-l) {
+  font-family: $font_utm_bryantlg;
+  font-style: normal;
+  font-size: $size;
+  font-weight: $weight;
+  color: $color;
+  letter-spacing: $letter-spacing;
+  text-align: $align;
+  margin-top: $mt;
+  margin-left: $m-l;
+}

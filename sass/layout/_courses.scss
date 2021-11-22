@@ -7,29 +7,12 @@
 }
 
 .text-other-courses {
-  font-family: $font_utm_bryantlg;
-  font-size: 80px;
-  font-style: normal;
-  font-weight: 800;
-  line-height: 98px;
-  letter-spacing: -0.02em;
-  text-align: center; 
-  color: $color-text-other-courses;
-  margin-top: 150px; 
+  @include text_other_courses(80px, $color-text-other-courses, 800, 98px, -0.4px, center, 150px, 0px);
 }
 
 .text-allour-courses {
-  font-family: $font_utm_bryantlg;
-  font-size: 40px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 59px;
-  letter-spacing: -0.02em;
-  margin-top: 45px;
-  text-align: center;  
-  color: $color-text-all-courses;
-  align-items: center;
-
+  @include text_other_courses(40px, $color-text-all-courses, 700, 59px, -0.4px, center, 45px, 0px);
+ 
   span {
     top: 5px;
   }
@@ -47,76 +30,29 @@
 }
 
 .courses {
-  .bg-html {
-    background-color: $color-bg-html;
-  
-    .size-img-card {
-      width: 226px;
-      height: 125px;
-      border-radius: 0px;
-    }
+  .bg-html{
+    @include img_card($color-bg-html, 226px, 125px);
   }
   
   .bg-laravel {
-    background-color: $color-bg-laravel;
-  
-    .size-img-card {
-      width: 183px;
-      height: 125px;
-      border-radius: 0px;
-    }
+    @include img_card($color-bg-laravel, 183px, 125px);
   }
   
   .bg-php {
-    background: $color-bg-php;
-  
-    .size-img-card {
-      width: 226px;
-      height: 125px;
-      border-radius: 0px;
-    }
+    @include img_card($color-bg-php, 226px, 125px);
   }
   
   .bg-css {
-    background-color: $color-bg-css;
-  
-    .size-img-card {
-      width: 180px;
-      height: 120px;
-      border-radius: 0px;
-    }
+    @include img_card($color-bg-css, 180px, 120px);
   }
   
   .bg-ruby {
-    background-color: $color-bg-ruby;
-  
-    .size-vector {
-      width: 136px;
-      height: 82px;
-      border-radius: 0px;
-      position: absolute;
-      top: 60px;
-      left: 63px;
-    }
-  
-    .size-rails {
-      width: 166px;
-      height: 44px;
-      border-radius: 0px;
-      position: absolute;
-      top: 100px;
-      left: 135px;
-    }
+    @include ruby_img_card(136px, 82px, 60px, 63px, 166px, 44px, 100px, 135px);
   }
   
   .bg-java {
+    @include img_card($color-bg-java, 258px, 150px);
     background-color: $color-bg-java;
-  
-    .size-img-card {
-      width: 258px;
-      height: 150px;
-      border-radius: 0px;
-    }
   }
 
   .card {
@@ -136,59 +72,32 @@
   }
   
   .card-title {
-    font-family: $font_utm_bryantlg; 
-    font-size: 30px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 37px;
-    letter-spacing: -0.05em;
-    text-align: left;
+    @include style_text_courses(30px, $color-title-card, 700, 37px, -0.8px, left, 0px);
     text-shadow: 1px 1px 2px $color-shadow-title-card;
-    color: $color-title-card;
   }
   
   .card-text {
-    font-family: $font_utm_bryantlg;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 700;
-    margin-top: 10px;
-    line-height: 20px;
-    letter-spacing: -0.05em;
-    text-align: center;
-    color: $color-text-card;
+    @include style_text_courses(14px, $color-text-card, 700, 20px, -0.8px, center, 10px);
   }
   
   .card-button {
+    @include style_text_courses(18px, $color-text-btn-card, 700, 22px, -0.8px, center, 10px);
     height: 42px;
     width: 200px;;
     border-radius: 22px;
     border: none;
     box-shadow: 0px 1.5px 2px 0px $color-shadow-btn-card inset;
     background-color: $color-bg-btn-card;
-    font-family: $font_utm_bryantlg;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 22px;
-    letter-spacing: -0.05em;
-    text-align: center;
-    margin-top: 10px;
-    color: $color-text-btn-card;
   }  
 }
 
 @media (max-width: 768px) and (min-width: 376px) {
   .text-other-courses {
-    font-size: 50px;
-    line-height: 50px;
-    margin-top: 80px;
+    @include text_other_courses_responsive(50px, 50px, 80px);
   }
   
   .text-allour-courses {
-    font-size: 28px;
-    line-height: 34px;
-    margin-top: 30px;
+    @include text_other_courses_responsive(28px, 34px, 30px);
 
     span {
       top: 3.5px;
@@ -210,68 +119,28 @@
     }
 
     .bg-html {
-      background-color: $color-bg-html;
-    
-      .size-img-card {
-        width: 152px;
-        height: 84px;
-      }
+      @include img_card_responsive(152px, 84px);
     }
     
     .bg-laravel {
-      background-color: $color-bg-laravel;
-    
-      .size-img-card {
-        width: 112px;
-        height: 76px;
-      }
+      @include img_card_responsive(112px, 76px);
     }
     
-    .bg-php {
-      background: $color-bg-php;
     
-      .size-img-card {
-        width: 150px;
-        height: 83px;
-      }
+    .bg-php {
+      @include img_card_responsive(150px, 83px);
     }
     
     .bg-css {
-      background-color: $color-bg-css;
-    
-      .size-img-card {
-        width: 110px;
-        height: 40px;
-      }
+      @include img_card_responsive(110px, 40px);
     }
     
     .bg-ruby {
-      background-color: $color-bg-ruby;
-    
-      .size-vector {
-        width: 74px;
-        height: 58px;
-        position: absolute;
-        top: 35px;
-        left: 32px;
-      }
-    
-      .size-rails {
-        width: 115px;
-        height: 30px;
-        position: absolute;
-        top: 62px;
-        left: 75px;
-      }
+      @include ruby_img_card_responsive(74px, 58px, 35px, 32px, 115px, 30px, 62px, 75px);
     }
     
     .bg-java {
-      background-color: $color-bg-java;
-    
-      .size-img-card {
-        width: 169px;
-        height: 105px;
-      }
+      @include img_card_responsive(169px, 105px);
     }
 
     .card-img-top {
@@ -283,26 +152,22 @@
     }
     
     .card-title {
-      font-size: 20px;
-      line-height: 5px;
+      @include style_text_courses_responsive(20px, 5px, 0px);
     }
 
     .card-text {
-      font-size: 13px;
-      line-height: 17px;
-      margin-top: 8px;
+      @include style_text_courses_responsive(13px, 17px, 8px);
     }
 
     .card-button {
+      @include style_text_courses_responsive(10px, 22px, 0px);
       height: 24px;
       width: 116px;;
-      font-size: 10px; 
-      margin-top: 0px;
     }
-    
-    .text-short {
-      display: block;
-    }
+  } 
+
+  .text-short {
+    display: block;
   }
 
   .text-long {
@@ -320,15 +185,11 @@
   }
 
   .text-other-courses {
-    font-size: 40px;
-    line-height: 49px;
-    margin-top: 70px; 
+    @include style_text_courses_responsive(40px, 49px, 70px);
   }
 
   .text-allour-courses {
-    font-size: 22px;
-    line-height: 26px;
-    margin-top: 20px;
+    @include style_text_courses_responsive(22px, 26px, 20px);
 
     span {
       top: 2.2px;
@@ -350,68 +211,27 @@
     }
     
     .bg-html {
-      background-color: $color-bg-html;
-    
-      .size-img-card {
-        width: 171px;
-        height: 95px;
-      }
+      @include img_card_responsive(171px, 95px);
     }
     
     .bg-laravel {
-      background-color: $color-bg-laravel;
-    
-      .size-img-card {
-        width: 139px;
-        height: 94px;
-      }
+      @include img_card_responsive(139px, 94px);
     }
     
     .bg-php {
-      background: $color-bg-php;
-    
-      .size-img-card {
-        width: 174px;
-        height: 97px;
-      }
+      @include img_card_responsive(174px, 97px);
     }
     
     .bg-css {
-      background-color: $color-bg-css;
-    
-      .size-img-card {
-        width: 150px;
-        height: 90px;
-      }
+      @include ruby_img_card_responsive(74px, 58px, 35px, 32px, 115px, 30px, 62px, 75px);
     }
     
     .bg-ruby {
-      background-color: $color-bg-ruby;
-    
-      .size-vector {
-        width: 107px;
-        height: 64px;
-        position: absolute;
-        top: 50px;
-        left: 40px;
-      }
-    
-      .size-rails {
-        width: 130px;
-        height: 34px;
-        position: absolute;
-        top: 80px;
-        left: 100px;
-      }
+      @include ruby_img_card_responsive(104px, 64px, 50px, 40px, 130px, 34px, 80px, 100px);
     }
     
     .bg-java {
-      background-color: $color-bg-java;
-    
-      .size-img-card {
-        width: 193px;
-        height: 119px;
-      }
+      @include img_card_responsive(193px, 119px);
     }
 
     .size-img-card {
@@ -428,21 +248,17 @@
     }
     
     .card-title {
-      font-size: 20px;
-      line-height: 24px;
+      @include style_text_courses_responsive(20px, 24px, 0px);
     }
 
     .card-text {
-      font-size: 14px;
-      line-height: 20px;
-      margin-top: 8px;
+      @include style_text_courses_responsive(14px, 20px, 8px);
     }
 
     .card-button {
+      @include style_text_courses_responsive(18px, 22px, 0px);
       height: 42px;
-      width: 200px;;
-      font-size: 18px; 
-      margin-top: 0px;
+      width: 200px;
     }
   }
 }

@@ -98,3 +98,39 @@
   line-height: $line-height;
   margin-top: $m-t;
 }
+
+@mixin style_text_whyhapo($size, $weight, $line-height, $letter-spacing, $color) {
+  font-family: $font_utm_bryantlg;
+  font-style: normal;
+  font-size: $size;
+  font-weight: $weight;
+  line-height: $line-height;
+  letter-spacing: $letter-spacing;
+  color: $color;
+  position: relative;
+}
+
+@mixin align_item_whyhapo($t, $l) {
+  position: relative;
+  top: $t;
+  left: $l;
+}
+
+@mixin style_text_whyhapo_responsive($size, $line-height, $width, $t, $l) {
+  font-size: $size;
+  line-height: $line-height;
+  width: $width;
+  top: $t;
+  left: $l;
+}
+
+@mixin size_img($w, $h) {
+  width: $w;
+  height: $h;
+}
+
+@mixin img_whyhapo($w, $h, $t) {
+  width: $w;
+  height: $h;
+  top: $t;
+}

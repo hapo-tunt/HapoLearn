@@ -2,10 +2,99 @@
   font-family: $font_utm_bryantlg;
   font-style: normal;
   font-size: $size;
-  font-weight: $weight;
   color: $color;
+  font-weight: $weight;
   letter-spacing: $letter-spacing;
   text-align: $align;
   margin-top: $m-t;
   margin-left: $m-l;
+}
+
+@mixin text_other_courses($size, $color, $weight, $line-height, $letter-spacing, $align, $m-t, $m-l) {
+  font-family: $font_utm_bryantlg;
+  font-style: normal;
+  font-size: $size;
+  color: $color;
+  font-weight: $weight;
+  line-height: $line-height;
+  letter-spacing: $letter-spacing;
+  text-align: $align; 
+  margin-top: $m-t;
+  margin-left: $m-l; 
+}
+
+@mixin text_other_courses_responsive($size, $line-height, $m-t) {
+  font-size: $size;
+  line-height: $line-height;
+  margin-top: $m-t;
+}
+
+@mixin img_card($bg-card, $width, $height) {
+  background-color: $bg-card;
+
+  .size-img-card {
+    width: $width;
+    height: $height;
+  }
+}
+
+@mixin img_card_responsive($width, $height) {
+  .size-img-card {
+    width: $width;
+    height: $height;
+  }
+}
+
+@mixin ruby_img_card($w-vector, $h-vector, $t-vector, $l-vector, $w-rails, $h-rails, $t-rails, $l-rails) {
+  background-color: $color-bg-ruby;
+
+  .size-vector {
+    position: absolute;
+    width: $w-vector;
+    height: $h-vector;
+    top: $t-vector;
+    left: $l-vector;
+  }
+
+  .size-rails {
+    position: absolute;
+    width: $w-rails;
+    height: $h-rails;
+    top: $t-rails;
+    left: $l-rails;
+  }
+}
+
+@mixin ruby_img_card_responsive($w-vector, $h-vector, $t-vector, $l-vector, $w-rails, $h-rails, $t-rails, $l-rails) {
+  .size-vector {
+    width: $w-vector;
+    height: $h-vector;
+    top: $t-vector;
+    left: $l-vector;
+  }
+
+  .size-rails {
+    width: $w-rails;
+    height: $h-rails;
+    top: $t-rails;
+    left: $l-rails;
+  }
+}
+
+@mixin style_text_courses($size, $color, $weight, $line-height, $letter-spacing, $align, $m-t) {
+  font-family: $font_utm_bryantlg;
+  font-style: normal;
+  font-size: $size;
+  color: $color;
+  font-weight: $weight;
+  line-height: $line-height;
+  letter-spacing: $letter-spacing;
+  text-align: $align;
+  margin-top: $m-t;
+}
+
+@mixin style_text_courses_responsive($size, $line-height, $m-t) {
+  font-size: $size;
+  line-height: $line-height;
+  margin-top: $m-t;
 }

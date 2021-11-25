@@ -144,3 +144,31 @@
   letter-spacing: $letter-spacing;
   text-align: $align;
 }
+
+@mixin style_text_startlearning($size, $color, $weight, $line-height, $letter-spacing, $align) {
+  font-family: $font_utm_bryantlg;
+  font-style: normal;
+  font-size: $size;
+  color: $color;
+  font-weight: $weight;
+  line-height: $line-height;
+  letter-spacing: -$letter-spacing;
+  text-align: $align;
+}
+
+@mixin size_circle_starlearning($w-and-h, $t) {
+  position: absolute;
+  border: 2px solid $color-title-start-learning;
+  border-radius: 50%; 
+  height: $w-and-h;
+  width: $w-and-h;
+  top: $t;
+}
+
+@mixin align-fontsome($size, $t, $l) {
+  position: relative;
+  color: $color-title-start-learning;
+  font-size: $size;
+  top: $t;
+  left: $l;
+}

@@ -25,4 +25,3 @@ $('.slider-feedback').slick({
     },
   ]
 });
-  

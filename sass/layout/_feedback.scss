@@ -116,7 +116,7 @@
     transform : rotate(45deg);
   }
 
-  .vl {
+  .vertical-line-feedback {
     border-left: 5px solid $color-bar-vectical;
     height: 108px;
     margin-left: 20px;
@@ -209,7 +209,7 @@
     height: 133px;
     width: 351px;
   
-    .vl {
+    .vertical-line-feedback {
       border-left: 3px solid $color-bar-vectical;
       height: 98px;
     }

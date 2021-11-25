@@ -172,3 +172,19 @@
   top: $t;
   left: $l;
 }
+
+@mixin style_text_statistic($size, $color, $weight, $line-height, $letter-spacing, $align) {
+  font-family: $font_utm_bryantlg;
+  font-style: normal;
+  font-size: $size;
+  font-weight: $weight;
+  line-height: $line-height;
+  letter-spacing: $letter-spacing;
+  text-align: $align;
+  color: $color;
+}
+
+@mixin style_text_statistic_responsive($size, $line-height) {
+  font-size: $size;
+  line-height: $line-height;
+}

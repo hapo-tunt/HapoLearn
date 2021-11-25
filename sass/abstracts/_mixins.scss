@@ -134,3 +134,13 @@
   height: $h;
   top: $t;
 }
+
+@mixin style_text_feedback($size, $color, $weight, $letter-spacing, $align) {
+  font-family: $font_utm_bryantlg;
+  font-style: normal;
+  font-size: $size;
+  color: $color;
+  font-weight: $weight;
+  letter-spacing: $letter-spacing;
+  text-align: $align;
+}

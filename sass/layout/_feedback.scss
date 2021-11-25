@@ -1,0 +1,275 @@
+.feedback {
+  position: relative;
+  margin-top: 110px;
+}
+
+.title-feedback {
+  @include style_text_feedback(80px, $color-title-feedback, 700, -0.32px, center);
+}
+
+.hr-feedback {
+  height: 6px;
+  width: 328px;
+  border-radius: 3px;
+  background-color: $color-hr-feedback;
+}
+
+.text-feedback {
+  @include style_text_feedback(25px, $color-text-feedback, 400, -0.32px, center);
+  line-height: 31px;
+  width: 750px;
+  margin: auto;
+  margin-top: 45px;
+  margin-bottom: 45px;
+}
+
+%icon-narrow{
+  position: absolute;
+  color: $color-icon-narrow;
+  font-size: 13px;
+  height: 25px;
+  width: 30px;
+  border: 0.5px solid $color-border-ribbon-feedback;
+  border-radius: 50%;
+  background-color: $color-bg-ribbon-feedback;
+  z-index: 999;
+}
+
+.prev-arrow {
+  @extend %icon-narrow;
+  top: 70px;
+  left: 37px;
+}
+
+.next-arrow {
+  @extend %icon-narrow;
+  top: 70px;
+  left: 1285px;
+}
+
+.slider-feedback {
+  width: 1350px;
+
+  .slider-item {
+    padding-bottom: 30px;
+  }
+}
+
+.person-feedback {
+  margin-top: 25px;
+  margin-left: 102px;
+  display: flex;
+
+  img {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+  }
+
+  .info-person-feedback {
+    margin-left: 15px;
+    line-height: 5px;
+
+    .name-person {
+      @include style_text_feedback(20px, $color-name-person-feedback, 700, 0px, left);
+      margin-top: 5px;
+    }
+
+    .name-courses {
+      @include style_text_feedback(16px, $color-name-courses-feedback, 700, 0px, left);
+    }
+
+    .rate-star {
+      position: relative;
+      top: -5px;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      letter-spacing: 0em;
+      text-align: left;
+      color: $color-star-feedback;
+    }
+  }  
+}
+
+.ribbon-feedback {
+  display: flex;
+  position: relative;
+  height: 163px;
+  width: 570px;
+  border-radius: 10px;
+  margin: auto;
+  border: 0.5px solid $color-border-ribbon-feedback;
+  background-color: $color-bg-ribbon-feedback;
+  box-shadow: 1px 2px 1px 1px $color-shadow-ribbon-feedback;
+
+  &::before {
+    content: '';
+    position: absolute;
+    bottom: -11px;
+    left: 80px;
+    width: 20px;
+    height: 20px; 
+    background: $color-bg-ribbon-feedback;
+    border-right: 1px solid $color-border-ribbon-feedback;
+    border-bottom: 1px solid $color-border-ribbon-feedback;
+    transform : rotate(45deg);
+  }
+
+  .vertical-line-feedback {
+    border-left: 5px solid $color-bar-vectical;
+    height: 108px;
+    margin-left: 20px;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+  
+  .cmt-feedback {
+    @include style_text_feedback(16px, $color-name-courses-feedback, 700, -0.8px, left);
+    line-height: 20px;
+    margin-left: 20px;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+}
+
+@media (max-width: 768px) and (min-width: 376px) {
+  .feedback {
+    margin-top: 30px;
+  }
+
+  .title-feedback {
+    font-size: 50px;
+    line-height: 61px;
+  }
+  
+  .hr-feedback {
+    width: 208px;
+    height: 4px;
+    border-radius: 3px;
+    margin-top: 0px;
+  }
+
+  .text-feedback {
+    width: 516px;
+    font-size: 18px;
+    line-height: 22px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .slider-feedback {
+    width: 768px;
+  }
+  
+  %icon-narrow{
+    height: 23px;
+    width: 26px;  
+  }
+
+  .prev-arrow {
+    left: 84px;
+  }
+  
+  .next-arrow {
+    left: 656px;
+  }
+  
+  .person-feedback {
+    margin-top: 30px;
+    margin-left: 137px;
+  }
+}
+
+@media (max-width: 375px) {
+  .feedback {
+    top: -150px;
+    margin-top: 0px;
+  }
+
+  .title-feedback {
+    font-size: 40px;
+    line-height: 49px;
+  }
+  
+  .hr-feedback {
+    width: 169px;
+    height: 3px;
+  }
+
+  .text-feedback {
+    width: 325px;
+    font-size: 16px;
+    line-height: 19px;
+    margin-top: 0px;
+    margin-bottom: 30px;
+  }
+
+  .ribbon-feedback {
+    height: 133px;
+    width: 351px;
+  
+    .vertical-line-feedback {
+      border-left: 3px solid $color-bar-vectical;
+      height: 98px;
+    }
+    
+    .cmt-feedback {
+      font-size: 14px;
+      line-height: 17px;
+    }
+  }
+
+  .slider-feedback {
+    width: 375px;
+  }
+
+  %icon-narrow{
+    top: 60px;
+    height: 25px;
+    width: 20px;  
+  }
+
+  .prev-arrow {
+    left: 0px;
+  }
+  
+  .next-arrow {
+    left: 352px;
+  }
+  
+  .person-feedback {
+    margin-top: 30px;
+    margin-left: 7px;
+  }
+
+  .person-feedback {
+    margin-top: 20px;
+    margin-left: 79px;
+
+    img {
+      height: 45px;
+      width: 45px;
+    }
+  
+    .info-person-feedback {
+      margin-left: 15px;
+      line-height: 5px;
+  
+      .name-perfon {
+        margin-top: 5px;
+        font-size: 15px;
+      }
+  
+      .name-courses {
+        font-size: 13px;
+      }
+  
+      .rate-star {
+        font-size: 10px;
+        color: $color-star-feedback;
+        top: -8px
+      }
+    }  
+  }
+}

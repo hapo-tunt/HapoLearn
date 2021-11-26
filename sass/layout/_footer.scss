@@ -1,0 +1,226 @@
+.body-footer {
+  height: 308px;
+  background-color: $color-bg-footer;
+  margin-top: 150px;
+  display: flex;
+}
+
+.content-footer {
+  width: 25%;
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  img {
+    @include size_img(291px, 60px);
+  }
+  
+  p {
+    @include style_text_footer(19px, $color-text-footer, 400, 25px, -0.8px, left);
+    height: 60px;
+    width: 297px;
+    margin-left: 135px;
+  }
+}
+
+.navs-footer {
+  width: 25%;
+  margin-top: 40px;
+
+  .nav {
+    float: right;
+
+    .nav-link {
+      @include style_text_footer(20px, $color-text-footer, 700, 40px, -0.8px, left);
+    }
+  }
+}
+
+.text-copyright {
+  @include style_text_footer(17px, $color-text-footer, 400, 40px, -0.8px, center);
+  height: 38px;
+  background-color: $color-text-copyright;
+}
+
+.contact-footer {
+  margin-top: 60px;
+  width: 50%;
+  margin: auto;
+
+  .nav {
+    justify-content: center;
+
+    .nav-link {
+      font-size: 50px;
+      margin-left: 30px;
+      color: $color-text-footer;
+    }
+  }
+}
+
+@media (min-width: 1440px) {
+  %style-icon-contact-footer {
+    overflow: hidden;
+    position: relative;
+    z-index: 1; 
+  }
+
+  .contact-footer {
+    .fa-facebook{
+      @extend %style-icon-contact-footer;
+    
+      &:hover{
+        @include contact_hover(3s, 1.2);
+
+        &::after {
+          @include contact_hover_after(3s, 15px, 13px);
+          animation-name: contact-fb;
+          content: 'facebook.com/tuyen.dung.haposoft';
+        }
+      }
+    }
+
+    .fa-phone-alt{
+      @extend %style-icon-contact-footer;
+    
+      &:hover{
+        @include contact_hover(3s, 1.2);
+
+        &::after {
+          @include contact_hover_after(3s, 15px, 13px);
+          animation-name: contact-call;
+          content: '+84-85-645-9898';
+        }
+      }
+    }
+
+    .fa-envelope{
+      @extend %style-icon-contact-footer;
+    
+      &:hover{
+        @include contact_hover(3s, 1.2);
+
+        &::after {
+          @include contact_hover_after(3s, 15px, 13px);
+          animation-name: contact-mail;
+          content: 'info@haposoft.com';
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) and (min-width: 376px) {
+  .body-footer {
+    height: 218px;
+    margin-top: 50px;
+  }
+
+  .content-footer {
+    width: 30%;
+    margin-top: 50px;
+    
+    img {
+      @include size_img(200px, 40px);
+    }
+    
+    p {
+      height: 40px;
+      width: 200px;
+      margin-left: 90px;
+      font-size: 16px;
+      line-height: 19px;
+    }
+  }
+
+  .navs-footer {
+    width: 40%;
+    margin-top: 20px;
+  
+    .nav {
+      .nav-link {
+        font-size: 18px;
+        line-height: 30px;
+      }
+    }
+  }
+
+  .contact-footer {
+    width: 30%;
+  
+    .nav {
+      .nav-link {
+        font-size: 30px;
+        margin-left: 10px;
+      }
+    }
+  }
+
+  .text-copyright {
+    font-size: 15px;
+  }
+}
+
+
+@media (max-width: 375px) {
+  .body-footer {
+    height: 319px;
+    margin-top: 50px;
+  }
+
+  .content-footer {
+    width: 50%;
+    margin-top: auto;
+    
+    img {
+      @include size_img(150px, 30px);
+    }
+    
+    p {
+      height: 40px;
+      width: 200px;
+      font-size: 15px;
+      line-height: 17px;
+      text-align: center;
+      margin-left: 10px;
+    }
+  }
+
+  .navs-footer {
+    width: 100%;
+    margin-top: 10px;
+    left: 0px;
+    position: absolute;
+  
+    .nav {
+      width: 100%;
+      justify-content: space-around;
+
+      .nav-link {
+        font-size: 18px;
+        line-height: 35px;
+        text-align: left;
+      }
+    }
+  }
+
+  .contact-footer {
+    width: 50%;
+    position: relative;
+    top: 100px;
+
+    .nav {
+      justify-content: center;
+  
+      .nav-link {
+        font-size: 25px;
+        margin-left: 0px;
+      }
+    }
+  }
+
+  .text-copyright {
+    font-size: 13px;
+  }
+}

@@ -1,3 +1,14 @@
+a:hover {
+  span {
+    color: $color-text-a-disable;
+    text-decoration: underline;
+  }
+
+  .a-disable {
+    color: $color-bg-a-active;
+  }
+}
+
 .navbar-toggler {
   border: none;
 
@@ -165,6 +176,10 @@
     flex-direction: column;
   }
   
+  .collapse {
+    padding-top: 5px;
+  }
+
   .navbar-nav {
     .nav-item {
       .nav-link {
@@ -175,6 +190,15 @@
 }
 
 @media (max-width: 653px) {
+  .logo-size {
+    height: 50px;
+    width: 240px;
+  }
+
+  .collapse {
+    padding-top: 10px;
+  }
+
   .navbar-nav {
     .nav-item {
       .nav-link {
@@ -187,6 +211,10 @@
 @media (max-width: 575px) {
   .header-responsive {
     flex-direction: row;
+  }
+
+  .collapse {
+    padding-top: 0px;
   }
 
   .logo-size {
@@ -212,6 +240,13 @@
   
   .a-bg-active {
     background-color: transparent;
+  }
+
+  a:hover {
+    span {
+      color: $color-bg-a-active;
+      text-decoration: underline;
+    }
   }
 } 
 

@@ -47,6 +47,15 @@
   }
 }
 
+a:hover span {
+  color: #505353;
+  text-decoration: underline;
+}
+
+a:hover .a-disable {
+  color: #B2D235;
+}
+
 .navbar-toggler {
   border: none;
 }
@@ -188,12 +197,22 @@
   .header-responsive {
     flex-direction: column;
   }
+  .collapse {
+    padding-top: 5px;
+  }
   .navbar-nav .nav-item .nav-link {
     width: auto;
   }
 }
 
 @media (max-width: 653px) {
+  .logo-size {
+    height: 50px;
+    width: 240px;
+  }
+  .collapse {
+    padding-top: 10px;
+  }
   .navbar-nav .nav-item .nav-link {
     width: 185px;
   }
@@ -202,6 +221,9 @@
 @media (max-width: 575px) {
   .header-responsive {
     flex-direction: row;
+  }
+  .collapse {
+    padding-top: 0px;
   }
   .logo-size {
     height: 45px;
@@ -222,6 +244,10 @@
   }
   .a-bg-active {
     background-color: transparent;
+  }
+  a:hover span {
+    color: #B2D235;
+    text-decoration: underline;
   }
 }
 

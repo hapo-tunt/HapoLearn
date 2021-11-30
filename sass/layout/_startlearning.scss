@@ -1,0 +1,161 @@
+.start-learning {
+  background-image: url(../../assets/img/rectangle_24.png);
+  background-size: 100% 100%;
+  height: 500px;
+  margin-top: 80px;
+}
+
+.text-start-learning {
+  @include style_text_startlearning(60px, $color-title-start-learning, 700, 74px, -0.32px, center);
+  width: 705px;
+  margin: auto;
+  margin-top: 130px;
+  z-index: 1;
+}
+
+.btn-start-learning {
+  @include style_text_startlearning(30px, $color-text-btn-start-learning, 700, 37px, -0.8px, center);
+  height: 70px;
+  width: 377px;
+  border: none;
+  border-radius: 35px;
+  margin: auto;
+  margin-bottom: 100px;
+  box-shadow: 0px 4px 4px 0px $color-shadow-btn-start-learning inset;
+  z-index: 1;
+}
+
+.section-cubes {
+  position: absolute; 
+  height: 500px;
+  width: 100%; 
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+
+  .circle-sm {
+    @include size_circle_starlearning(571px, -35px);
+  }
+  
+  .circle-md {
+    @include size_circle_starlearning(761px, -122px);
+  }
+  
+  .circle-l {
+    @include size_circle_starlearning(1013px, -232px);
+  }
+  
+  .circle-xl {
+    @include size_circle_starlearning(1260px, -350px);
+  }
+
+  .style-fontsome {
+    .fa-plus {
+      @include align-fontsome(100px, 300px, -200px);
+    }
+
+    .fa-graduation-cap {
+      @include align-fontsome(100px, 50px, -500px);
+    }
+
+    .fa-star {
+      @include align-fontsome(150px, 200px, 500px);
+    }
+
+    .fa-laptop {
+      @include align-fontsome(100px, 0px, -200px);
+    }
+  }
+}
+
+@media (max-width: 768px) and (min-width: 376px) {
+  .start-learning {
+    margin-top: 10px;
+    height: 226px;
+  }
+
+  .text-start-learning {
+    width: 402px;
+    margin-top: 50px;
+    font-size: 35px;
+    line-height: 42px;
+  }
+  
+  .btn-start-learning {
+    font-size: 20px;
+    line-height: 24px;
+    height: 46px;
+    width: 250px;
+    margin-bottom: 30px;
+  }
+
+  .section-cubes {
+    height: 226px;
+
+    .circle-sm {
+      @include size_circle_starlearning(289px, -24px);
+    }
+    
+    .circle-md {
+      @include size_circle_starlearning(400px, -83px);
+    }
+    
+    .circle-l {
+      @include size_circle_starlearning(513px, -136px);
+    }
+    
+    .circle-xl {
+      @include size_circle_starlearning(700px, -229px);
+    }
+  }
+
+  .style-fontsome {
+    display: none;
+  }
+}
+
+@media (max-width: 375px) {
+  .start-learning {
+    height: 181px;
+    margin-top: -140px;
+  }
+  
+  .text-start-learning {
+    width: 291px;
+    margin-top: 40px;
+    font-size: 23px;
+    line-height: 28px;
+  }
+  
+  .btn-start-learning {
+    font-size: 16px;
+    line-height: 22px;
+    height: 37px;
+    width: 200px;
+    margin-bottom: 30px;
+  }
+
+  .style-fontsome {
+    display: none;
+  }
+
+  .section-cubes {
+    height: 181px;
+
+    .circle-sm {
+      @include size_circle_starlearning(200px, -9px);
+    }
+    
+    .circle-md {
+      @include size_circle_starlearning(300px, -67px);
+    }
+    
+    .circle-l {
+      @include size_circle_starlearning(370px, -100px);
+    }
+    
+    .circle-xl {
+      display: none;
+    }
+  }
+}

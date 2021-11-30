@@ -188,3 +188,30 @@
   font-size: $size;
   line-height: $line-height;
 }
+
+@mixin style_text_footer($size, $color, $weight, $line-height, $letter-spacing, $align) {
+  font-family: $font_utm_bryantlg;
+  font-style: normal;
+  font-size: $size;
+  font-weight: $weight;
+  line-height: $line-height;
+  letter-spacing: $letter-spacing;
+  text-align: $align;
+  color: $color;
+}
+
+@mixin contact_hover($s, $scale) {
+  transition: $s;
+  transform: scale($scale);
+}
+
+@mixin contact_hover_after($duration, $pl, $size) {
+  position: relative;
+  vertical-align: middle;
+  letter-spacing: 2px;
+  z-index: -1;
+  animation-duration: $duration;
+  padding-left: $pl;
+  color: $color-text-footer;
+  font-size: $size;
+}

@@ -1,11 +1,11 @@
 @font-face {
   font-family: OpenSans;
-  src: url(../../assets/font/OpenSans-Bold.ttf);
+  src: url(../assets/font/OpenSans-Bold.ttf);
 }
 
 @font-face {
   font-family: UTM BryantLG;
-  src: url(../../assets/font/UTM-BryantLG.ttf);
+  src: url(../assets/font/UTM-BryantLG.ttf);
 }
 
 @keyframes contact-fb {

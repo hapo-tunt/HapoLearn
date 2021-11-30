@@ -120,7 +120,7 @@
 }
 
 .bg-banner {
-  background-image: url(hapolearn/assets/img/hapo_banner.png);
+  background-image: url(../assets/img/hapo_banner.png);
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }

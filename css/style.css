@@ -47,12 +47,54 @@
   }
 }
 
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-toggler span {
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.a-hide {
+  display: none;
+}
+
+.logo-align {
+  margin-left: 5%;
+}
+
 .a-disable {
   font-family: "OpenSans";
-  font-size: 14px;
+  font-size: 17px;
   font-style: Bold;
   font-weight: 700;
   color: #505353;
+}
+
+.a-active {
+  font-family: "OpenSans";
+  font-size: 17px;
+  font-style: Bold;
+  font-weight: 700;
+  color: #FEFFFF;
+}
+
+.navbar-nav {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.navbar-nav .nav-item:nth-child(1) {
+  margin-left: -moz-calc(33.33333%);
+  margin-left: -webkit-calc(33.33333%);
+  margin-left: calc(33.33333%);
+  transition: 0.8s;
+}
+
+.navbar-nav .nav-item .nav-link {
+  width: 200px;
 }
 
 .icon-hide {
@@ -62,15 +104,6 @@
 .logo-size {
   height: 70px;
   width: 340.16px;
-  border-radius: 0px;
-}
-
-.a-active {
-  font-family: "OpenSans";
-  font-size: 14px;
-  font-style: Bold;
-  font-weight: 700;
-  color: #FEFFFF;
 }
 
 .a-bg-active {
@@ -82,13 +115,71 @@
   border: 0px;
 }
 
-@media (min-width: 769px) {
-  .ul-width-pc .container-fluid {
-    width: 60%;
+@media (max-width: 1675px) {
+  .navbar-nav .nav-item:nth-child(1) {
+    margin-left: -moz-calc(20%);
+    margin-left: -webkit-calc(20%);
+    margin-left: calc(20%);
+  }
+  .navbar-nav .nav-item .nav-link {
+    width: 195px;
   }
 }
 
-@media (max-width: 768px) and (min-width: 376px) {
+@media (max-width: 1581px) {
+  .navbar-nav .nav-item:nth-child(1) {
+    margin-left: -moz-calc(14.28571%);
+    margin-left: -webkit-calc(14.28571%);
+    margin-left: calc(14.28571%);
+  }
+  .navbar-nav .nav-item .nav-link {
+    width: 193px;
+  }
+  .navbar-nav .nav-item a {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 1366px) {
+  .navbar-nav .nav-item:nth-child(1) {
+    margin-left: -moz-calc(10%);
+    margin-left: -webkit-calc(10%);
+    margin-left: calc(10%);
+  }
+  .navbar-nav .nav-item .nav-link {
+    width: 185px;
+  }
+  .navbar-nav .nav-item a {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 1278px) {
+  .navbar-nav .nav-item:nth-child(1) {
+    margin-left: 5px;
+  }
+  .navbar-nav .nav-item .nav-link {
+    width: 180px;
+  }
+  .navbar-nav .nav-item span {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 1144px) {
+  .navbar-nav .nav-item:nth-child(1) {
+    margin-left: 0px;
+  }
+  .navbar-nav .nav-item .nav-link {
+    width: 200px;
+  }
+  .a-hide {
+    display: block;
+    transform: 1s;
+  }
+}
+
+@media (max-width: 1003px) {
   .logo-size {
     height: 61px;
     width: 300px;
@@ -97,19 +188,34 @@
   .header-responsive {
     flex-direction: column;
   }
+  .navbar-nav .nav-item .nav-link {
+    width: auto;
+  }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 653px) {
+  .navbar-nav .nav-item .nav-link {
+    width: 185px;
+  }
+}
+
+@media (max-width: 575px) {
+  .header-responsive {
+    flex-direction: row;
+  }
   .logo-size {
-    height: 26px;
-    width: 150px;
+    height: 45px;
+    width: 200px;
     border-radius: 0px;
   }
-  .nav-item {
-    text-align: center;
-  }
   .logo-align {
-    margin-right: 120px;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+    left: -25px;
+  }
+  nav-item {
+    text-align: center;
   }
   .a-active {
     color: #B2D235;
@@ -119,8 +225,40 @@
   }
 }
 
+@media (max-width: 375px) {
+  .logo-size {
+    height: 28px;
+    width: 180px;
+  }
+  .navbar-toggler span {
+    font-size: 22.5px;
+  }
+  .nav-item {
+    text-align: center;
+  }
+  .a-active {
+    color: #B2D235;
+  }
+  .a-bg-active {
+    background-color: transparent;
+  }
+}
+
+@media (max-width: 343px) {
+  .logo-size {
+    height: 25px;
+    width: 150px;
+  }
+  .logo-align {
+    left: -27px;
+  }
+  .navbar-toggler span {
+    font-size: 20px;
+  }
+}
+
 .bg-banner {
-  background-image: url(../assets/img/hapo_banner.png);
+  background-image: url(/assets/img/hapo_banner.png);
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
@@ -649,7 +787,7 @@
 }
 
 .bg-why-hapo {
-  background-image: url(../assets/img/rectangle_17.png);
+  background-image: url(../../assets/img/rectangle_17.png);
   background-size: 100% 100%;
   background-repeat: no-repeat;
   height: 740px;
@@ -1066,7 +1204,7 @@
 }
 
 .start-learning {
-  background-image: url(../assets/img/rectangle_24.png);
+  background-image: url(../../assets/img/rectangle_24.png);
   background-size: 100% 100%;
   height: 500px;
   margin-top: 80px;

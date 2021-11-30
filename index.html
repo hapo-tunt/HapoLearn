@@ -13,23 +13,32 @@
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
     <link href="css/style.css" rel="stylesheet">
+    <link rel="shortcut icon" href="/assets/img/owl.png" />
     <title>Hapo Learn</title>
 </head>
-    
+    <style>
+        div {
+            border: px blue solid;
+        }
+
+        button, li, ul {
+            border: px red solid;
+        }
+    </style>
 <body>
     <header>
         <nav class="container-fluid p-0 navbar navbar-expand-sm navbar-light bg-light">
             <div class="container-fluid p-0 d-flex header-responsive">
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
-                aria-expanded="true" aria-controls="navbarheader" aria-label="Toggle navigation" id="togglerClick">
-                    <span class="navbar-toggler-icon" id="togglerOpen"></span>
-                    <span class="icon-hide" id="togglerClose"><i class="fas fa-times"></i></span>
+                aria-expanded="true" aria-controls="navbarheader" aria-label="Toggle navigation" id="togglerClick">  
+                    <span id="togglerOpen"> <i class="fas fa-bars" ></i> </span>
+                    <span class="icon-hide" id="togglerClose"> <i class="fas fa-times"></i> </span>
                 </button>
-                <a href="#" class="logo-align mt-lg-5 ml-lg-5 pb-lg-5 pb-md-2 pt-md-2">
+                <a href="#" class="logo-align">
                     <img class="logo-size" src="assets/img/hapo_learn.png" alt="Hapo Learn">
                 </a>
-                <div class="collapse justify-content-between navbar-collapse delay-collapse ul-width-pc w-100 mt-lg-5" id="navbarResponsive">
-                    <ul class="navbar-nav row-cols-xl-4 row-cols-lg-2 container-fluid mr-lg-5 pb-lg-5 pb-md-2">
+                <div class="collapse navbar-collapse delay-collapse w-100" id="navbarResponsive">
+                    <ul class="navbar-nav container-fluid p-0">
                         <li class="nav-item">
                             <a class="nav-link text-center" href="#"><span class="a-disable">HOME</span></a>
                         </li>
@@ -39,10 +48,10 @@
                         <li class="nav-item">
                             <a class="nav-link text-center" href="#"><span class="a-disable">LOGIN/REGISTER</span></a>
                         </li>
-                        <li class="nav-item d-lg-none text-center">
+                        <li class="nav-item a-hide text-center">
                             <a class="nav-link" href="#"><span class="a-disable">LIST LESSON</span></a>
                         </li>
-                        <li class="nav-item d-lg-none text-center">
+                        <li class="nav-item a-hide text-center">
                             <a class="nav-link" href="#"><span class="a-disable">LESSON DETAIL</span></a>
                         </li>
                         <li class="nav-item text-center">
@@ -54,7 +63,7 @@
         </nav>
     </header>
 
-    <article>
+    <!-- <article>
         <div class="container-fluid p-0">
             <div class="size-banner">
                 <div class="bg-banner size-img-banner">
@@ -393,7 +402,7 @@
             </div>
         </div>
     </footer>
-    <div class="text-copyright"> © 2020 HapoLearn, Inc. All rights reserved.</div>
+    <div class="text-copyright"> © 2020 HapoLearn, Inc. All rights reserved.</div> -->
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"

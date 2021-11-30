@@ -649,7 +649,7 @@
 }
 
 .bg-why-hapo {
-  background-image: url(../../assets/img/rectangle_17.png);
+  background-image: url(../assets/img/rectangle_17.png);
   background-size: 100% 100%;
   background-repeat: no-repeat;
   height: 740px;
@@ -1066,7 +1066,7 @@
 }
 
 .start-learning {
-  background-image: url(../../assets/img/rectangle_24.png);
+  background-image: url(../assets/img/rectangle_24.png);
   background-size: 100% 100%;
   height: 500px;
   margin-top: 80px;

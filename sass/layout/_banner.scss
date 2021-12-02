@@ -28,18 +28,22 @@
 
 .text-learnany-banner {
   @include style_text_banner(50px, $color-text-learnany, 400, -0.8px, left, 190px, 59px);
+  transition: 1s;
 }
   
 .text-athapo-banner {
   @include style_text_banner(50px, $color-text-athapo, 700, 0px, left, 30px, 59px);
+  transition: 1s;
 }
   
 .text-onthego-banner {
   @include style_text_banner(20px, $color-text-onthego, 400, -0.8px, left, 15px, 59px);
+  transition: 1s;
 }
     
 .text-btn-banner {
   @include style_text_banner(30px, $color-text-btn-banner, 700, -0.8px, center, 0px, 0px);
+  transition: 1s;
 }
       
 .btn-banner {
@@ -52,9 +56,93 @@
   margin-top: 15px;
   margin-left: 59px;
   border: none;
+  
+  &:hover {
+    background-color: $color-text-all-courses;
+    color: $color-text-a-disable;
+    text-decoration: underline;
+  }
 }
+
+@media (max-width: 1278px) {
+  .size-icon-banner {
+    height: 40px;
+    width: 44px;
+  }
+  
+  .size-banner {
+    height: 600px;
+  }
+
+  .size-img-banner {
+    height: 600px;
+  }
+
+  .text-learnany-banner {
+    font-size: 40px
+  }
+
+  .text-athapo-banner {
+    font-size: 40px
+  }
+  
+  .text-onthego-banner {
+    font-size: 20px
+  }
+
+  .text-btn-banner {
+    font-size: 25px;
+  }
+
+  .btn-banner {
+    width: 280px;
+    height: 50px;
+  }       
+}
+
+@media (max-width: 1003px) {
+  .size-banner {
+    height: 450px;
+  }
+
+  .size-img-banner {
+    height: 450px;
+  }
+
+  .text-learnany-banner {
+    font-size: 37px;
+    margin-left: 5px;
+    margin-top: 120px;
+  }
+
+  .text-athapo-banner {
+    font-size: 37px;
+    margin-left: 5px;
+  }
+  
+  .text-onthego-banner {
+    font-size: 17px;
+    margin-left: 5px;
+  }
+
+  .text-btn-banner {
+    font-size: 20px;
+  }
+
+  .btn-banner {
+    width: 250px;
+    height: 40px;
+    margin-left: 20px;
+  }       
+}
+
      
-@media (max-width: 768px) and (min-width: 376px) {
+@media (max-width: 768px) {
+  .size-icon-banner {
+    height: 33px;
+    width: 37px;
+  }
+
   .size-banner {
     height: 350px;
   }
@@ -73,19 +161,16 @@
 
   .text-learnany-banner {
     font-size: 30px;
-    margin-top: 55px;
-    margin-left: 27px;
+    margin-top: 75px;
   }
 
   .text-athapo-banner {
     font-size: 30px;
-    margin-left: 27px;
   }
   
   .text-onthego-banner {
-    font-size: 17px;
+    font-size: 15px;
     margin-top: 15px;
-    margin-left: 27px;
   }
 
   .text-btn-banner {
@@ -93,22 +178,57 @@
   }
         
   .btn-banner {
-    height: 37px;
-    width: 200px;
-    margin-left: 27px;
+    width: 180px;
   }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 653px) {
   .size-banner {
-    height: 200px;
+    height: 400px;
   }
 
   .size-img-banner {
-    height: 200px;
-    width: 469px;
+    height: 400px;
+  }
+
+  .text-learnany-banner {
+    font-size: 26px;
+    margin-top: 75px;
+  }
+
+  .text-athapo-banner {
+    font-size: 26px;
+  }
+  
+  .text-onthego-banner {
+    font-size: 14px;
+    margin-top: 10px;
+  }
+
+  .text-btn-banner {
+    font-size: 15px;
+  }
+        
+  .btn-banner {
+    width: 165px;
+    height: 35px;
+    margin-left: 10px
+    ;
+  }
+}
+
+
+@media (max-width: 575px) {
+  .size-banner {
+    height: 700px;
+    overflow: hidden;
+  }
+
+  .size-img-banner {
+    width: 130%;
+    height: 300px;
     position: relative;
-    left: -94px;
+    left: -120px;
   }
 
   .line-height-banner {
@@ -116,35 +236,108 @@
   }
 
   .bg-linear-banner {
-    height: 350px;
+    height: 380px;
+  }
+
+  .align-text-banner {
+    display: flex;
+    flex-direction: column;
+    margin-top: 340px;
+    left: 120px;
+    width: calc(100% - 120px);
   }
 
   .text-learnany-banner {
-    font-size: 30px;
-    margin-top: 215px;
-    margin-left: 135px;
+    font-size: 37px;
+    margin: auto;
   }
 
   .text-athapo-banner {
-    font-size: 30px;
-    margin-left: 135px;
+    position: relative;
+    font-size: 38px;
+    margin: auto;
+    margin-top: 30px;
+    left: -49px;
   }
   
   .text-onthego-banner {
+    position: relative;
+    left: -90px;
     font-size: 17px;
     margin-top: 15px;
-    margin-left: 135px;
     color: $color-text-onthego;
+    margin: auto;
+    margin-top: 10px;
   }
 
   .text-btn-banner {  
-    font-size: 18px;
+    font-size: 22px;
   }
         
   .btn-banner {
-    height: 46px;
-    width: 250px;
+    margin: auto;
+    height: 50px;
+    width: 300px;
+    margin-top: 30px;
+    position: relative;
+    left: -20px;
+  }
+}
+
+@media (max-width: 405px) {
+  .size-img-banner {
+    width: 140%;
+    height: 200px;
+  }
+
+  .line-height-banner {
+    line-height: 20px;
+  }
+
+  .bg-linear-banner {
+    height: 380px;
+  }
+
+  .align-text-banner {
+    display: flex;
+    flex-direction: column;
+    margin-top: 230px;
+    left: 120px;
+    width: calc(100% - 120px);
+  }
+
+  .text-learnany-banner {
+    font-size: 29px;
+    margin: auto;
+  }
+
+  .text-athapo-banner {
+    position: relative;
+    font-size: 29px;
+    margin: auto;
+    margin-top: 20px;
+    left: -37px;
+  }
+  
+  .text-onthego-banner {
+    position: relative;
+    left: -62px;
+    font-size: 15px;
+    margin-top: 15px;
+    color: $color-text-onthego;
+    margin: auto;
     margin-top: 10px;
-    margin-left: 155px;
+  }
+
+  .text-btn-banner {  
+    font-size: 24px;
+  }
+        
+  .btn-banner {
+    margin: auto;
+    height: 45px;
+    width: 280px;
+    margin-top: 30px;
+    left: -10px;
   }
 }

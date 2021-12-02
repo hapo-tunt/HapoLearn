@@ -1,21 +1,32 @@
-a:hover {
-  span {
-    color: $color-text-a-disable;
-    text-decoration: underline;
-  }
+header {
+  a:hover {
+    span {
+      color: $color-text-a-disable;
+      text-decoration: underline;
+    }
+  
+    .a-active {
+      background-color: transparent;
+      color: $color-bg-a-active;
+    }
 
-  .a-disable {
-    color: $color-bg-a-active;
+    .a-disable {
+      color: $color-bg-a-active;
+    }
   }
 }
 
 .navbar-toggler {
   border: none;
-
+  
   span {
     font-size: 30px;
     font-style: normal;
     font-weight: 400;
+    
+    &:hover {
+      color: $color-bg-a-active;
+    }
   }
 }
 
@@ -190,6 +201,10 @@ a:hover {
 }
 
 @media (max-width: 653px) {
+  .logo-align {
+    margin-right: 50px;
+  }
+
   .logo-size {
     height: 50px;
     width: 240px;

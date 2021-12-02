@@ -1,17 +1,30 @@
 .align-courses {
-  margin-top: 65px;
+  transition: 1s;
+  margin-top: 70px;
+  justify-content: space-around;
 }
 
 .align-other-courses {
+  transition: 1s;
   margin-top: 60px;
 }
 
 .text-other-courses {
+  transition: 1s;
   @include text_other_courses(80px, $color-text-other-courses, 800, 98px, -0.4px, center, 150px, 0px);
 }
 
 .text-allour-courses {
-  @include text_other_courses(40px, $color-text-all-courses, 700, 59px, -0.4px, center, 45px, 0px);
+  transition: 1s;
+  a {
+    @include text_other_courses(40px, $color-text-all-courses, 700, 59px, -0.4px, center, 45px, 0px);
+
+    &:hover {
+      transition: 0.3s;
+      color: $color-text-a-disable;
+      text-decoration: none;
+    }
+  }
  
   span {
     top: 5px;
@@ -19,6 +32,7 @@
 }
 
 .hr-other-courses {
+  transition: 1s;
   height: 6px;
   width: 480px;
   border-radius: 3px;
@@ -31,56 +45,68 @@
 
 .courses {
   .bg-html{
+    transition: 1s;
     @include img_card($color-bg-html, 226px, 125px);
   }
   
   .bg-laravel {
+    transition: 1s;
     @include img_card($color-bg-laravel, 183px, 125px);
   }
   
   .bg-php {
+    transition: 1s;
     @include img_card($color-bg-php, 226px, 125px);
   }
   
   .bg-css {
+    transition: 1s;
     @include img_card($color-bg-css, 180px, 120px);
   }
   
   .bg-ruby {
+    transition: 1s;
     @include ruby_img_card(136px, 82px, 60px, 63px, 166px, 44px, 100px, 135px);
   }
   
   .bg-java {
+    transition: 1s;
     @include img_card($color-bg-java, 258px, 150px);
     background-color: $color-bg-java;
   }
 
   .card {
+    transition: 1s;
     width: 370px;
     box-shadow: 0px 0px 10px 0px $color-shadow-card;
     border-radius: 20px;
   }
 
   .card-img-top {
+    transition: 1s;
     height: 215px;
     border-radius: 20px 20px 0px 0px;
   }
   
   .card-body {
+    transition: 1s;
     height: 255px;
     border-radius: 0px 0px 20px 20px ;
   }
   
   .card-title {
+    transition: 1s;
     @include style_text_courses(30px, $color-title-card, 700, 37px, -0.8px, left, 0px);
     text-shadow: 1px 1px 2px $color-shadow-title-card;
   }
   
   .card-text {
+    transition: 1s;
     @include style_text_courses(14px, $color-text-card, 700, 20px, -0.8px, center, 10px);
   }
   
   .card-button {
+    transition: 1s;
     @include style_text_courses(18px, $color-text-btn-card, 700, 22px, -0.8px, center, 10px);
     height: 42px;
     width: 200px;;
@@ -88,16 +114,25 @@
     border: none;
     box-shadow: 0px 1.5px 2px 0px $color-shadow-btn-card inset;
     background-color: $color-bg-btn-card;
+
+    &:hover {
+      transition: 0.5s;
+      background-color: $color-text-all-courses;
+      color: $color-text-a-disable;
+      text-decoration: underline;
+    }
   }  
 }
 
-@media (max-width: 768px) and (min-width: 376px) {
+@media (max-width: 1278px) {
   .text-other-courses {
     @include text_other_courses_responsive(50px, 50px, 80px);
   }
   
   .text-allour-courses {
-    @include text_other_courses_responsive(28px, 34px, 30px);
+    a{
+      @include text_other_courses_responsive(28px, 34px, 30px);
+    }
 
     span {
       top: 3.5px;
@@ -111,6 +146,140 @@
   .hr-other-courses {
     height: 4px;
     width: 303px;
+  }
+  
+  .courses {
+    .card {
+      width: 320px;
+    }
+    
+    .card-img-top {
+      height: 180px;
+    }
+    
+    .card-body {
+      height: 200px;
+    }
+
+    .bg-html {
+      @include img_card_responsive(190px, 105px);
+    }
+    
+    .bg-laravel {
+      @include img_card_responsive(170px, 100px);
+    }
+    
+    
+    .bg-php {
+      @include img_card_responsive(200px, 110px);
+    }
+    
+    .bg-css {
+      @include img_card_responsive(180px, 80px);
+    }
+    
+    .bg-ruby {
+      @include ruby_img_card_responsive(100px, 68px, 60px, 65px, 140px, 30px, 98px, 115px);
+    }
+    
+    .bg-java {
+      @include img_card_responsive(169px, 105px);
+    }
+
+    
+    .card-title {
+      @include style_text_courses_responsive(25px, 5px, 5px);
+    }
+
+    .card-text {
+      @include style_text_courses_responsive(14px, 17px, 10px);
+    }
+
+    .card-button {
+      @include style_text_courses_responsive(17px, 22px, 5px);
+      height: 40px;
+      width: 200px;;
+    }
+  } 
+}
+
+@media (max-width: 1003px) {
+  .align-courses {
+    margin-top: 70px;
+    justify-content: space-between;
+  }
+  
+  .text-other-courses {
+    @include text_other_courses_responsive(45px, 50px, 80px);
+  }
+  
+  .text-allour-courses {
+    a{
+      @include text_other_courses_responsive(27px, 34px, 30px);
+    }
+  }
+
+  .hr-other-courses {
+    height: 4px;
+    width: 280px;
+  }
+  
+  .courses {
+    .card {
+      width: 280px;
+    }
+    
+    .card-img-top {
+      height: 160px;
+    }
+    
+    .card-body {
+      height: 190px;
+    }
+
+    .card-button {
+      @include style_text_courses_responsive(17px, 22px, 5px);
+      height: 37px;
+      width: 180px;;
+    }
+
+    .bg-ruby {
+      @include ruby_img_card_responsive(100px, 68px, 50px, 50px, 140px, 30px, 88px, 100px);
+    }
+  } 
+
+  .text-short {
+    display: block;
+  }
+
+  .text-long {
+    display: none;
+  }
+}
+
+@media (max-width: 873px) {
+  .align-courses {
+    justify-content: space-around;
+    margin-top: 50px;
+  }
+
+  .text-other-courses {
+    @include text_other_courses_responsive(40px, 50px, 80px);
+  }
+  
+  .text-allour-courses {
+    a {
+      @include text_other_courses_responsive(28px, 34px, 30px);
+    }
+  }
+
+  .align-other-courses {
+    margin-top: 20px;
+  }
+
+  .hr-other-courses {
+    height: 4px;
+    width: 230px;
   }
   
   .courses {
@@ -160,9 +329,9 @@
     }
 
     .card-button {
-      @include style_text_courses_responsive(10px, 22px, 0px);
+      @include style_text_courses_responsive(12px, 22px, 0px);
       height: 24px;
-      width: 116px;;
+      width: 140px;;
     }
   } 
 
@@ -175,21 +344,118 @@
   }
 }
 
-@media (max-width: 375px) {
-  .align-other-courses {
-    margin-top: 10px;
-  }
-  
+@media (max-width: 711px) and (min-width: 576px) {
   .align-courses {
-    margin-top: 240px;
+    justify-content: space-between;
+    margin-top: 40px
   }
 
   .text-other-courses {
-    @include style_text_courses_responsive(40px, 49px, 70px);
+    @include text_other_courses_responsive(30px, 30px, 70px);
+  }
+  
+  .text-allour-courses {
+    a {
+      @include text_other_courses_responsive(20px, 0px, 70px);
+    }
+  }
+
+  .align-other-courses {
+    margin-top: 20px;
+  }
+
+  .hr-other-courses {
+    height: 4px;
+    width: 180px;
+  }
+  
+  .courses {
+    .card {
+      width: 185px;
+    }
+
+    .card-img-top {
+      height: 110px;
+    }
+    
+    .card-body {
+      height: 140px;
+    }
+
+    .bg-html {
+      @include img_card_responsive(120px, 70px);
+    }
+    
+    .bg-laravel {
+      @include img_card_responsive(100px, 60px);
+    }
+    
+    
+    .bg-php {
+      @include img_card_responsive(120px, 60px);
+    }
+    
+    .bg-css {
+      @include img_card_responsive(110px, 40px);
+    }
+    
+    .bg-ruby {
+      @include ruby_img_card_responsive(60px, 40px, 35px, 42px, 70px, 20px, 55px, 70px);
+    }
+    
+    .bg-java {
+      @include img_card_responsive(110px, 60px);
+    }
+    
+    .card-title {
+      @include style_text_courses_responsive(20px, 5px, 0px);
+    }
+
+    .align-title-html {
+      margin-left: 35px;
+      width: 200px;
+      font-size: 18px
+    }
+
+    .align-title-ruby {
+      margin-left: 45px;
+      width: 200px;
+      font-size: 18px
+    }
+
+    .card-text {
+      @include style_text_courses_responsive(11px, 10px, 5px);
+    }
+
+    .card-button {
+      @include style_text_courses_responsive(11px, 10px, 0px);
+      height: 24px;
+      width: 100px;;
+    }
+  } 
+}
+
+@media (max-width: 575px) {
+  .align-other-courses {
+    margin-top: 30px;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .align-courses {
+    margin-top: -150px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .text-other-courses {
+    @include style_text_courses_responsive(50px, 49px, 70px);
   }
 
   .text-allour-courses {
-    @include style_text_courses_responsive(22px, 26px, 20px);
+    a{
+      @include style_text_courses_responsive(30px, 26px, 20px);
+    }
 
     span {
       top: 2.2px;
@@ -198,47 +464,247 @@
   
   .hr-other-courses {
     height: 3px;
-    width: 245px;
+    width: 320px;
   }  
 
   .courses {
-    flex-direction: column;
-    align-items: center;
-    
-    .card {
-      width: 280px;
-      margin-top: 30px;
-    }
-    
-    .bg-html {
-      @include img_card_responsive(171px, 95px);
+    .bg-html{
+      @include img_card($color-bg-html, 226px, 125px);
     }
     
     .bg-laravel {
-      @include img_card_responsive(139px, 94px);
+      @include img_card($color-bg-laravel, 183px, 125px);
     }
     
     .bg-php {
-      @include img_card_responsive(174px, 97px);
+      @include img_card($color-bg-php, 226px, 125px);
     }
     
     .bg-css {
-      @include ruby_img_card_responsive(74px, 58px, 35px, 32px, 115px, 30px, 62px, 75px);
+      @include img_card($color-bg-css, 180px, 120px);
     }
     
     .bg-ruby {
-      @include ruby_img_card_responsive(104px, 64px, 50px, 40px, 130px, 34px, 80px, 100px);
+      @include ruby_img_card(136px, 82px, 60px, 63px, 166px, 44px, 100px, 135px);
     }
     
     .bg-java {
-      @include img_card_responsive(193px, 119px);
+      @include img_card($color-bg-java, 258px, 150px);
+      background-color: $color-bg-java;
     }
-
-    .size-img-card {
-      width: 171px;
-      height: 95px;
+  
+    .card {
+      width: 340px;
+      box-shadow: 0px 0px 10px 0px $color-shadow-card;
+      border-radius: 20px;
+      margin-top: 30px;
+    }
+  
+    .card-img-top {
+      transition: 1s;
+      height: 215px;
+      border-radius: 20px 20px 0px 0px;
     }
     
+    .card-body {
+      transition: 1s;
+      height: 255px;
+      border-radius: 0px 0px 20px 20px ;
+    }
+    
+    .card-title {
+      @include style_text_courses(30px, $color-title-card, 700, 37px, -0.8px, left, 0px);
+    }
+    
+    .card-text {
+      @include style_text_courses(14px, $color-text-card, 700, 20px, -0.8px, center, 10px);
+    }
+    
+    .card-button {
+      @include style_text_courses(18px, $color-text-btn-card, 700, 22px, -0.8px, center, 10px);
+      height: 42px;
+      width: 200px;;
+      border-radius: 22px;
+      border: none;
+      background-color: $color-bg-btn-card;
+    }
+  }
+
+  .text-short {
+    display: none;
+  }
+
+  .text-long {
+    display: block;
+  }
+}
+
+@media (max-width: 575px) {
+  .align-other-courses {
+    margin-top: 30px;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .align-courses {
+    margin-top: -115px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .text-other-courses {
+    @include style_text_courses_responsive(50px, 49px, 70px);
+  }
+
+  .text-allour-courses {
+    a {
+      @include style_text_courses_responsive(30px, 26px, 20px);
+    }
+
+    span {
+      top: 2.2px;
+    }
+  }
+  
+  .hr-other-courses {
+    height: 3px;
+    width: 320px;
+  }  
+
+  .courses {
+    .bg-html{
+      @include img_card($color-bg-html, 226px, 125px);
+    }
+    
+    .bg-laravel {
+      @include img_card($color-bg-laravel, 183px, 125px);
+    }
+    
+    .bg-php {
+      @include img_card($color-bg-php, 226px, 125px);
+    }
+    
+    .bg-css {
+      @include img_card($color-bg-css, 180px, 120px);
+    }
+    
+    .bg-ruby {
+      @include ruby_img_card(136px, 82px, 60px, 63px, 166px, 44px, 100px, 135px);
+    }
+    
+    .bg-java {
+      @include img_card($color-bg-java, 258px, 150px);
+      background-color: $color-bg-java;
+    }
+  
+    .card {
+      width: 340px;
+      box-shadow: 0px 0px 10px 0px $color-shadow-card;
+      border-radius: 20px;
+      margin-top: 30px;
+    }
+  
+    .card-img-top {
+      transition: 1s;
+      height: 215px;
+      border-radius: 20px 20px 0px 0px;
+    }
+    
+    .card-body {
+      transition: 1s;
+      height: 255px;
+      border-radius: 0px 0px 20px 20px ;
+    }
+    
+    .card-title {
+      @include style_text_courses(30px, $color-title-card, 700, 37px, -0.8px, left, 0px);
+    }
+    
+    .card-text {
+      @include style_text_courses(14px, $color-text-card, 700, 20px, -0.8px, center, 10px);
+    }
+    
+    .card-button {
+      @include style_text_courses(18px, $color-text-btn-card, 700, 22px, -0.8px, center, 10px);
+      height: 42px;
+      width: 200px;;
+      border-radius: 22px;
+      border: none;
+      background-color: $color-bg-btn-card;
+    }
+  }
+
+  .text-short {
+    display: none;
+  }
+
+  .text-long {
+    display: block;
+  }
+}
+
+@media (max-width: 405px) {
+  .align-other-courses {
+    margin-top: 30px;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .align-courses {
+    margin-top: -250px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .text-other-courses {
+    @include style_text_courses_responsive(45px, 49px, 70px);
+  }
+
+  .text-allour-courses {
+    a {
+      @include style_text_courses_responsive(25px, 26px, 20px);
+    }
+
+    span {
+      top: 2.2px;
+    }
+  }
+  
+  .hr-other-courses {
+    height: 3px;
+    width: 280px;
+  }  
+
+  .courses {
+    .bg-html{
+      @include img_card($color-bg-html, 171px, 95px);
+    }
+    
+    .bg-laravel {
+      @include img_card($color-bg-laravel, 139px, 94px);
+    }
+    
+    .bg-php {
+      @include img_card($color-bg-php, 174px, 97px);
+    }
+    
+    .bg-css {
+      @include img_card($color-bg-css, 168px, 104px);
+    }
+    
+    .bg-ruby {
+      @include ruby_img_card(107px, 64px, 60px, 40px, 130px, 34px, 90px, 100px);
+    }
+    
+    .bg-java {
+      @include img_card($color-bg-java, 193px, 119px);
+      background-color: $color-bg-java;
+    }
+  
+    .card {
+      width: 280px;
+    }
+  
     .card-img-top {
       height: 163px;
     }
@@ -248,17 +714,28 @@
     }
     
     .card-title {
-      @include style_text_courses_responsive(20px, 24px, 0px);
+      @include style_text_courses(25px, $color-title-card, 700, 37px, -0.8px, left, 0px);
     }
-
+    
     .card-text {
-      @include style_text_courses_responsive(14px, 20px, 8px);
+      @include style_text_courses(14px, $color-text-card, 700, 20px, -0.8px, center, 0px);
     }
-
+    
     .card-button {
-      @include style_text_courses_responsive(18px, 22px, 0px);
+      @include style_text_courses(18px, $color-text-btn-card, 700, 22px, -0.8px, center, 5px);
       height: 42px;
-      width: 200px;
+      width: 200px;;
+      border-radius: 22px;
+      border: none;
+      background-color: $color-bg-btn-card;
     }
+  }
+
+  .text-short {
+    display: none;
+  }
+
+  .text-long {
+    display: block;
   }
 }

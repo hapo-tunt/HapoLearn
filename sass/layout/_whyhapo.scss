@@ -3,6 +3,7 @@
   background-size: 100% 100%;
   background-repeat: no-repeat;
   height: 740px;
+  transition: 1s;
 }
 
 .align-why-hapo {
@@ -10,91 +11,364 @@
 }
 
 .title-why-hapo {
+  transition: 1s;
+  position: relative;
   @include style_text_whyhapo(70px, 700, 86px, 0.32px, $color-text-why-hapo);
   left: -24px;
   top: -24px
 }
 
 .text-why-hapo {
-  @include style_text_whyhapo(-20px, 400, 50px, 0.8px, $color-text-why-hapo);
+  transition: 1s;
+  @include style_text_whyhapo(17px, 400, 50px, 0.8px, $color-text-why-hapo);
 
   img {
-    @include size_img(30px, 35px);
+    @include size_img(20px, 20px);
   }
 }  
 
 .img-keyboard {
+  transition: 1s;
   @include size_img(378px, 473px);
-  @include align_item_whyhapo(-220px, 0px);
+  @include align_item_whyhapo(-220px, -17px);
 }
 
 .img-laptop {
+  transition: 1s;
   @include size_img(715px, 560px);
   @include align_item_whyhapo(112px, 0px);
 }
 
 .section-text-why-hapo {
+  transition: 1s;
   @include align_item_whyhapo(-195px, 150px);
 }
 
-@media (max-width: 768px) and (min-width: 376px) {
-  .bg-why-hapo {
-    height: 395px;
-  }
-
+@media (max-width: 1440px) {
   .title-why-hapo {
-    @include style_text_whyhapo_responsive(50px, 61px, 404px, -50px, 50px);
+    left: -68px;
+    top: -24px;
   }
-  
-  .text-why-hapo {
-    @include style_text_whyhapo_responsive(15px, 38px, 450px, -10px, -138px);
 
-    img {
-      @include size_img(18px, 20px);
-    }
-  }  
-  
-  .img-keyboard {
-    @include img_whyhapo(220px, 293px, -141px);
-  }
-  
-  .img-laptop {
-    @include img_whyhapo(317px, 255px, 140px);
+  .text-why-hapo {
+    left: -45px;
   }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 1366px) {
+  .img-keyboard {
+    @include size_img(350px, 450px);
+    @include align_item_whyhapo(-220px, -17px);
+  }
+  
+  .img-laptop {
+    transition: 1s;
+    @include size_img(570px, 450px);
+    @include align_item_whyhapo(230px, -20px);
+  }
+
+  .title-why-hapo {
+    transition: 1s;
+    position: relative;
+    @include style_text_whyhapo(60px, 700, 86px, 0.32px, $color-text-why-hapo);
+  }
+  
+  .text-why-hapo {
+    transition: 1s;
+    @include style_text_whyhapo(16px, 400, 50px, 0.8px, $color-text-why-hapo);
+    left: -60px;
+  }
+}
+
+@media (max-width: 1144px) {
+  .text-why-hapo {
+    @include style_text_whyhapo(16px, 400, 50px, 0.8px, $color-text-why-hapo);
+    left: 0px;
+  }
+
+  .img-keyboard {
+    @include size_img(350px, 450px);
+    @include align_item_whyhapo(-220px, -17px);
+  }
+  
+  .img-laptop {
+    @include size_img(500px, 395px);
+    @include align_item_whyhapo(280px, -10px);
+  }
+
+  .title-why-hapo {
+    width: 450px;
+    @include style_text_whyhapo(55px, 700, 86px, 0.32px, $color-text-why-hapo);
+    top: -100px;
+    left: 180px;
+  }
+  
+  .text-why-hapo {
+    transition: 1s;
+    @include style_text_whyhapo(15px, 400, 50px, 0.8px, $color-text-why-hapo);
+    left: -115px;
+  }
+}
+
+@media (max-width: 1003px) {
+  .title-why-hapo {
+    top: -100px;
+    left: 150px;
+  }
+
+  .img-laptop {
+    @include size_img(430px, 355px);
+    @include align_item_whyhapo(280px, 0px);
+  }
+
+  .text-why-hapo {
+    left: -130px;
+  }
+}
+
+@media (max-width: 900px) {
   .align-why-hapo {
     margin-top: 60px;
   }
 
   .bg-why-hapo {
-    height: 569px;
+    height: 450px;
   }
 
   .title-why-hapo {
     @include style_text_whyhapo_responsive(40px, 40px, 228px, -26px, 136px);
+    top: 20px;
+    left: 250px;
+    width: 450px;
   }
   
   .text-why-hapo {
-    @include style_text_whyhapo_responsive(11.5px, 35px, 350px, 5px, 14px);
-   
+    @include style_text_whyhapo_responsive(13px, 35px, 350px, 5px, 14px);
+    width: 400px;
+    top: 80px;
+
     img {
-      @include size_img(14px, 18px);
-    }
-  }  
-  
+      @include size_img(14px, 14px);
+    }  
+  }
+
   .img-keyboard {
     @include img_whyhapo(204px, 277px, -118px);
   }
 
   .img-laptop {
-    @include img_whyhapo(322px, 227px, -206px);
-    left: -30px;
+    @include img_whyhapo(302px, 227px, -206px);
+    @include align_item_whyhapo(150px, 0px);
   }
   
   .section-text-why-hapo {
     top: -220px;
     left: 0px;
+  }
+}
+
+@media (max-width: 767px) {
+  .align-why-hapo {
+    margin-top: 60px;
+  }
+
+  .bg-why-hapo {
+    height: 700px;
+  }
+
+  .title-why-hapo {
+    @include style_text_whyhapo_responsive(45px, 40px, 228px, -26px, 136px);
+    top: 20px;
+    left: 0px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .text-why-hapo {
+    @include style_text_whyhapo_responsive(20px, 45px, 350px, 5px, 0px);
+    top: 80px;
+    left: 0px;
+    width: 100%;
+    text-align: center;
+
+    img {
+      @include size_img(14px, 14px);
+    }  
+  }
+
+  .img-keyboard {
+    @include img_whyhapo(204px, 277px, -118px);
+  }
+
+  .img-laptop {
+    @include img_whyhapo(450px, 350px, -206px);
+    @include align_item_whyhapo(-150px, 0px);
+    margin: auto;
+  }
+  
+  .section-text-why-hapo {
+    top: -220px;
+    left: 0px;
+  }
+}
+
+@media (max-width: 575px) {
+  .align-why-hapo {
+    margin-top: 60px;
+  }
+
+  .bg-why-hapo {
+    height: 700px;
+  }
+
+  .title-why-hapo {
+    @include style_text_whyhapo_responsive(35px, 40px, 228px, -26px, 136px);
+    top: 20px;
+    left: 0px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .text-why-hapo {
+    @include style_text_whyhapo_responsive(15px, 45px, 350px, 5px, 0px);
+    top: 80px;
+    left: 0px;
+    width: 100%;
+    text-align: center;
+
+    img {
+      @include size_img(14px, 14px);
+    }  
+  }
+
+  .img-keyboard {
+    @include img_whyhapo(204px, 277px, -118px);
+  }
+
+  .img-laptop {
+    @include img_whyhapo(400px, 300px, -206px);
+    @include align_item_whyhapo(-150px, 0px);
+    margin: auto;
+  }
+  
+  .section-text-why-hapo {
+    top: -220px;
+    left: 0px;
+  }
+}
+
+@media (max-width: 431px) {
+  .align-why-hapo {
+    margin-top: 60px;
+  }
+
+  .bg-why-hapo {
+    height: 600px;
+  }
+
+  .title-why-hapo {
+    @include style_text_whyhapo_responsive(35px, 40px, 228px, -26px, 136px);
+    top: 0px;
+    left: 60px;
+    width: 250px;
+    text-align: left;
+    margin: auto;
+  }
+  
+  .text-why-hapo {
+    @include style_text_whyhapo_responsive(13px, 30px, 0px, 0px, 0px);
+    top: 50px;
+    left: 0px;
+    width: 100%;
+    text-align: center;
+    letter-spacing: 0.5px;
+  }
+
+  .img-keyboard {
+    @include img_whyhapo(204px, 277px, -118px);
+  }
+
+  .img-laptop {
+    @include img_whyhapo(350px, 250px, -206px);
+    @include align_item_whyhapo(-150px, 0px);
+    margin: auto;
+  }
+  
+  .section-text-why-hapo {
+    top: -220px;
+    left: 0px;
+  }
+}
+
+@media (max-width: 369px) {
+  .bg-why-hapo {
+    height: 530px;
+  }
+
+  .title-why-hapo {
+    @include style_text_whyhapo_responsive(35px, 40px, 228px, -26px, 136px);
+    top: 0px;
+    left: 60px;
+    width: 250px;
+    text-align: left;
+    margin: auto;
+  }
+  
+  .text-why-hapo {
+    @include style_text_whyhapo_responsive(12px, 30px, 0px, 0px, 0px);
+    letter-spacing: 0.5px;
+    top: 50px;
+    left: 0px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .img-keyboard {
+    @include img_whyhapo(204px, 250px, -118px);
+  }
+
+  .img-laptop {
+    @include img_whyhapo(300px, 180px, -206px);
+    @include align_item_whyhapo(-150px, 0px);
+    margin: auto;
+  }
+  
+  .section-text-why-hapo {
+    top: -220px;
+    left: 0px;
+  }
+}
+
+@media (max-width: 367px) {
+  .bg-why-hapo {
+    height: 480px;
+  }
+  
+  .text-why-hapo {
+    @include style_text_whyhapo_responsive(12px, 30px, 0px, 0px, 0px);
+    letter-spacing: 0.1px;
+    top: 50px;
+    left: 0px;
+    width: 320px;
+    text-align: center;
+  }
+
+  .title-why-hapo {
+    @include style_text_whyhapo_responsive(33px, 40px, 228px, -26px, 136px);
+    top: 20px;
+    left: 60px;
+    width: 200px;
+    text-align: left;
+    margin: auto;
+  }
+  
+  .img-laptop {
+    @include img_whyhapo(300px, 180px, -206px);
+    @include align_item_whyhapo(-150px, 0px);
+    margin: auto;
+  }
+
+  .img-keyboard {
+    @include img_whyhapo(180px, 220px, -100px);
   }
 }

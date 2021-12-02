@@ -1,6 +1,6 @@
 .feedback {
   position: relative;
-  margin-top: 110px;
+  margin-top: 50px;
 }
 
 .title-feedback {
@@ -133,60 +133,155 @@
   }
 }
 
-@media (max-width: 768px) and (min-width: 376px) {
+@media (max-width: 1349px) {
+  .slider-feedback {
+    transition: 1s;
+    width: 1024px;
+    overflow: hidden;
+  }
+
+  .ribbon-feedback {
+    width: 450px;
+    transition: 1s;
+  }
+
+  .prev-arrow {
+    transition: 1s;
+    top: 70px;
+    left: 17px;
+  }
+  
+  .next-arrow {
+    transition: 1s;
+    top: 70px;
+    left: 980px;
+  }
+
+  .title-feedback {
+    transition: 1s;
+    @include style_text_feedback(65px, $color-title-feedback, 700, -0.32px, center);
+  }
+  
+  .hr-feedback {
+    transition: 1s;
+    height: 6px;
+    width: 300px;
+    border-radius: 3px;
+    background-color: $color-hr-feedback;
+  }
+  
+  .text-feedback {
+    transition: 1s;
+    @include style_text_feedback(24px, $color-text-feedback, 400, -0.32px, center);
+    line-height: 31px;
+    width: 750px;
+    margin: auto;
+    margin-top: 45px;
+    margin-bottom: 45px;
+  }
+}
+
+@media (max-width: 1024px) {
   .feedback {
     margin-top: 30px;
   }
 
   .title-feedback {
-    font-size: 50px;
+    font-size: 60px;
     line-height: 61px;
   }
   
   .hr-feedback {
-    width: 208px;
+    width: 280px;
     height: 4px;
     border-radius: 3px;
     margin-top: 0px;
+  }
+
+  .ribbon-feedback {
+    width: 570px;
   }
 
   .text-feedback {
     width: 516px;
     font-size: 18px;
     line-height: 22px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 40px;
+    margin-bottom: 40px;
   }
 
   .slider-feedback {
-    width: 768px;
-  }
-  
-  %icon-narrow{
-    height: 23px;
-    width: 26px;  
+    width: 600px;
   }
 
   .prev-arrow {
-    left: 84px;
+    left: 0px;
   }
   
   .next-arrow {
-    left: 656px;
+    left: 570px;
   }
   
   .person-feedback {
-    margin-top: 30px;
-    margin-left: 137px;
+    margin-top: 20px;
+    margin-left: 78px;
   }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 600px) {
   .feedback {
-    top: -150px;
+    margin-top: 30px;
+  }
+
+  .title-feedback {
+    font-size: 45px;
+    line-height: 61px;
+  }
+  
+  .hr-feedback {
+    width: 200px;
+    height: 4px;
+    border-radius: 3px;
     margin-top: 0px;
   }
 
+  .ribbon-feedback {
+    width: 385px;
+  }
+
+  .text-feedback {
+    width: 410px;
+    font-size: 17px;
+    line-height: 22px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+
+  .slider-feedback {
+    width: 410px;
+  }
+
+  .prev-arrow {
+    left: 0px;
+  }
+  
+  .next-arrow {
+    left: 380px;
+  }
+  
+  .person-feedback {
+    margin-top: 20px;
+    margin-left: 78px;
+  }
+
+  .cmt-feedback {
+    font-size: 13px;
+    line-height: 17px;
+    margin-right: 10px;
+  }
+}
+
+@media (max-width: 409px) {
   .title-feedback {
     font-size: 40px;
     line-height: 49px;
@@ -198,7 +293,7 @@
   }
 
   .text-feedback {
-    width: 325px;
+    width: 320px;
     font-size: 16px;
     line-height: 19px;
     margin-top: 0px;
@@ -207,7 +302,7 @@
 
   .ribbon-feedback {
     height: 133px;
-    width: 351px;
+    width: 300px;
   
     .vertical-line-feedback {
       border-left: 3px solid $color-bar-vectical;
@@ -221,7 +316,7 @@
   }
 
   .slider-feedback {
-    width: 375px;
+    width: 320px;
   }
 
   %icon-narrow{
@@ -235,7 +330,7 @@
   }
   
   .next-arrow {
-    left: 352px;
+    left: 300px;
   }
   
   .person-feedback {

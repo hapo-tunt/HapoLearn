@@ -23,6 +23,12 @@
       transition: 0.3s;
       color: $color-text-a-disable;
       text-decoration: none;
+
+      span {
+        transition: 0.3s;
+        color: $color-text-a-disable;
+        text-decoration: none;
+      }
     }
   }
  
@@ -119,7 +125,7 @@
       transition: 0.5s;
       background-color: $color-text-all-courses;
       color: $color-text-a-disable;
-      text-decoration: underline;
+      text-decoration: underline; 
     }
   }  
 }
@@ -622,15 +628,6 @@
     
     .card-text {
       @include style_text_courses(14px, $color-text-card, 700, 20px, -0.8px, center, 10px);
-    }
-    
-    .card-button {
-      @include style_text_courses(18px, $color-text-btn-card, 700, 22px, -0.8px, center, 10px);
-      height: 42px;
-      width: 200px;;
-      border-radius: 22px;
-      border: none;
-      background-color: $color-bg-btn-card;
     }
   }
 

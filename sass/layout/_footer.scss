@@ -6,12 +6,11 @@
 }
 
 .content-footer {
-  width: 25%;
-  margin-top: 60px;
+  padding-top: 70px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  
+
   img {
     @include size_img(291px, 60px);
   }
@@ -20,17 +19,17 @@
     @include style_text_footer(19px, $color-text-footer, 400, 25px, -0.8px, left);
     height: 60px;
     width: 297px;
-    margin-left: 135px;
+    margin-left: 140px;
   }
 }
 
 .navs-footer {
-  width: 25%;
-  margin-top: 40px;
-
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
   .nav {
-    float: right;
-
     .nav-link {
       @include style_text_footer(20px, $color-text-footer, 700, 40px, -0.8px, left);
     }
@@ -38,14 +37,12 @@
 }
 
 .text-copyright {
-  @include style_text_footer(17px, $color-text-footer, 400, 40px, -0.8px, center);
+  @include style_text_footer(15px, $color-text-footer, 400, 40px, -0.8px, center);
   height: 38px;
   background-color: $color-text-copyright;
 }
 
 .contact-footer {
-  margin-top: 60px;
-  width: 50%;
   margin: auto;
 
   .nav {
@@ -55,58 +52,6 @@
       font-size: 50px;
       margin-left: 30px;
       color: $color-text-footer;
-    }
-  }
-}
-
-@media (min-width: 1440px) {
-  %style-icon-contact-footer {
-    overflow: hidden;
-    position: relative;
-    z-index: 1; 
-  }
-
-  .contact-footer {
-    .fa-facebook{
-      @extend %style-icon-contact-footer;
-    
-      &:hover{
-        @include contact_hover(3s, 1.2);
-
-        &::after {
-          @include contact_hover_after(3s, 15px, 13px);
-          animation-name: contact-fb;
-          content: 'facebook.com/tuyen.dung.haposoft';
-        }
-      }
-    }
-
-    .fa-phone-alt{
-      @extend %style-icon-contact-footer;
-    
-      &:hover{
-        @include contact_hover(3s, 1.2);
-
-        &::after {
-          @include contact_hover_after(3s, 15px, 13px);
-          animation-name: contact-call;
-          content: '+84-85-645-9898';
-        }
-      }
-    }
-
-    .fa-envelope{
-      @extend %style-icon-contact-footer;
-    
-      &:hover{
-        @include contact_hover(3s, 1.2);
-
-        &::after {
-          @include contact_hover_after(3s, 15px, 13px);
-          animation-name: contact-mail;
-          content: 'info@haposoft.com';
-        }
-      }
     }
   }
 }

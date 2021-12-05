@@ -25,3 +25,33 @@ $('.slider-feedback').slick({
     },
   ]
 });
+
+tippy('#tooltip-fb', {
+  content: "<a class='style-tooltip-footer' href=''>facebook.com/tuyen.dung.haposoft</a>",
+  placement: "bottom",
+  arrow: true,
+  animation: 'fade',
+  duration: [1000, 0],
+  interactive: true,
+  allowHTML: true,
+});
+
+tippy('#tooltip-email', {
+  content: "<a class='style-tooltip-footer' href=''>info@haposoft.com</a>",
+  placement: "bottom",
+  arrow: true,
+  animation: 'fade',
+  duration: [1000, 0],
+  interactive: true,
+  allowHTML: true,
+});
+
+tippy('#tooltip-call', {
+  content: "<span class='style-tooltip-footer'>+84-85-645-9898</span>",
+  placement: "bottom",
+  arrow: true,
+  animation: 'fade',
+  duration: [1000, 0],
+  interactive: true,
+  allowHTML: true,
+});

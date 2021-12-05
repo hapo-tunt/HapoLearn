@@ -14,7 +14,7 @@
 }
 
 .btn-start-learning {
-  a {
+  .style-text-btn-learning {
     @include style_text_startlearning(30px, $color-text-btn-start-learning, 700, 37px, -0.8px, center);
   }
 
@@ -33,7 +33,6 @@
 
     a {
       color: $color-text-a-disable;
-      text-decoration: underline;
     };
   }
 }
@@ -61,7 +60,7 @@
     margin-bottom: 100px;
     transition: 1s;
 
-    a {
+    .style-text-btn-learning {
       font-size: 25px;
       transition: 1s;
     }
@@ -84,10 +83,10 @@
   .btn-start-learning {
     line-height: 24px;
     height: 46px;
-    width: 330px;
+    width: 280px;
     margin-bottom: 50px;
 
-    a {
+    .style-text-btn-learning {
       font-size: 22px;
     }
   }
@@ -112,7 +111,7 @@
     width: 230px;
     margin-bottom: 50px;
 
-    a {
+    .style-text-btn-learning {
       font-size: 20px;
     }
   }
@@ -132,7 +131,7 @@
     width: 230px;
     margin-bottom: 50px;
 
-    a {
+    .style-text-btn-learning {
       font-size: 20px;
     }
   }

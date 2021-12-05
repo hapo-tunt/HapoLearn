@@ -95,7 +95,7 @@
                         I had coded quite a bit, but never touched...
                     </p>
                     <button class="card-button">
-                       <span>Take This Course</span>
+                       <a>Take This Course</a>
                     </button>
                 </div>
             </div>
@@ -114,7 +114,7 @@
                         I had coded quite a bit, but never touched...
                     </p>
                     <button class="card-button">
-                       <span>Take This Course</span>
+                       <a>Take This Course</a>
                     </button>
                 </div>
             </div>
@@ -133,7 +133,7 @@
                         I had coded quite a bit, but never touched...
                     </p>
                     <button class="card-button">
-                       <span>Take This Course</span>
+                       <a>Take This Course</a>
                     </button>
                 </div>
             </div>
@@ -161,7 +161,7 @@
                         I had coded quite a bit, but never touched...
                     </p>
                     <button class="card-button">
-                       <span>Take This Course</span>
+                       <a>Take This Course</a>
                     </button>
                 </div>
             </div>
@@ -181,7 +181,7 @@
                         I had coded quite a bit, but never touched...
                     </p>
                     <button class="card-button">
-                       <span>Take This Course</span>
+                       <a>Take This Course</a>
                     </button>
                 </div>
             </div>
@@ -200,7 +200,7 @@
                         I had coded quite a bit, but never touched...
                     </p>
                     <button class="card-button">
-                       <span>Take This Course</span>
+                       <a>Take This Course</a>
                     </button>
                 </div>
             </div>
@@ -326,7 +326,7 @@
                 Become a member of our growing community!
             </div>
             <button class="btn-start-learning">
-                Start Learning Now!
+                <a class="style-text-btn-learning">Start Learning Now!</a>
             </button>
         </div>
 
@@ -354,36 +354,38 @@
 
     <footer class="container-fluid p-0 position-relative">
         <div class="body-footer">
-            <div class="content-footer col-4">
+            <div class="content-footer col-md-4 col-sm-3">
                 <img src="assets/img/hapo_learn_white.png">
                 <p>Interactive lessons, "on-the-go" practice, peer support.</p>
             </div>
-            <div class="navs-footer col-4">
+            <div class="navs-footer col-md-4 col-sm-6">
                 <nav class="nav">
                     <div>
-                        <a class="nav-link active" href="#">Home</a>
-                        <a class="nav-link" href="#">Features</a>
-                        <a class="nav-link" href="#">Courses</a>
-                        <a class="nav-link" href="#">Blog</a>
+                        <a class="nav-link active" href="#"><span>Home</span></a>
+                        <a class="nav-link" href="#"><span>Features</span></a>
+                        <a class="nav-link" href="#"><span>Courses</span></a>
+                        <a class="nav-link" href="#"><span>Blog</span></a>
                     </div>
                     <div>
-                        <a class="nav-link" href="#">Contact</a>
-                        <a class="nav-link" href="#">Terms of Use</a>
-                        <a class="nav-link" href="#">FAQ</a>
+                        <a class="nav-link" href="#"><span>Contact</span></a>
+                        <a class="nav-link" href="#"><span>Terms of Use</span></a>
+                        <a class="nav-link" href="#"><span>FAQ</span></a>
                     </div>
                 </nav>
             </div>    
-            <div class="contact-footer col-4">
+            <div class="contact-footer col-md-4 col-sm-3">
                 <nav class="nav">
-                    <a class="nav-link" href="#"><i class="fab fa-facebook"></i></a>
-                    <a class="nav-link" href="#"><i class="fas fa-phone-alt"></i></a>
-                    <a class="nav-link" href="#"><i class="fas fa-envelope"></i><img></a>
+                    <a class="nav-link" id="tooltip-fb" href="#"><i class="fab fa-facebook"></i></a>
+                    <a class="nav-link" id="tooltip-call"href="#"><i class="fas fa-phone-alt"></i></a>
+                    <a class="nav-link" id="tooltip-email" href="#"><i class="fas fa-envelope"></i><img></a>
                 </nav>
             </div>
         </div>
     </footer>
     <div class="text-copyright"> © 2020 HapoLearn, Inc. All rights reserved.</div> 
 
+    <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.min.js"></script>
+    <script src="https://unpkg.com/tippy.js@6/dist/tippy-bundle.umd.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"

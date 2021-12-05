@@ -296,7 +296,7 @@ header a:hover .a-disable {
 }
 
 .bg-banner {
-  background-image: url(assets/img/hapo_banner.png);
+  background-image: url(../assets/img/hapo_banner.png);
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
@@ -1560,7 +1560,7 @@ header a:hover .a-disable {
 }
 
 .bg-why-hapo {
-  background-image: url(assets/img/rectangle_17.png);
+  background-image: url(../assets/img/rectangle_17.png);
   background-size: 100% 100%;
   background-repeat: no-repeat;
   height: 740px;
@@ -2421,7 +2421,7 @@ header a:hover .a-disable {
 }
 
 .start-learning {
-  background-image: url(assets/img/rectangle_24.png);
+  background-image: url(../assets/img/rectangle_24.png);
   background-size: 100% 100%;
   height: 500px;
   margin-top: 80px;

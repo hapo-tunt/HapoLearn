@@ -622,6 +622,14 @@
       @include style_text_courses(14px, $color-text-card, 700, 20px, -0.8px, center, 10px);
     }
   }
+
+  .text-short {
+    display:none;
+  }
+
+  .text-long {
+    display: block;
+  }
 }
 
 @media (max-width: 430px) {
@@ -713,10 +721,10 @@
   }
 
   .text-short {
-    display: none;
+    display: block;
   }
 
   .text-long {
-    display: block;
+    display: none;
   }
 }

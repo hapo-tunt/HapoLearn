@@ -1392,6 +1392,12 @@ header a:hover .a-disable {
     text-align: center;
     margin-top: 10px;
   }
+  .text-short {
+    display: none;
+  }
+  .text-long {
+    display: block;
+  }
 }
 
 @media (max-width: 430px) {
@@ -1523,10 +1529,10 @@ header a:hover .a-disable {
     background-color: #B2D235;
   }
   .text-short {
-    display: none;
+    display: block;
   }
   .text-long {
-    display: block;
+    display: none;
   }
 }
 

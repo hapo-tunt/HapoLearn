@@ -1271,12 +1271,6 @@ header a:hover .a-disable {
     border: none;
     background-color: #B2D235;
   }
-  .text-short {
-    display: none;
-  }
-  .text-long {
-    display: block;
-  }
 }
 
 @media (max-width: 575px) {
@@ -1397,12 +1391,6 @@ header a:hover .a-disable {
     letter-spacing: -0.8px;
     text-align: center;
     margin-top: 10px;
-  }
-  .text-short {
-    display: none;
-  }
-  .text-long {
-    display: block;
   }
 }
 

@@ -535,14 +535,6 @@
       background-color: $color-bg-btn-card;
     }
   }
-
-  .text-short {
-    display: none;
-  }
-
-  .text-long {
-    display: block;
-  }
 }
 
 @media (max-width: 575px) {
@@ -629,14 +621,6 @@
     .card-text {
       @include style_text_courses(14px, $color-text-card, 700, 20px, -0.8px, center, 10px);
     }
-  }
-
-  .text-short {
-    display: none;
-  }
-
-  .text-long {
-    display: block;
   }
 }
 

@@ -522,42 +522,34 @@ header a:hover .a-disable {
     overflow: hidden;
   }
   .size-img-banner {
-    width: 130%;
-    height: 300px;
-    position: relative;
-    left: -120px;
+    width: 100%;
+    height: 250px;
   }
   .line-height-banner {
     line-height: 20px;
   }
   .bg-linear-banner {
-    height: 380px;
+    height: 450px;
   }
   .align-text-banner {
+    width: 100%;
+    margin-top: 300px;
     display: flex;
     flex-direction: column;
-    margin-top: 340px;
-    left: 120px;
-    width: calc(100% - 120px);
+    align-items: center;
   }
   .text-learnany-banner {
     font-size: 37px;
     margin: auto;
   }
   .text-athapo-banner {
-    position: relative;
+    margin-left: -100px;
     font-size: 38px;
-    margin: auto;
     margin-top: 30px;
-    left: -49px;
   }
   .text-onthego-banner {
-    position: relative;
-    left: -90px;
+    margin-left: -180px;
     font-size: 17px;
-    margin-top: 15px;
-    color: #505353;
-    margin: auto;
     margin-top: 10px;
   }
   .text-btn-banner {
@@ -568,58 +560,49 @@ header a:hover .a-disable {
     height: 50px;
     width: 300px;
     margin-top: 30px;
-    position: relative;
-    left: -20px;
   }
 }
 
-@media (max-width: 405px) {
+@media (max-width: 430px) {
+  .size-banner {
+    height: 700px;
+    overflow: hidden;
+  }
   .size-img-banner {
-    width: 140%;
+    width: 100%;
     height: 200px;
   }
   .line-height-banner {
     line-height: 20px;
   }
   .bg-linear-banner {
-    height: 380px;
+    height: 400px;
   }
   .align-text-banner {
-    display: flex;
-    flex-direction: column;
-    margin-top: 230px;
-    left: 120px;
-    width: calc(100% - 120px);
+    margin-top: 250px;
   }
   .text-learnany-banner {
-    font-size: 29px;
+    font-size: 25px;
     margin: auto;
   }
   .text-athapo-banner {
-    position: relative;
-    font-size: 29px;
-    margin: auto;
-    margin-top: 20px;
-    left: -37px;
-  }
-  .text-onthego-banner {
-    position: relative;
-    left: -62px;
-    font-size: 15px;
-    margin-top: 15px;
-    color: #505353;
-    margin: auto;
+    margin-left: -60px;
+    font-size: 25px;
     margin-top: 10px;
   }
+  .text-onthego-banner {
+    margin-left: -70px;
+    font-size: 16px;
+    margin-top: 0px;
+  }
   .text-btn-banner {
-    font-size: 24px;
+    font-size: 18px;
   }
   .btn-banner {
     margin: auto;
-    height: 45px;
-    width: 280px;
+    height: 40px;
+    width: 240px;
     margin-top: 30px;
-    left: -10px;
   }
 }
 
@@ -1423,14 +1406,14 @@ header a:hover .a-disable {
   }
 }
 
-@media (max-width: 405px) {
+@media (max-width: 430px) {
   .align-other-courses {
     margin-top: 30px;
     flex-direction: column;
     align-items: center;
   }
   .align-courses {
-    margin-top: -250px;
+    margin-top: -220px;
     flex-direction: column;
     align-items: center;
   }

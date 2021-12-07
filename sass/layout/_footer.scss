@@ -166,11 +166,11 @@
     transition: 1s;
     
     .nav {
-      margin-left: 20px;
+      margin-left: 10px;
       transition: 1s;
 
       .nav-link {
-        @include style_text_footer(16px, $color-text-footer, 700, 40px, -0.8px, left);
+        @include style_text_footer(15px, $color-text-footer, 700, 40px, -0.8px, left);
         transition: 1s;
       }
     }

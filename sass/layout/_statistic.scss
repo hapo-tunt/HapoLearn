@@ -13,6 +13,7 @@
 .title-statistic {
   @include style_text_statistic(80px, $color-title-statistic, 700, 98px, -0.32px, center);
   transition: 1s;
+  z-index: 999;
 }
 
 .hr-statistic {

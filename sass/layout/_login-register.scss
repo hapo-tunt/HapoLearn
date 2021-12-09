@@ -1,0 +1,190 @@
+.modal {
+  form {
+    width: 85%;
+
+    label {
+      font-family: $font_utm_bryantlg;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 25px;
+      color: $color-label-modal;
+    }
+
+    input[type=text] , input[type=password] {
+      height: 60px;
+      width: 370px;
+    }
+
+    input[type=checkbox] {
+      position: relative;
+      top: 5px;
+      margin-top: 10px;
+      height: 23px;
+      width: 18px;
+      accent-color: $color-bg-a-active;
+      cursor: pointer;
+    }
+
+    .style-label-remember {
+      font-size: 18px;
+    }
+
+    .style-forgot-pass {
+      margin-top: 10px;
+      @extend label;
+      font-size: 18px;
+      color: $color-bg-a-active;
+    }
+
+    .submit-modal {
+      margin-top: 25px;
+      height: 42px;
+      width: 200px;
+      border-radius: 22px;
+      border: none;
+      box-shadow: inset 0px 4px 4px $color-shadow-btn-banner;
+      background-color: $color-bg-a-active;
+      color: $color-text-a-active;
+      font-family: $font_utm_bryantlg;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 22px;
+    }
+  }
+
+  .modal-dialog {
+    position: relative;
+    left: 2%;
+  }
+  .modal-content {
+    width: 430px;
+    height: 650px;
+    border-radius: 0px;
+
+    .modal-header {
+      height: 70px;
+    }
+  }
+}
+
+.nav-tabs {
+  .nav-item {
+    height: 70px;
+    width: 50%;
+    
+    .nav-link {
+      width: 100%;
+      height: 100%;
+      border-radius: 0px;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+
+      font-family: $font_utm_bryantlg;
+      font-size: 25px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 31px;
+      color: $color-bg-a-active;
+      background-color: transparent;
+    }
+
+    .active {
+      border: none;
+      background-color: $color-bg-a-active;
+      color: $color-text-a-active;
+    }
+  }
+} 
+
+.icon-close-login-register {
+  width: 22px;
+  height: 25px;
+  border: none;
+  background-color: $color-text-btn-card;
+  position: relative;
+  left: 415px;
+  top: -80px;
+  
+  i {
+    margin-left: -18px;
+    margin-top: -8px;
+    font-size: 41px;
+    color: $color-bg-a-active;
+  }
+}
+
+.hr-modal {
+  margin-top: 40px;
+  width: 100%;
+}
+
+.text-login-with {
+  font-family: $font_utm_bryantlg;
+  background-color: $color-text-a-active;
+  width: 92px;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 25px;
+  position: relative;
+  top: -33px;
+  z-index: 999;
+}
+
+.login-with {
+  position: relative;
+  top: -15px;
+
+  .login-facebook {
+    border: none;
+    color: $color-text-a-active;
+    background-color: $color-bg-login-fb;
+    height: 55px;
+    width: 370px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .size-icon-facebook-modal {
+      font-size: 40px;
+    }
+
+    .style-text-login-facebook {
+      font-family: $font_utm_bryantlg;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 25px;
+      margin-left: 5px;
+    }
+  }
+
+  .login-google {
+    margin-top: 13px;
+    border: none;
+    color: $color-text-a-active;
+    background-color: $color-bg-login-google;
+    height: 55px;
+    width: 370px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    .size-icon-google-modal {
+      font-size: 40px;
+    }
+
+    .style-text-login-google {
+      margin-left: 5px;
+      font-family: $font_utm_bryantlg;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 25px;
+    }
+  }
+}

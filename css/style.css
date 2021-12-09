@@ -3044,3 +3044,189 @@ header a:hover .a-disable {
     font-size: 13px;
   }
 }
+
+.modal form {
+  width: 85%;
+}
+
+.modal form label, .modal form .style-forgot-pass {
+  font-family: "UTM BryantLG";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 25px;
+  color: #505353;
+}
+
+.modal form input[type=text], .modal form input[type=password] {
+  height: 60px;
+  width: 370px;
+}
+
+.modal form input[type=checkbox] {
+  position: relative;
+  top: 5px;
+  margin-top: 10px;
+  height: 23px;
+  width: 18px;
+  accent-color: #B2D235;
+  cursor: pointer;
+}
+
+.modal form .style-label-remember {
+  font-size: 18px;
+}
+
+.modal form .style-forgot-pass {
+  margin-top: 10px;
+  font-size: 18px;
+  color: #B2D235;
+}
+
+.modal form .submit-modal {
+  margin-top: 25px;
+  height: 42px;
+  width: 200px;
+  border-radius: 22px;
+  border: none;
+  box-shadow: inset 0px 4px 4px #00000040;
+  background-color: #B2D235;
+  color: #FEFFFF;
+  font-family: "UTM BryantLG";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 22px;
+}
+
+.modal .modal-dialog {
+  position: relative;
+  left: 2%;
+}
+
+.modal .modal-content {
+  width: 430px;
+  height: 650px;
+  border-radius: 0px;
+}
+
+.modal .modal-content .modal-header {
+  height: 70px;
+}
+
+.nav-tabs .nav-item {
+  height: 70px;
+  width: 50%;
+}
+
+.nav-tabs .nav-item .nav-link {
+  width: 100%;
+  height: 100%;
+  border-radius: 0px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  font-family: "UTM BryantLG";
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 31px;
+  color: #B2D235;
+  background-color: transparent;
+}
+
+.nav-tabs .nav-item .active {
+  border: none;
+  background-color: #B2D235;
+  color: #FEFFFF;
+}
+
+.icon-close-login-register {
+  width: 22px;
+  height: 25px;
+  border: none;
+  background-color: #FFFFFF;
+  position: relative;
+  left: 415px;
+  top: -80px;
+}
+
+.icon-close-login-register i {
+  margin-left: -18px;
+  margin-top: -8px;
+  font-size: 41px;
+  color: #B2D235;
+}
+
+.hr-modal {
+  margin-top: 40px;
+  width: 100%;
+}
+
+.text-login-with {
+  font-family: "UTM BryantLG";
+  background-color: #FEFFFF;
+  width: 92px;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 25px;
+  position: relative;
+  top: -33px;
+  z-index: 999;
+}
+
+.login-with {
+  position: relative;
+  top: -15px;
+}
+
+.login-with .login-facebook {
+  border: none;
+  color: #FEFFFF;
+  background-color: #3B5999;
+  height: 55px;
+  width: 370px;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-with .login-facebook .size-icon-facebook-modal {
+  font-size: 40px;
+}
+
+.login-with .login-facebook .style-text-login-facebook {
+  font-family: "UTM BryantLG";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 25px;
+  margin-left: 5px;
+}
+
+.login-with .login-google {
+  margin-top: 13px;
+  border: none;
+  color: #FEFFFF;
+  background-color: #DC4E41;
+  height: 55px;
+  width: 370px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-with .login-google .size-icon-google-modal {
+  font-size: 40px;
+}
+
+.login-with .login-google .style-text-login-google {
+  margin-left: 5px;
+  font-family: "UTM BryantLG";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 25px;
+}

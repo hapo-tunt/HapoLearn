@@ -38,17 +38,17 @@
 .prev-arrow {
   @extend %icon-narrow;
   top: 70px;
-  left: 37px;
+  left: 0px;
 }
 
 .next-arrow {
   @extend %icon-narrow;
   top: 70px;
-  left: 1285px;
+  left: 1170px;
 }
 
 .slider-feedback {
-  width: 1350px;
+  width: 1200px;
 
   .slider-item {
     padding-bottom: 30px;
@@ -57,7 +57,7 @@
 
 .person-feedback {
   margin-top: 25px;
-  margin-left: 102px;
+  margin-left: 65px;
   display: flex;
 
   img {
@@ -107,7 +107,7 @@
     content: '';
     position: absolute;
     bottom: -11px;
-    left: 80px;
+    left: 67px;
     width: 20px;
     height: 20px; 
     background: $color-bg-ribbon-feedback;
@@ -141,20 +141,20 @@
   }
 
   .ribbon-feedback {
-    width: 450px;
+    width: 480px;
     transition: 1s;
   }
 
   .prev-arrow {
     transition: 1s;
     top: 70px;
-    left: 17px;
+    left: 1px;
   }
   
   .next-arrow {
     transition: 1s;
     top: 70px;
-    left: 980px;
+    left: 994px;
   }
 
   .title-feedback {
@@ -181,7 +181,7 @@
   }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1040px) {
   .feedback {
     margin-top: 30px;
   }
@@ -224,11 +224,11 @@
   
   .person-feedback {
     margin-top: 20px;
-    margin-left: 78px;
+    margin-left: 64px;
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 615px) {
   .feedback {
     margin-top: 30px;
   }
@@ -271,7 +271,7 @@
   
   .person-feedback {
     margin-top: 20px;
-    margin-left: 78px;
+    margin-left: 62px;
   }
 
   .cmt-feedback {
@@ -334,13 +334,8 @@
   }
   
   .person-feedback {
-    margin-top: 30px;
-    margin-left: 7px;
-  }
-
-  .person-feedback {
     margin-top: 20px;
-    margin-left: 79px;
+    margin-left: 67px;
 
     img {
       height: 45px;

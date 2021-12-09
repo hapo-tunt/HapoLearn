@@ -81,11 +81,12 @@ header a:hover .a-disable {
 
 .logo-align {
   margin-left: 5%;
+  padding-bottom: 12px;
 }
 
 .a-disable {
   font-family: "OpenSans";
-  font-size: 17px;
+  font-size: 14px;
   font-style: Bold;
   font-weight: 700;
   color: #505353;
@@ -93,7 +94,7 @@ header a:hover .a-disable {
 
 .a-active {
   font-family: "OpenSans";
-  font-size: 17px;
+  font-size: 14px;
   font-style: Bold;
   font-weight: 700;
   color: #FEFFFF;
@@ -104,15 +105,13 @@ header a:hover .a-disable {
   flex-wrap: wrap;
 }
 
-.navbar-nav .nav-item:nth-child(1) {
-  margin-left: -moz-calc(33.33333%);
-  margin-left: -webkit-calc(33.33333%);
-  margin-left: calc(33.33333%);
-  transition: 0.8s;
+.navbar-nav .nav-item:nth-child(6) {
+  margin-right: 100px;
 }
 
 .navbar-nav .nav-item .nav-link {
-  width: 200px;
+  width: auto;
+  margin-right: 10px;
 }
 
 .icon-hide {
@@ -133,75 +132,21 @@ header a:hover .a-disable {
   border: 0px;
 }
 
-@media (max-width: 1675px) {
-  .navbar-nav .nav-item:nth-child(1) {
-    margin-left: -moz-calc(20%);
-    margin-left: -webkit-calc(20%);
-    margin-left: calc(20%);
-  }
-  .navbar-nav .nav-item .nav-link {
-    width: 195px;
-  }
-}
-
-@media (max-width: 1581px) {
-  .navbar-nav .nav-item:nth-child(1) {
-    margin-left: -moz-calc(14.28571%);
-    margin-left: -webkit-calc(14.28571%);
-    margin-left: calc(14.28571%);
-  }
-  .navbar-nav .nav-item .nav-link {
-    width: 193px;
-  }
-  .navbar-nav .nav-item a {
-    font-size: 16px;
-  }
-}
-
-@media (max-width: 1366px) {
-  .navbar-nav .nav-item:nth-child(1) {
-    margin-left: -moz-calc(10%);
-    margin-left: -webkit-calc(10%);
-    margin-left: calc(10%);
-  }
-  .navbar-nav .nav-item .nav-link {
-    width: 185px;
-  }
-  .navbar-nav .nav-item a {
-    font-size: 15px;
-  }
-}
-
 @media (max-width: 1278px) {
-  .navbar-nav .nav-item:nth-child(1) {
-    margin-left: 5px;
-  }
-  .navbar-nav .nav-item .nav-link {
-    width: 180px;
-  }
-  .navbar-nav .nav-item span {
-    font-size: 14px;
+  .navbar-nav .nav-item:nth-child(6) {
+    margin-right: 0px;
   }
 }
 
-@media (max-width: 1144px) {
-  .navbar-nav .nav-item:nth-child(1) {
-    margin-left: 0px;
-  }
-  .navbar-nav .nav-item .nav-link {
-    width: 200px;
-  }
-  .a-hide {
-    display: block;
-    transform: 1s;
-  }
-}
-
-@media (max-width: 1003px) {
+@media (max-width: 991px) {
   .logo-size {
     height: 61px;
     width: 300px;
     border-radius: 0px;
+  }
+  .a-hide {
+    display: block;
+    transform: 1s;
   }
   .header-responsive {
     flex-direction: column;
@@ -209,12 +154,19 @@ header a:hover .a-disable {
   .collapse {
     padding-top: 5px;
   }
+  .navbar-nav {
+    justify-content: space-between;
+  }
+  .navbar-nav .nav-item:nth-child(6) {
+    padding-right: 0px;
+  }
   .navbar-nav .nav-item .nav-link {
     width: auto;
+    margin-right: 0px;
   }
 }
 
-@media (max-width: 653px) {
+@media (max-width: 653px) and (min-width: 576px) {
   .logo-align {
     margin-right: 50px;
   }
@@ -226,7 +178,8 @@ header a:hover .a-disable {
     padding-top: 10px;
   }
   .navbar-nav .nav-item .nav-link {
-    width: 185px;
+    width: 180px;
+    margin-right: 0px;
   }
 }
 
@@ -248,7 +201,7 @@ header a:hover .a-disable {
     position: relative;
     left: -25px;
   }
-  nav-item {
+  .nav-item {
     text-align: center;
   }
   .a-active {
@@ -388,8 +341,13 @@ header a:hover .a-disable {
 }
 
 .btn-banner:hover {
-  background-color: #90AB26;
-  color: #505353;
+  background-color: transparent;
+  border: 1px solid #B2D235;
+  box-shadow: none;
+}
+
+.btn-banner:hover a {
+  color: #B2D235;
   text-decoration: underline;
 }
 
@@ -609,12 +567,13 @@ header a:hover .a-disable {
 .align-courses {
   transition: 1s;
   margin-top: 70px;
-  justify-content: space-around;
+  justify-content: center;
 }
 
 .align-other-courses {
   transition: 1s;
   margin-top: 60px;
+  justify-content: center;
 }
 
 .text-other-courses {
@@ -814,9 +773,13 @@ header a:hover .a-disable {
 }
 
 .courses .card-button:hover {
-  transition: 0.5s;
-  background-color: #90AB26;
-  color: #505353;
+  background-color: transparent;
+  border: 1px solid #B2D235;
+  box-shadow: none;
+}
+
+.courses .card-button:hover a {
+  color: #B2D235;
   text-decoration: underline;
 }
 
@@ -916,7 +879,6 @@ header a:hover .a-disable {
 @media (max-width: 1003px) {
   .align-courses {
     margin-top: 70px;
-    justify-content: space-between;
   }
   .align-title-html {
     width: 278px;
@@ -982,7 +944,6 @@ header a:hover .a-disable {
     width: 223px;
   }
   .align-courses {
-    justify-content: space-around;
     margin-top: 50px;
   }
   .text-other-courses {
@@ -1070,7 +1031,6 @@ header a:hover .a-disable {
 
 @media (max-width: 711px) and (min-width: 576px) {
   .align-courses {
-    justify-content: space-between;
     margin-top: 40px;
   }
   .align-title-html {
@@ -1981,16 +1941,16 @@ header a:hover .a-disable {
 
 .prev-arrow {
   top: 70px;
-  left: 37px;
+  left: 0px;
 }
 
 .next-arrow {
   top: 70px;
-  left: 1285px;
+  left: 1170px;
 }
 
 .slider-feedback {
-  width: 1350px;
+  width: 1200px;
 }
 
 .slider-feedback .slider-item {
@@ -1999,7 +1959,7 @@ header a:hover .a-disable {
 
 .person-feedback {
   margin-top: 25px;
-  margin-left: 102px;
+  margin-left: 65px;
   display: flex;
 }
 
@@ -2062,7 +2022,7 @@ header a:hover .a-disable {
   content: '';
   position: absolute;
   bottom: -11px;
-  left: 80px;
+  left: 67px;
   width: 20px;
   height: 20px;
   background: #ffffff;
@@ -2100,18 +2060,18 @@ header a:hover .a-disable {
     overflow: hidden;
   }
   .ribbon-feedback {
-    width: 450px;
+    width: 480px;
     transition: 1s;
   }
   .prev-arrow {
     transition: 1s;
     top: 70px;
-    left: 17px;
+    left: 1px;
   }
   .next-arrow {
     transition: 1s;
     top: 70px;
-    left: 980px;
+    left: 994px;
   }
   .title-feedback {
     transition: 1s;
@@ -2147,7 +2107,7 @@ header a:hover .a-disable {
   }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1040px) {
   .feedback {
     margin-top: 30px;
   }
@@ -2182,11 +2142,11 @@ header a:hover .a-disable {
   }
   .person-feedback {
     margin-top: 20px;
-    margin-left: 78px;
+    margin-left: 64px;
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 615px) {
   .feedback {
     margin-top: 30px;
   }
@@ -2221,7 +2181,7 @@ header a:hover .a-disable {
   }
   .person-feedback {
     margin-top: 20px;
-    margin-left: 78px;
+    margin-left: 62px;
   }
   .cmt-feedback {
     font-size: 13px;
@@ -2273,12 +2233,8 @@ header a:hover .a-disable {
     left: 300px;
   }
   .person-feedback {
-    margin-top: 30px;
-    margin-left: 7px;
-  }
-  .person-feedback {
     margin-top: 20px;
-    margin-left: 79px;
+    margin-left: 67px;
   }
   .person-feedback img {
     height: 45px;
@@ -2321,7 +2277,6 @@ header a:hover .a-disable {
   width: 705px;
   margin: auto;
   margin-top: 130px;
-  z-index: 1;
 }
 
 .btn-start-learning {
@@ -2332,7 +2287,6 @@ header a:hover .a-disable {
   margin: auto;
   margin-bottom: 100px;
   box-shadow: 0px 4px 4px 0px #00000040 inset;
-  z-index: 1;
 }
 
 .btn-start-learning .style-text-btn-learning {
@@ -2362,7 +2316,7 @@ header a:hover .a-disable {
     transition: 1s;
   }
   .text-start-learning {
-    width: 768px;
+    width: 700px;
     margin-top: 100px;
     font-size: 50px;
     line-height: 42px;
@@ -2388,7 +2342,7 @@ header a:hover .a-disable {
     height: 300px;
   }
   .text-start-learning {
-    width: 460px;
+    width: 450px;
     margin-top: 80px;
     font-size: 40px;
     line-height: 42px;
@@ -2690,6 +2644,10 @@ header a:hover .a-disable {
   color: #FFFFFF;
 }
 
+.contact-footer .nav .nav-link:hover {
+  color: #B2D235;
+}
+
 .style-tooltip-footer {
   font-family: UTM BryantLG;
   font-size: 20px;
@@ -2898,13 +2856,13 @@ header a:hover .a-disable {
     transition: 1s;
   }
   .contact-footer {
-    margin-left: -50px;
+    margin-left: -40px;
   }
   .contact-footer .nav {
-    width: 200px;
+    width: 180px;
   }
   .contact-footer .nav .nav-link {
-    font-size: 30px;
+    font-size: 28px;
     margin-left: 0px;
     transition: 1s;
   }
@@ -2965,7 +2923,7 @@ header a:hover .a-disable {
     align-items: center;
   }
   .contact-footer .nav .nav-link {
-    font-size: 30px;
+    font-size: 27px;
     margin-left: 0px;
     transition: 1s;
   }

@@ -18,7 +18,7 @@ $('.slider-feedback').slick({
   nextArrow: '<button class="slide-arrow next-arrow"><i class="fas fa-angle-right"></i></button>',
   responsive: [
     {
-      breakpoint: 1025,
+      breakpoint: 1040,
       settings: {
         slidesToShow: 1
       }

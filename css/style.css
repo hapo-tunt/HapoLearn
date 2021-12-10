@@ -3538,7 +3538,7 @@ header a:hover .a-disable {
   content: "";
   display: block;
   position: relative;
-  background: url(/assets/img/owl.png) no-repeat;
+  background: url(assets/img/owl.png) no-repeat;
   background-size: contain;
   border-radius: 50%;
   border: 1px solid #acacac;
@@ -3664,7 +3664,6 @@ header a:hover .a-disable {
     content: "";
     display: block;
     position: relative;
-    background: url(/assets/img/owl.png) no-repeat;
     background-size: contain;
     border-radius: 50%;
     border: 1px solid #acacac;

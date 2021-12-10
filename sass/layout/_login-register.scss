@@ -121,12 +121,14 @@
   position: relative;
   left: 415px;
   top: -80px;
+  z-index: 998;
 
   i {
     margin-left: -18px;
     margin-top: -8px;
     font-size: 41px;
     color: $color-bg-a-active;
+    z-index: 999;
   }
 
   &:hover {
@@ -246,6 +248,11 @@
 
       .style-label-remember {
         font-size: 16px;
+        
+        .align-text-remember {
+          position: relative;
+          top: 1px;
+        }
       }
   
       .style-forgot-pass {
@@ -266,7 +273,7 @@
   
     .modal-content {
       width: 400px;
-      height: 550px;
+      height: 560px;
       border-radius: 0px;
   
       .modal-header {
@@ -306,7 +313,7 @@
   }
   
   .text-login-with {
-    width: 75px;
+    width: 79px;
     font-size: 16px;
   }
   
@@ -387,7 +394,7 @@
   
     .modal-content {
       width: 320px;
-      height: 480px;
+      height: 490px;
   
       .modal-header {
         height: 40px;

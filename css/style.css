@@ -3165,6 +3165,7 @@ header a:hover .a-disable {
   position: relative;
   left: 415px;
   top: -80px;
+  z-index: 998;
 }
 
 .icon-close-login-register i {
@@ -3172,6 +3173,7 @@ header a:hover .a-disable {
   margin-top: -8px;
   font-size: 41px;
   color: #B2D235;
+  z-index: 999;
 }
 
 .icon-close-login-register:hover i {
@@ -3284,6 +3286,10 @@ header a:hover .a-disable {
   .modal form .style-label-remember {
     font-size: 16px;
   }
+  .modal form .style-label-remember .align-text-remember {
+    position: relative;
+    top: 1px;
+  }
   .modal form .style-forgot-pass {
     font-size: 16px;
   }
@@ -3298,7 +3304,7 @@ header a:hover .a-disable {
   }
   .modal .modal-content {
     width: 400px;
-    height: 550px;
+    height: 560px;
     border-radius: 0px;
   }
   .modal .modal-content .modal-header {
@@ -3329,7 +3335,7 @@ header a:hover .a-disable {
     width: 100%;
   }
   .text-login-with {
-    width: 75px;
+    width: 79px;
     font-size: 16px;
   }
   .login-with {
@@ -3393,7 +3399,7 @@ header a:hover .a-disable {
   }
   .modal .modal-content {
     width: 320px;
-    height: 480px;
+    height: 490px;
   }
   .modal .modal-content .modal-header {
     height: 40px;

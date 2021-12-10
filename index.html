@@ -379,7 +379,7 @@
                                     <label for="password">Password:</label> <input type="password" name="password">
                                 </div>
                                 <div class="d-flex justify-content-between">
-                                    <label class="style-label-remember" for="remember"><input type="checkbox" name="remember"><span class="align-text-remember">Remember me</span></label>
+                                    <label class="style-label-remember" for="remember"><input type="checkbox" name="remember"><span class="align-text-remember ml-1">Remember me</span></label>
                                     <a class="style-forgot-pass" href="#">Forgot password</a>
                                 </div>
                                 <div class="d-flex justify-content-center">
@@ -424,6 +424,33 @@
                 </div>
             </div>
         </div>
+    </div>
+
+    <div class="messbox" id="hideMess">
+        <div class="position-absolute boxchat" id="toggleChat">
+            <div class="close-chat" id="closeChat">
+                <i class="fas fa-times"></i>
+            </div>
+            <div class="d-flex flex-row">
+                <div>
+                    <div class="name-chat-admin title-chat-hapo">HapoLearn</div>
+                    <div class="chat-admin">
+                        <p class="text-chat-admin float-left"> HapoLearn xin chào bạn.<br>
+                            Bạn có cần chúng tôi hỗ trợ gì không ?
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex flex-column align-items-center">
+                <div class="login-mess d-flex justify-content-center"><i class="fab fa-facebook-messenger"></i>Đăng nhập vào messenger</div>
+                <div class="title-chat-hapo hide-title-chat mt-2">Chat với HapoLearn trong Messenger</div>
+            </div>
+        </div>
+
+        <button class="badge badge-primary size-badge-mess position-absolute">
+            <i class="fab fa-facebook-messenger" id="openMess"></i>
+            <i class="fas fa-times close-mess" id="closeMess"></i>
+        </button>  
     </div>
 
     <footer class="container-fluid p-0 position-relative">

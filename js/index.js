@@ -5,6 +5,24 @@ $(function () {
   });
 });
 
+$(function () {
+  $("#closeMess").click(function () {
+    $("#hideMess").hide();
+  });
+});
+
+$(function () {
+  $("#openMess").click(function () {
+    $("#toggleChat").toggle();
+  });
+});
+
+$(function () {
+  $("#closeChat").click(function () {
+    $("#toggleChat").hide();
+  })
+})
+
 $('.slider-feedback').slick({
   infinite: true,
   autoplay: true,

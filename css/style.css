@@ -3463,3 +3463,277 @@ header a:hover .a-disable {
     font-size: 16px;
   }
 }
+
+.messbox {
+  position: fixed;
+  z-index: 999;
+  right: 10%;
+  top: 85%;
+}
+
+.messbox .close-mess {
+  display: none;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background-color: grey;
+  color: white;
+  font-size: 18px;
+  font-weight: 900;
+  position: absolute;
+  top: -2px;
+  right: -5px;
+}
+
+.messbox .close-mess:hover {
+  color: red;
+}
+
+.messbox .size-badge-mess {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  border: none;
+}
+
+.messbox .size-badge-mess:hover .close-mess {
+  display: block;
+}
+
+.messbox i {
+  font-size: 43px;
+  color: white;
+}
+
+.messbox .boxchat {
+  width: 450px;
+  height: 220px;
+  top: -240px;
+  right: -60px;
+  border: 1px solid #e7e7e7;
+  background: #e7e7e7;
+  border-radius: 20px;
+  display: none;
+}
+
+.messbox .boxchat::before {
+  content: '';
+  position: absolute;
+  bottom: -11px;
+  right: 20px;
+  width: 20px;
+  height: 20px;
+  background: #e7e7e7;
+  border-right: 1px solid #E2E2E2;
+  border-bottom: 1px solid #E2E2E2;
+  transform: rotate(45deg);
+}
+
+.messbox .chat-admin {
+  width: 450px;
+  margin-top: -20px;
+}
+
+.messbox .chat-admin::before {
+  content: "";
+  display: block;
+  position: relative;
+  background: url(/assets/img/owl.png) no-repeat;
+  background-size: contain;
+  border-radius: 50%;
+  border: 1px solid #acacac;
+  background-color: white;
+  width: 50px;
+  height: 50px;
+  top: 50px;
+  left: 10px;
+  cursor: pointer;
+}
+
+.messbox .chat-admin .text-chat-admin {
+  padding-left: 20px;
+  float: left;
+  width: 70%;
+  margin-left: 80px;
+  border-radius: 15px;
+  background-color: #acacac;
+}
+
+.messbox .name-chat-admin {
+  position: relative;
+  top: 20px;
+  left: 102px;
+}
+
+.messbox .close-chat {
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: grey;
+  top: 8px;
+  right: 8px;
+  z-index: 999;
+  cursor: pointer;
+}
+
+.messbox .close-chat:hover i {
+  color: red;
+}
+
+.messbox .close-chat i {
+  margin-left: 8.5px;
+  margin-top: 4px;
+  font-size: 30px;
+}
+
+.messbox .login-mess {
+  text-align: center;
+  width: 370px;
+  height: 40px;
+  font-size: 17px;
+  background-color: #265bcf;
+  border-radius: 15px;
+  color: white;
+  margin-top: 20px;
+  line-height: 40px;
+  cursor: pointer;
+}
+
+.messbox .login-mess i {
+  margin-top: 5px;
+  font-size: 30px;
+  color: white;
+  padding-right: 10px;
+}
+
+.messbox .login-mess:hover {
+  border: 1px solid #265bcf;
+  background: transparent;
+  color: #265bcf;
+}
+
+.messbox .login-mess:hover i {
+  color: #265bcf;
+}
+
+.messbox .title-chat-hapo {
+  font-size: 15px;
+  opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+  .messbox {
+    right: 15%;
+  }
+  .messbox .size-badge-mess {
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    border: none;
+  }
+  .messbox i {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 575px) {
+  .messbox .boxchat {
+    width: 320px;
+    height: 200px;
+    top: -225px;
+    right: -50px;
+  }
+  .messbox .boxchat::before {
+    content: '';
+    position: absolute;
+    bottom: -11px;
+    right: 20px;
+    width: 20px;
+    height: 20px;
+    background: #e7e7e7;
+    border-right: 1px solid #E2E2E2;
+    border-bottom: 1px solid #E2E2E2;
+    transform: rotate(45deg);
+  }
+  .messbox .chat-admin {
+    width: 300px;
+    margin-top: -20px;
+  }
+  .messbox .chat-admin::before {
+    content: "";
+    display: block;
+    position: relative;
+    background: url(/assets/img/owl.png) no-repeat;
+    background-size: contain;
+    border-radius: 50%;
+    border: 1px solid #acacac;
+    background-color: white;
+    width: 50px;
+    height: 50px;
+    top: 60px;
+    left: 10px;
+    cursor: pointer;
+  }
+  .messbox .chat-admin .text-chat-admin {
+    padding-left: 20px;
+    float: left;
+    width: 70%;
+    margin-left: 80px;
+    border-radius: 15px;
+    background-color: #acacac;
+  }
+  .messbox .name-chat-admin {
+    position: relative;
+    top: 20px;
+    left: 102px;
+  }
+  .messbox .close-chat {
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: grey;
+    top: 8px;
+    right: 8px;
+    z-index: 999;
+    cursor: pointer;
+  }
+  .messbox .close-chat:hover i {
+    color: red;
+  }
+  .messbox .close-chat i {
+    margin-left: 8.5px;
+    margin-top: 4px;
+    font-size: 30px;
+  }
+  .messbox .login-mess {
+    text-align: center;
+    width: 250px;
+    height: 40px;
+    font-size: 17px;
+    background-color: #265bcf;
+    border-radius: 15px;
+    color: white;
+    margin-top: 0px;
+    line-height: 40px;
+    cursor: pointer;
+  }
+  .messbox .login-mess i {
+    margin-top: 5px;
+    font-size: 30px;
+    color: white;
+    padding-right: 10px;
+  }
+  .messbox .login-mess:hover {
+    border: 1px solid #265bcf;
+    background: transparent;
+    color: #265bcf;
+  }
+  .messbox .login-mess:hover i {
+    color: #265bcf;
+  }
+  .messbox .hide-title-chat {
+    display: none;
+  }
+}

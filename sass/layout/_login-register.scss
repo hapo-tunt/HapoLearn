@@ -1,6 +1,7 @@
 .modal {
   form {
     width: 85%;
+    margin: auto;
 
     label {
       font-family: $font_utm_bryantlg;
@@ -11,9 +12,11 @@
       color: $color-label-modal;
     }
 
-    input[type=text] , input[type=password] {
+    input[type=text] , input[type=password], input[type=email] {
       height: 60px;
       width: 370px;
+      background-color: $color-bg-input;
+      border: 1px solid $color-border-input;
     }
 
     input[type=checkbox] {
@@ -51,13 +54,22 @@
       font-style: normal;
       font-weight: 700;
       line-height: 22px;
+
+      &:hover {
+        background-color: transparent;
+        border: 1px solid $color-bg-a-active;
+        box-shadow: none;
+        color: $color-bg-a-active;
+        text-decoration: underline;
+        }
+      }
     }
-  }
 
   .modal-dialog {
     position: relative;
     left: 2%;
   }
+
   .modal-content {
     width: 430px;
     height: 650px;
@@ -70,9 +82,12 @@
 }
 
 .nav-tabs {
+  border: none;
+
   .nav-item {
     height: 70px;
     width: 50%;
+    border: none;
     
     .nav-link {
       width: 100%;
@@ -81,7 +96,6 @@
       justify-content: center;
       align-items: center;
       display: flex;
-
       font-family: $font_utm_bryantlg;
       font-size: 25px;
       font-style: normal;
@@ -89,6 +103,7 @@
       line-height: 31px;
       color: $color-bg-a-active;
       background-color: transparent;
+      border-bottom: 1px solid $color-bg-a-active;
     }
 
     .active {
@@ -107,12 +122,18 @@
   position: relative;
   left: 415px;
   top: -80px;
-  
+
   i {
     margin-left: -18px;
     margin-top: -8px;
     font-size: 41px;
     color: $color-bg-a-active;
+  }
+
+  &:hover {
+    i {
+      color: red;
+    }
   }
 }
 
@@ -149,8 +170,17 @@
     justify-content: center;
     align-items: center;
 
+    &:hover {
+      background-color: transparent;
+      border: 1px solid $color-bg-login-fb;
+      box-shadow: none;
+      color: $color-bg-login-fb;
+      text-decoration: none;
+    }
+
     .size-icon-facebook-modal {
       font-size: 40px;
+      margin-left: -7px;
     }
 
     .style-text-login-facebook {
@@ -173,9 +203,18 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+    &:hover {
+      background-color: transparent;
+      border: 1px solid $color-bg-login-google;
+      box-shadow: none;
+      color: $color-bg-login-google;
+      text-decoration: none;
+    }
     
     .size-icon-google-modal {
       font-size: 40px;
+      margin-left: -7px;
     }
 
     .style-text-login-google {
@@ -187,4 +226,8 @@
       line-height: 25px;
     }
   }
+}
+
+@media (max-width: 768px) {
+  
 }

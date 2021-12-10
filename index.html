@@ -16,9 +16,7 @@
     <link rel="shortcut icon" href="/assets/img/owl.png" />
     <title>Hapo Learn</title>
 </head>
-   <style>
-       div {border: 0px solid;}
-   </style>
+
 <body>
     <header>
         <nav class="container-fluid p-0 navbar navbar-expand-sm navbar-light bg-light">
@@ -353,15 +351,10 @@
             </div>
         </div> 
     </article>
-<style>
-    div , li , a{
-        border: px solid;
-    }
-</style>
-  <!-- Modal -->
+    <!-- Modal -->
     <div class="modal fade size-modal" id="loginRegister" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
+            <div class="modal-content m-auto">
                 <div class="modal-header p-0">
                     <ul class="nav nav-tabs w-100" role="tablist">
                         <li class="nav-item">
@@ -377,7 +370,7 @@
                 </button>
                 <div class="modal-body container-fluid p-0">
                     <div class="tab-content">
-                        <div class="tab-pane fade show active d-flex flex-column align-items-center" id="home" role="tabpanel" aria-labelledby="loginTab">
+                        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="loginTab">
                             <form>
                                 <div class="d-flex flex-column mt-1">
                                     <label for="username">Username:</label> <input type="text" name="username">
@@ -394,8 +387,10 @@
                                 </div>
                             </form>
                             <hr class="hr-modal">
-                            <span class="text-login-with">Login with</span>
-                            <div class="login-with">
+                            <div class="d-flex">
+                                <span class="text-login-with m-auto">Login with</span>
+                            </div>         
+                            <div class="login-with d-flex flex-column justify-content-center align-items-center">
                                 <button class="login-google">
                                     <i class="fab fa-google-plus-g size-icon-google-modal"></i><span class="style-text-login-google">Google</span>
                                 </button>
@@ -412,14 +407,16 @@
                                     <label for="username">Username:</label> <input type="text" name="username">
                                 </div>
                                 <div class="d-flex flex-column mt-3">
+                                    <label for="email">Email:</label> <input type="email" name="email">
+                                </div>
+                                <div class="d-flex flex-column mt-3">
                                     <label for="password">Password:</label> <input type="password" name="password">
                                 </div>
-                                <div class="d-flex justify-content-between">
-                                    <label class="style-label-remember" for="remember"><input type="checkbox" name="remember"> Remember me</label>
-                                    <a class="style-forgot-pass" href="#">Forgot password</a>
+                                <div class="d-flex flex-column mt-3">
+                                    <label for="re-password">Repeat Password:</label> <input type="password" name="re-password">
                                 </div>
                                 <div class="d-flex justify-content-center">
-                                    <input class="submit-modal" type="submit" value="LOGIN">
+                                    <input class="submit-modal mt-5" type="submit" value="REGISTER">
                                 </div>
                             </form>
                         </div>

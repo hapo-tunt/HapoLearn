@@ -58,12 +58,9 @@
   border: none;
   
   &:hover {
-    background-color: transparent;
-    border: 1px solid $color-bg-a-active;
-    box-shadow: none;
     a {
-      color: $color-bg-a-active;
-      text-decoration: underline;
+      color: $color-text-athapo;
+      text-decoration: none;
     }
   }
 }

@@ -10,17 +10,25 @@
   margin-top: 120px;
 }
 
+.div-laptop {
+  overflow: hidden;
+}
+
 .title-why-hapo {
   transition: 1s;
   position: relative;
   @include style_text_whyhapo(70px, 700, 86px, 0.32px, $color-text-why-hapo);
-  left: -24px;
-  top: -24px
+  width: 600px;
+  right: 20px;
+  top: -24px;  
 }
 
 .text-why-hapo {
   transition: 1s;
-  @include style_text_whyhapo(17px, 400, 50px, 0.8px, $color-text-why-hapo);
+  @include style_text_whyhapo(17px, 400, 50px, 0.8px, $color-text-why-hapo);;
+  width: 600px;
+  right: 0px;
+  letter-spacing: 0.8px;
 
   img {
     @include size_img(20px, 20px);
@@ -35,135 +43,121 @@
 
 .img-laptop {
   transition: 1s;
-  @include size_img(715px, 560px);
+  @include size_img(715px, 530px);
   @include align_item_whyhapo(112px, 0px);
 }
 
 .section-text-why-hapo {
+  position: relative;
   transition: 1s;
-  @include align_item_whyhapo(-195px, 150px);
-}
-
-@media (max-width: 1440px) {
-  .title-why-hapo {
-    left: -68px;
-    top: -24px;
-  }
-
-  .text-why-hapo {
-    left: -45px;
-  }
+  top: 300px;
+  right: 0px;
 }
 
 @media (max-width: 1366px) {
+  .bg-why-hapo {
+    height: 500px;
+  }
+
   .img-keyboard {
-    @include size_img(350px, 450px);
+    @include size_img(300px, 400px);
     @include align_item_whyhapo(-220px, -17px);
   }
   
   .img-laptop {
     transition: 1s;
-    @include size_img(570px, 450px);
-    @include align_item_whyhapo(230px, -20px);
+    @include size_img(500px, 380px);
   }
 
   .title-why-hapo {
     transition: 1s;
     position: relative;
     @include style_text_whyhapo(60px, 700, 86px, 0.32px, $color-text-why-hapo);
-  }
-  
-  .text-why-hapo {
-    transition: 1s;
-    @include style_text_whyhapo(16px, 400, 50px, 0.8px, $color-text-why-hapo);
-    left: -60px;
-  }
-}
-
-@media (max-width: 1144px) {
-  .text-why-hapo {
-    @include style_text_whyhapo(16px, 400, 50px, 0.8px, $color-text-why-hapo);
-    left: 0px;
-  }
-
-  .img-keyboard {
-    @include size_img(350px, 450px);
-    @include align_item_whyhapo(-220px, -17px);
-  }
-  
-  .img-laptop {
-    @include size_img(500px, 395px);
-    @include align_item_whyhapo(280px, -10px);
-  }
-
-  .title-why-hapo {
-    width: 450px;
-    @include style_text_whyhapo(55px, 700, 86px, 0.32px, $color-text-why-hapo);
-    top: -100px;
-    left: 180px;
+    width: 100%;
+    top: -250px;
+    right: -256px;
   }
   
   .text-why-hapo {
     transition: 1s;
     @include style_text_whyhapo(15px, 400, 50px, 0.8px, $color-text-why-hapo);
-    left: -115px;
+    width: 450px;
+    letter-spacing: 0.8px;
+    top: -210px;
   }
 }
 
 @media (max-width: 1003px) {
-  .title-why-hapo {
-    top: -100px;
-    left: 150px;
+  .bg-why-hapo {
+    height: 500px;
   }
 
+  .img-keyboard {
+    @include size_img(280px, 370px);
+    @include align_item_whyhapo(-220px, -17px);
+  }
+  
   .img-laptop {
-    @include size_img(430px, 355px);
-    @include align_item_whyhapo(280px, 0px);
+    transition: 1s;
+    @include size_img(400px, 300px);
+    top: 165px;
+    left: 5px;
   }
 
+  .title-why-hapo {
+    transition: 1s;
+    position: relative;
+    @include style_text_whyhapo(50px, 700, 86px, 0.32px, $color-text-why-hapo);
+    width: 500px;
+    top: -250px;
+    right: -320px;
+  }
+  
   .text-why-hapo {
-    left: -130px;
+    transition: 1s;
+    @include style_text_whyhapo(14px, 400, 40px, 0.8px, $color-text-why-hapo);
+    width: 430px;
+    letter-spacing: 0.8px;
+    top: -180px;
   }
 }
 
 @media (max-width: 900px) {
   .align-why-hapo {
-    margin-top: 60px;
+    margin-top: 80px;
   }
 
   .bg-why-hapo {
-    height: 450px;
-  }
-
-  .title-why-hapo {
-    @include style_text_whyhapo_responsive(40px, 40px, 228px, -26px, 136px);
-    top: 20px;
-    left: 250px;
-    width: 450px;
-  }
-  
-  .text-why-hapo {
-    @include style_text_whyhapo_responsive(13px, 35px, 350px, 5px, 14px);
-    width: 400px;
-    top: 80px;
-
-    img {
-      @include size_img(14px, 14px);
-    }  
+    height: 420px;
   }
 
   .img-keyboard {
-    @include img_whyhapo(204px, 277px, -118px);
-  }
-
-  .img-laptop {
-    @include img_whyhapo(302px, 227px, -206px);
-    @include align_item_whyhapo(150px, 0px);
+    @include size_img(230px, 300px);
+    @include align_item_whyhapo(-170px, -17px);
   }
   
-  .section-text-why-hapo {
-    top: -220px;
-    left: 0px;
+  .img-laptop {
+    transition: 1s;
+    @include size_img(350px, 280px);
+    top: 100px;
+  }
+
+  .title-why-hapo {
+    transition: 1s;
+    position: relative;
+    @include style_text_whyhapo(40px, 700, 86px, 0.32px, $color-text-why-hapo);
+    width: auto;
+    top: -284px;
+    right: -180px;
+  }
+  
+  .text-why-hapo {
+    transition: 1s;
+    @include style_text_whyhapo(14px, 400, 30px, 0.8px, $color-text-why-hapo);
+    width: 390px;
+    letter-spacing: 0.3px;
+    top: -200px;
+    left: 40px;
   }
 }
 
@@ -173,68 +167,25 @@
   }
 
   .bg-why-hapo {
-    height: 700px;
+    height: 669px;
+    flex-direction: column;
   }
 
   .title-why-hapo {
     @include style_text_whyhapo_responsive(45px, 40px, 228px, -26px, 136px);
-    top: 20px;
+    top: 50px;
     left: 0px;
     width: 100%;
     text-align: center;
   }
   
   .text-why-hapo {
-    @include style_text_whyhapo_responsive(20px, 45px, 350px, 5px, 0px);
-    top: 80px;
+    @include style_text_whyhapo_responsive(20px, 50px, 350px, 5px, 0px);
+    top: 100px;
     left: 0px;
     width: 100%;
     text-align: center;
-
-    img {
-      @include size_img(14px, 14px);
-    }  
-  }
-
-  .img-keyboard {
-    @include img_whyhapo(204px, 277px, -118px);
-  }
-
-  .img-laptop {
-    @include img_whyhapo(450px, 350px, -206px);
-    @include align_item_whyhapo(-150px, 0px);
-    margin: auto;
-  }
-  
-  .section-text-why-hapo {
-    top: -220px;
-    left: 0px;
-  }
-}
-
-@media (max-width: 575px) {
-  .align-why-hapo {
-    margin-top: 60px;
-  }
-
-  .bg-why-hapo {
-    height: 700px;
-  }
-
-  .title-why-hapo {
-    @include style_text_whyhapo_responsive(35px, 40px, 228px, -26px, 136px);
-    top: 20px;
-    left: 0px;
-    width: 100%;
-    text-align: center;
-  }
-  
-  .text-why-hapo {
-    @include style_text_whyhapo_responsive(15px, 45px, 350px, 5px, 0px);
-    top: 80px;
-    left: 0px;
-    width: 100%;
-    text-align: center;
+    letter-spacing: none;
 
     img {
       @include size_img(14px, 14px);
@@ -247,41 +198,52 @@
 
   .img-laptop {
     @include img_whyhapo(400px, 300px, -206px);
-    @include align_item_whyhapo(-150px, 0px);
-    margin: auto;
+    @include align_item_whyhapo(90px, 0px);
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .div-laptop {
+    overflow: visible;
   }
   
   .section-text-why-hapo {
-    top: -220px;
+    top: 0px;
     left: 0px;
+    width: 100%;
   }
 }
 
-@media (max-width: 431px) {
+@media (max-width: 575px) {
   .align-why-hapo {
     margin-top: 60px;
   }
 
   .bg-why-hapo {
-    height: 600px;
+    height: 569px;
+    flex-direction: column;
   }
 
   .title-why-hapo {
-    @include style_text_whyhapo_responsive(35px, 40px, 228px, -26px, 136px);
-    top: 0px;
-    left: 60px;
-    width: 250px;
+    @include style_text_whyhapo_responsive(40px, 40px, 228px, -26px, 136px);
+    top: 30px;
+    left: 0px;
+    width: 228px;
     text-align: left;
     margin: auto;
   }
   
   .text-why-hapo {
-    @include style_text_whyhapo_responsive(13px, 30px, 0px, 0px, 0px);
-    top: 50px;
+    @include style_text_whyhapo_responsive(14px, 30px, 350px, 5px, 0px);
+    top: 70px;
     left: 0px;
     width: 100%;
     text-align: center;
-    letter-spacing: 0.5px;
+    letter-spacing: none;
+
+    img {
+      @include size_img(14px, 14px);
+    }  
   }
 
   .img-keyboard {
@@ -289,86 +251,108 @@
   }
 
   .img-laptop {
-    @include img_whyhapo(350px, 250px, -206px);
-    @include align_item_whyhapo(-150px, 0px);
-    margin: auto;
+    @include img_whyhapo(320px, 200px,-200px);
+    @include align_item_whyhapo(100px, 0px);
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .div-laptop {
+    overflow: visible;
   }
   
   .section-text-why-hapo {
-    top: -220px;
+    top: 0px;
     left: 0px;
+    width: 100%;
   }
 }
 
-@media (max-width: 369px) {
+@media (max-width: 450px) {
+  .title-why-hapo {
+    @include style_text_whyhapo_responsive(40px, 40px, 228px, -26px, 136px);
+    top: 30px;
+    left: 50px;
+    width: 228px;
+    text-align: left;
+    margin: auto;
+  }
+}
+
+@media (max-width: 380px) {
+  .align-why-hapo {
+    margin-top: 60px;
+  }
+
   .bg-why-hapo {
-    height: 530px;
+    height: 569px;
+    flex-direction: column;
   }
 
   .title-why-hapo {
-    @include style_text_whyhapo_responsive(35px, 40px, 228px, -26px, 136px);
-    top: 0px;
-    left: 60px;
-    width: 250px;
+    @include style_text_whyhapo_responsive(40px, 40px, 228px, -26px, 136px);
+    top: 30px;
+    left: 50px;
+    width: 228px;
     text-align: left;
     margin: auto;
   }
   
   .text-why-hapo {
-    @include style_text_whyhapo_responsive(12px, 30px, 0px, 0px, 0px);
-    letter-spacing: 0.5px;
-    top: 50px;
+    @include style_text_whyhapo_responsive(13px, 30px, 350px, 5px, 0px);
+    top: 70px;
     left: 0px;
     width: 100%;
     text-align: center;
+    letter-spacing: 0.1px;
+
+    img {
+      @include size_img(14px, 14px);
+    }  
   }
 
   .img-keyboard {
-    @include img_whyhapo(204px, 250px, -118px);
+    @include img_whyhapo(204px, 277px, -118px);
   }
 
   .img-laptop {
-    @include img_whyhapo(300px, 180px, -206px);
-    @include align_item_whyhapo(-150px, 0px);
-    margin: auto;
+    @include img_whyhapo(320px, 200px,-200px);
+    @include align_item_whyhapo(100px, 0px);
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .div-laptop {
+    overflow: visible;
   }
   
   .section-text-why-hapo {
-    top: -220px;
+    top: 0px;
     left: 0px;
+    width: 100%;
   }
 }
 
-@media (max-width: 367px) {
-  .bg-why-hapo {
-    height: 480px;
-  }
-  
-  .text-why-hapo {
-    @include style_text_whyhapo_responsive(12px, 30px, 0px, 0px, 0px);
-    letter-spacing: 0.1px;
-    top: 50px;
-    left: 0px;
-    width: 320px;
-    text-align: center;
-  }
-
+@media (max-width: 380px) {
   .title-why-hapo {
-    @include style_text_whyhapo_responsive(33px, 40px, 228px, -26px, 136px);
-    top: 20px;
+    @include style_text_whyhapo_responsive(35px, 40px, 228px, -26px, 136px);
+    top: 30px;
     left: 60px;
     width: 200px;
     text-align: left;
     margin: auto;
   }
-  
-  .img-laptop {
-    @include img_whyhapo(300px, 180px, -206px);
-    @include align_item_whyhapo(-150px, 0px);
-    margin: auto;
-  }
 
-  .img-keyboard {
-    @include img_whyhapo(180px, 220px, -100px);
+  .text-why-hapo {
+    @include style_text_whyhapo_responsive(12px, 30px, 320px, 5px, 0px);
+    top: 70px;
+    left: 0px;
+    width: 100%;
+    text-align: center;
+    letter-spacing: 0.1px;
+
+    img {
+      @include size_img(14px, 14px);
+    }  
   }
 }

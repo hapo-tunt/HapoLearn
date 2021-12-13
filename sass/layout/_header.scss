@@ -11,7 +11,9 @@ header {
     }
 
     .a-disable {
-      color: $color-bg-a-active;
+      background-color:  $color-bg-a-active;
+      color: $color-text-a-active;
+      text-decoration: none;
     }
   }
 }
@@ -36,7 +38,8 @@ header {
 
 .logo-align {
   margin-left: 5%;
-  padding-bottom: 12px;
+  padding-bottom: 17px;
+  padding-top: 10px;
 }
 
 .a-disable {
@@ -47,26 +50,33 @@ header {
   color: $color-text-a-disable;
 }
 
+
+.a-bg-active {
+  height: 34px;
+  border-radius: 17px;
+  background-color: transparent;
+  text-align: center;
+  padding: 7px 13px 7px 13px;
+  border: 0px;
+}
+
 .a-active {
   font-family: $font_opensans;
   font-size: 14px;
   font-style: Bold;
   font-weight: 700;
   color: $color-text-a-active;
+  background-color: $color-bg-a-active;
 }
 
 .navbar-nav {
-  display: flex;
-  flex-wrap: wrap;
-
   .nav-item {
     &:nth-child(6) {
-      margin-right: 100px;
+      margin-right: 50px;
     }
 
     .nav-link {
       width: auto;
-      margin-right: 10px;
     }
   }
 }
@@ -80,26 +90,14 @@ header {
   width: 340.16px;
 }
 
-.a-bg-active {
-  height: 34px;
-  border-radius: 17px;
-  background-color: $color-bg-a-active;
-  text-align: center;
-  padding: 7px 20px 7px 20px;
-  border: 0px;
-}
 
-@media (max-width: 1278px){
-  .navbar-nav {
-    .nav-item {
-      &:nth-child(6) {
-        margin-right: 0px;
-      }
-    }
+@media (max-width: 1199px) {
+  .logo-align {
+    margin-left: 0px;
+    padding-bottom: 0px;
+    padding-top: 0px;
   }
-}
-
-@media (max-width: 991px) {
+  
   .logo-size {
     height: 61px;
     width: 300px;
@@ -119,12 +117,20 @@ header {
     padding-top: 5px;
   }
 
+  .a-disable {
+    font-size: 13px;
+  }
+  
+  .a-active {
+    font-size: 13px;
+  }
+
   .navbar-nav {
     justify-content: space-between;
 
     .nav-item {
       &:nth-child(6) {
-        padding-right: 0px;
+        margin-right: 0px;
       }
 
       .nav-link {
@@ -135,9 +141,15 @@ header {
   }
 }
 
-@media (max-width: 653px) and (min-width: 576px) {
+@media (max-width: 744px) and (min-width: 576px) {
   .logo-align {
     margin-right: 50px;
+  }
+
+  .navbar-nav {
+    .nav-item {
+      width: 190px;
+    }
   }
 
   .logo-size {
@@ -152,7 +164,7 @@ header {
   .navbar-nav {
     .nav-item {  
        .nav-link {
-        width: 180px;
+        width: auto;
         margin-right: 0px;
       }
     }
@@ -160,6 +172,26 @@ header {
 }
 
 @media (max-width: 575px) {
+  header {
+    a:hover {
+      span {
+        color: $color-bg-a-active;
+        text-decoration: underline;
+      }
+    
+      .a-active {
+        background-color: transparent;
+        color: $color-bg-a-active;
+      }
+  
+      .a-disable {
+        background: transparent;
+        color: $color-bg-a-active;
+        text-decoration: underline;
+      }
+    }
+  }
+
   .header-responsive {
     flex-direction: row;
   }

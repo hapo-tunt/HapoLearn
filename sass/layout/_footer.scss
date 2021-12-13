@@ -37,7 +37,6 @@
 
   a:hover {
     span {
-      color: $color-bg-a-active;
       text-decoration: underline;
     }
   }
@@ -59,10 +58,6 @@
       font-size: 45px;
       margin-left: 30px;
       color: $color-text-footer;
-
-      &:hover {
-        color: $color-bg-a-active;
-      }
     }
   }
 }

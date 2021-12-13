@@ -22,12 +22,12 @@
 
     &:hover {
       transition: 0.3s;
-      color: $color-text-a-disable;
+      color:  $color-text-athapo;
       text-decoration: none;
 
       span {
         transition: 0.3s;
-        color: $color-text-a-disable;
+        color:  $color-text-athapo;
         text-decoration: none;
       }
     }
@@ -122,14 +122,11 @@
     box-shadow: 0px 1.5px 2px 0px $color-shadow-btn-card inset;
     background-color: $color-bg-btn-card;
 
-    &:hover {
-      background-color: transparent;
-      border: 1px solid $color-bg-a-active;
-      box-shadow: none;
-      
+    &:hover {    
       a {
-        color: $color-bg-a-active;
-        text-decoration: underline;
+        transition: 1s;
+        color: $color-text-athapo;
+        text-decoration: none;
       }
     }
   }  

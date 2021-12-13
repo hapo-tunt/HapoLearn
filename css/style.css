@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: OpenSans;
   src: url(../assets/font/OpenSans-Bold.ttf);
@@ -58,7 +59,9 @@ header a:hover .a-active {
 }
 
 header a:hover .a-disable {
-  color: #B2D235;
+  background-color: #B2D235;
+  color: #FEFFFF;
+  text-decoration: none;
 }
 
 .navbar-toggler {
@@ -81,7 +84,8 @@ header a:hover .a-disable {
 
 .logo-align {
   margin-left: 5%;
-  padding-bottom: 12px;
+  padding-bottom: 17px;
+  padding-top: 10px;
 }
 
 .a-disable {
@@ -92,26 +96,30 @@ header a:hover .a-disable {
   color: #505353;
 }
 
+.a-bg-active {
+  height: 34px;
+  border-radius: 17px;
+  background-color: transparent;
+  text-align: center;
+  padding: 7px 13px 7px 13px;
+  border: 0px;
+}
+
 .a-active {
   font-family: "OpenSans";
   font-size: 14px;
   font-style: Bold;
   font-weight: 700;
   color: #FEFFFF;
-}
-
-.navbar-nav {
-  display: flex;
-  flex-wrap: wrap;
+  background-color: #B2D235;
 }
 
 .navbar-nav .nav-item:nth-child(6) {
-  margin-right: 100px;
+  margin-right: 50px;
 }
 
 .navbar-nav .nav-item .nav-link {
   width: auto;
-  margin-right: 10px;
 }
 
 .icon-hide {
@@ -123,22 +131,12 @@ header a:hover .a-disable {
   width: 340.16px;
 }
 
-.a-bg-active {
-  height: 34px;
-  border-radius: 17px;
-  background-color: #B2D235;
-  text-align: center;
-  padding: 7px 20px 7px 20px;
-  border: 0px;
-}
-
-@media (max-width: 1278px) {
-  .navbar-nav .nav-item:nth-child(6) {
-    margin-right: 0px;
+@media (max-width: 1199px) {
+  .logo-align {
+    margin-left: 0px;
+    padding-bottom: 0px;
+    padding-top: 0px;
   }
-}
-
-@media (max-width: 991px) {
   .logo-size {
     height: 61px;
     width: 300px;
@@ -154,11 +152,17 @@ header a:hover .a-disable {
   .collapse {
     padding-top: 5px;
   }
+  .a-disable {
+    font-size: 13px;
+  }
+  .a-active {
+    font-size: 13px;
+  }
   .navbar-nav {
     justify-content: space-between;
   }
   .navbar-nav .nav-item:nth-child(6) {
-    padding-right: 0px;
+    margin-right: 0px;
   }
   .navbar-nav .nav-item .nav-link {
     width: auto;
@@ -166,9 +170,12 @@ header a:hover .a-disable {
   }
 }
 
-@media (max-width: 653px) and (min-width: 576px) {
+@media (max-width: 744px) and (min-width: 576px) {
   .logo-align {
     margin-right: 50px;
+  }
+  .navbar-nav .nav-item {
+    width: 190px;
   }
   .logo-size {
     height: 50px;
@@ -178,12 +185,25 @@ header a:hover .a-disable {
     padding-top: 10px;
   }
   .navbar-nav .nav-item .nav-link {
-    width: 180px;
+    width: auto;
     margin-right: 0px;
   }
 }
 
 @media (max-width: 575px) {
+  header a:hover span {
+    color: #B2D235;
+    text-decoration: underline;
+  }
+  header a:hover .a-active {
+    background-color: transparent;
+    color: #B2D235;
+  }
+  header a:hover .a-disable {
+    background: transparent;
+    color: #B2D235;
+    text-decoration: underline;
+  }
   .header-responsive {
     flex-direction: row;
   }
@@ -340,15 +360,9 @@ header a:hover .a-disable {
   border: none;
 }
 
-.btn-banner:hover {
-  background-color: transparent;
-  border: 1px solid #B2D235;
-  box-shadow: none;
-}
-
 .btn-banner:hover a {
-  color: #B2D235;
-  text-decoration: underline;
+  color: #11114E;
+  text-decoration: none;
 }
 
 @media (max-width: 1278px) {
@@ -609,13 +623,13 @@ header a:hover .a-disable {
 
 .text-allour-courses a:hover {
   transition: 0.3s;
-  color: #505353;
+  color: #11114E;
   text-decoration: none;
 }
 
 .text-allour-courses a:hover span {
   transition: 0.3s;
-  color: #505353;
+  color: #11114E;
   text-decoration: none;
 }
 
@@ -772,15 +786,10 @@ header a:hover .a-disable {
   background-color: #B2D235;
 }
 
-.courses .card-button:hover {
-  background-color: transparent;
-  border: 1px solid #B2D235;
-  box-shadow: none;
-}
-
 .courses .card-button:hover a {
-  color: #B2D235;
-  text-decoration: underline;
+  transition: 1s;
+  color: #11114E;
+  text-decoration: none;
 }
 
 @media (max-width: 1278px) {
@@ -1413,6 +1422,10 @@ header a:hover .a-disable {
   margin-top: 120px;
 }
 
+.div-laptop {
+  overflow: hidden;
+}
+
 .title-why-hapo {
   transition: 1s;
   position: relative;
@@ -1424,7 +1437,8 @@ header a:hover .a-disable {
   letter-spacing: 0.32px;
   color: #FFFFFF;
   position: relative;
-  left: -24px;
+  width: 600px;
+  right: 20px;
   top: -24px;
 }
 
@@ -1438,6 +1452,9 @@ header a:hover .a-disable {
   letter-spacing: 0.8px;
   color: #FFFFFF;
   position: relative;
+  width: 600px;
+  right: 0px;
+  letter-spacing: 0.8px;
 }
 
 .text-why-hapo img {
@@ -1457,44 +1474,34 @@ header a:hover .a-disable {
 .img-laptop {
   transition: 1s;
   width: 715px;
-  height: 560px;
+  height: 530px;
   position: relative;
   top: 112px;
   left: 0px;
 }
 
 .section-text-why-hapo {
-  transition: 1s;
   position: relative;
-  top: -195px;
-  left: 150px;
-}
-
-@media (max-width: 1440px) {
-  .title-why-hapo {
-    left: -68px;
-    top: -24px;
-  }
-  .text-why-hapo {
-    left: -45px;
-  }
+  transition: 1s;
+  top: 300px;
+  right: 0px;
 }
 
 @media (max-width: 1366px) {
+  .bg-why-hapo {
+    height: 500px;
+  }
   .img-keyboard {
-    width: 350px;
-    height: 450px;
+    width: 300px;
+    height: 400px;
     position: relative;
     top: -220px;
     left: -17px;
   }
   .img-laptop {
     transition: 1s;
-    width: 570px;
-    height: 450px;
-    position: relative;
-    top: 230px;
-    left: -20px;
+    width: 500px;
+    height: 380px;
   }
   .title-why-hapo {
     transition: 1s;
@@ -1507,59 +1514,9 @@ header a:hover .a-disable {
     letter-spacing: 0.32px;
     color: #FFFFFF;
     position: relative;
-  }
-  .text-why-hapo {
-    transition: 1s;
-    font-family: "UTM BryantLG";
-    font-style: normal;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 50px;
-    letter-spacing: 0.8px;
-    color: #FFFFFF;
-    position: relative;
-    left: -60px;
-  }
-}
-
-@media (max-width: 1144px) {
-  .text-why-hapo {
-    font-family: "UTM BryantLG";
-    font-style: normal;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 50px;
-    letter-spacing: 0.8px;
-    color: #FFFFFF;
-    position: relative;
-    left: 0px;
-  }
-  .img-keyboard {
-    width: 350px;
-    height: 450px;
-    position: relative;
-    top: -220px;
-    left: -17px;
-  }
-  .img-laptop {
-    width: 500px;
-    height: 395px;
-    position: relative;
-    top: 280px;
-    left: -10px;
-  }
-  .title-why-hapo {
-    width: 450px;
-    font-family: "UTM BryantLG";
-    font-style: normal;
-    font-size: 55px;
-    font-weight: 700;
-    line-height: 86px;
-    letter-spacing: 0.32px;
-    color: #FFFFFF;
-    position: relative;
-    top: -100px;
-    left: 180px;
+    width: 100%;
+    top: -250px;
+    right: -256px;
   }
   .text-why-hapo {
     transition: 1s;
@@ -1571,73 +1528,110 @@ header a:hover .a-disable {
     letter-spacing: 0.8px;
     color: #FFFFFF;
     position: relative;
-    left: -115px;
+    width: 450px;
+    letter-spacing: 0.8px;
+    top: -210px;
   }
 }
 
 @media (max-width: 1003px) {
-  .title-why-hapo {
-    top: -100px;
-    left: 150px;
+  .bg-why-hapo {
+    height: 500px;
+  }
+  .img-keyboard {
+    width: 280px;
+    height: 370px;
+    position: relative;
+    top: -220px;
+    left: -17px;
   }
   .img-laptop {
-    width: 430px;
-    height: 355px;
+    transition: 1s;
+    width: 400px;
+    height: 300px;
+    top: 165px;
+    left: 5px;
+  }
+  .title-why-hapo {
+    transition: 1s;
     position: relative;
-    top: 280px;
-    left: 0px;
+    font-family: "UTM BryantLG";
+    font-style: normal;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 86px;
+    letter-spacing: 0.32px;
+    color: #FFFFFF;
+    position: relative;
+    width: 500px;
+    top: -250px;
+    right: -320px;
   }
   .text-why-hapo {
-    left: -130px;
+    transition: 1s;
+    font-family: "UTM BryantLG";
+    font-style: normal;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 40px;
+    letter-spacing: 0.8px;
+    color: #FFFFFF;
+    position: relative;
+    width: 430px;
+    letter-spacing: 0.8px;
+    top: -180px;
   }
 }
 
 @media (max-width: 900px) {
   .align-why-hapo {
-    margin-top: 60px;
+    margin-top: 80px;
   }
   .bg-why-hapo {
-    height: 450px;
-  }
-  .title-why-hapo {
-    font-size: 40px;
-    line-height: 40px;
-    width: 228px;
-    top: -26px;
-    left: 136px;
-    top: 20px;
-    left: 250px;
-    width: 450px;
-  }
-  .text-why-hapo {
-    font-size: 13px;
-    line-height: 35px;
-    width: 350px;
-    top: 5px;
-    left: 14px;
-    width: 400px;
-    top: 80px;
-  }
-  .text-why-hapo img {
-    width: 14px;
-    height: 14px;
+    height: 420px;
   }
   .img-keyboard {
-    width: 204px;
-    height: 277px;
-    top: -118px;
+    width: 230px;
+    height: 300px;
+    position: relative;
+    top: -170px;
+    left: -17px;
   }
   .img-laptop {
-    width: 302px;
-    height: 227px;
-    top: -206px;
-    position: relative;
-    top: 150px;
-    left: 0px;
+    transition: 1s;
+    width: 350px;
+    height: 280px;
+    top: 100px;
   }
-  .section-text-why-hapo {
-    top: -220px;
-    left: 0px;
+  .title-why-hapo {
+    transition: 1s;
+    position: relative;
+    font-family: "UTM BryantLG";
+    font-style: normal;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 86px;
+    letter-spacing: 0.32px;
+    color: #FFFFFF;
+    position: relative;
+    width: auto;
+    top: -284px;
+    right: -180px;
+  }
+  .text-why-hapo {
+    transition: 1s;
+    font-family: "UTM BryantLG";
+    font-style: normal;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0.8px;
+    color: #FFFFFF;
+    position: relative;
+    width: 390px;
+    letter-spacing: 0.3px;
+    top: -200px;
+    left: 40px;
   }
 }
 
@@ -1646,7 +1640,8 @@ header a:hover .a-disable {
     margin-top: 60px;
   }
   .bg-why-hapo {
-    height: 700px;
+    height: 669px;
+    flex-direction: column;
   }
   .title-why-hapo {
     font-size: 45px;
@@ -1654,74 +1649,22 @@ header a:hover .a-disable {
     width: 228px;
     top: -26px;
     left: 136px;
-    top: 20px;
+    top: 50px;
     left: 0px;
     width: 100%;
     text-align: center;
   }
   .text-why-hapo {
     font-size: 20px;
-    line-height: 45px;
+    line-height: 50px;
     width: 350px;
     top: 5px;
     left: 0px;
-    top: 80px;
+    top: 100px;
     left: 0px;
     width: 100%;
     text-align: center;
-  }
-  .text-why-hapo img {
-    width: 14px;
-    height: 14px;
-  }
-  .img-keyboard {
-    width: 204px;
-    height: 277px;
-    top: -118px;
-  }
-  .img-laptop {
-    width: 450px;
-    height: 350px;
-    top: -206px;
-    position: relative;
-    top: -150px;
-    left: 0px;
-    margin: auto;
-  }
-  .section-text-why-hapo {
-    top: -220px;
-    left: 0px;
-  }
-}
-
-@media (max-width: 575px) {
-  .align-why-hapo {
-    margin-top: 60px;
-  }
-  .bg-why-hapo {
-    height: 700px;
-  }
-  .title-why-hapo {
-    font-size: 35px;
-    line-height: 40px;
-    width: 228px;
-    top: -26px;
-    left: 136px;
-    top: 20px;
-    left: 0px;
-    width: 100%;
-    text-align: center;
-  }
-  .text-why-hapo {
-    font-size: 15px;
-    line-height: 45px;
-    width: 350px;
-    top: 5px;
-    left: 0px;
-    top: 80px;
-    left: 0px;
-    width: 100%;
-    text-align: center;
+    letter-spacing: none;
   }
   .text-why-hapo img {
     width: 14px;
@@ -1737,46 +1680,56 @@ header a:hover .a-disable {
     height: 300px;
     top: -206px;
     position: relative;
-    top: -150px;
+    top: 90px;
     left: 0px;
-    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .div-laptop {
+    overflow: visible;
   }
   .section-text-why-hapo {
-    top: -220px;
+    top: 0px;
     left: 0px;
+    width: 100%;
   }
 }
 
-@media (max-width: 431px) {
+@media (max-width: 575px) {
   .align-why-hapo {
     margin-top: 60px;
   }
   .bg-why-hapo {
-    height: 600px;
+    height: 569px;
+    flex-direction: column;
   }
   .title-why-hapo {
-    font-size: 35px;
+    font-size: 40px;
     line-height: 40px;
     width: 228px;
     top: -26px;
     left: 136px;
-    top: 0px;
-    left: 60px;
-    width: 250px;
+    top: 30px;
+    left: 0px;
+    width: 228px;
     text-align: left;
     margin: auto;
   }
   .text-why-hapo {
-    font-size: 13px;
+    font-size: 14px;
     line-height: 30px;
-    width: 0px;
-    top: 0px;
+    width: 350px;
+    top: 5px;
     left: 0px;
-    top: 50px;
+    top: 70px;
     left: 0px;
     width: 100%;
     text-align: center;
-    letter-spacing: 0.5px;
+    letter-spacing: none;
+  }
+  .text-why-hapo img {
+    width: 14px;
+    height: 14px;
   }
   .img-keyboard {
     width: 204px;
@@ -1784,109 +1737,129 @@ header a:hover .a-disable {
     top: -118px;
   }
   .img-laptop {
-    width: 350px;
-    height: 250px;
-    top: -206px;
+    width: 320px;
+    height: 200px;
+    top: -200px;
     position: relative;
-    top: -150px;
+    top: 100px;
     left: 0px;
-    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .div-laptop {
+    overflow: visible;
   }
   .section-text-why-hapo {
-    top: -220px;
+    top: 0px;
     left: 0px;
+    width: 100%;
   }
 }
 
-@media (max-width: 369px) {
-  .bg-why-hapo {
-    height: 530px;
+@media (max-width: 450px) {
+  .title-why-hapo {
+    font-size: 40px;
+    line-height: 40px;
+    width: 228px;
+    top: -26px;
+    left: 136px;
+    top: 30px;
+    left: 50px;
+    width: 228px;
+    text-align: left;
+    margin: auto;
   }
+}
+
+@media (max-width: 380px) {
+  .align-why-hapo {
+    margin-top: 60px;
+  }
+  .bg-why-hapo {
+    height: 569px;
+    flex-direction: column;
+  }
+  .title-why-hapo {
+    font-size: 40px;
+    line-height: 40px;
+    width: 228px;
+    top: -26px;
+    left: 136px;
+    top: 30px;
+    left: 50px;
+    width: 228px;
+    text-align: left;
+    margin: auto;
+  }
+  .text-why-hapo {
+    font-size: 13px;
+    line-height: 30px;
+    width: 350px;
+    top: 5px;
+    left: 0px;
+    top: 70px;
+    left: 0px;
+    width: 100%;
+    text-align: center;
+    letter-spacing: 0.1px;
+  }
+  .text-why-hapo img {
+    width: 14px;
+    height: 14px;
+  }
+  .img-keyboard {
+    width: 204px;
+    height: 277px;
+    top: -118px;
+  }
+  .img-laptop {
+    width: 320px;
+    height: 200px;
+    top: -200px;
+    position: relative;
+    top: 100px;
+    left: 0px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .div-laptop {
+    overflow: visible;
+  }
+  .section-text-why-hapo {
+    top: 0px;
+    left: 0px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 380px) {
   .title-why-hapo {
     font-size: 35px;
     line-height: 40px;
     width: 228px;
     top: -26px;
     left: 136px;
-    top: 0px;
-    left: 60px;
-    width: 250px;
-    text-align: left;
-    margin: auto;
-  }
-  .text-why-hapo {
-    font-size: 12px;
-    line-height: 30px;
-    width: 0px;
-    top: 0px;
-    left: 0px;
-    letter-spacing: 0.5px;
-    top: 50px;
-    left: 0px;
-    width: 100%;
-    text-align: center;
-  }
-  .img-keyboard {
-    width: 204px;
-    height: 250px;
-    top: -118px;
-  }
-  .img-laptop {
-    width: 300px;
-    height: 180px;
-    top: -206px;
-    position: relative;
-    top: -150px;
-    left: 0px;
-    margin: auto;
-  }
-  .section-text-why-hapo {
-    top: -220px;
-    left: 0px;
-  }
-}
-
-@media (max-width: 367px) {
-  .bg-why-hapo {
-    height: 480px;
-  }
-  .text-why-hapo {
-    font-size: 12px;
-    line-height: 30px;
-    width: 0px;
-    top: 0px;
-    left: 0px;
-    letter-spacing: 0.1px;
-    top: 50px;
-    left: 0px;
-    width: 320px;
-    text-align: center;
-  }
-  .title-why-hapo {
-    font-size: 33px;
-    line-height: 40px;
-    width: 228px;
-    top: -26px;
-    left: 136px;
-    top: 20px;
+    top: 30px;
     left: 60px;
     width: 200px;
     text-align: left;
     margin: auto;
   }
-  .img-laptop {
-    width: 300px;
-    height: 180px;
-    top: -206px;
-    position: relative;
-    top: -150px;
+  .text-why-hapo {
+    font-size: 12px;
+    line-height: 30px;
+    width: 320px;
+    top: 5px;
     left: 0px;
-    margin: auto;
+    top: 70px;
+    left: 0px;
+    width: 100%;
+    text-align: center;
+    letter-spacing: 0.1px;
   }
-  .img-keyboard {
-    width: 180px;
-    height: 220px;
-    top: -100px;
+  .text-why-hapo img {
+    width: 14px;
+    height: 14px;
   }
 }
 
@@ -2300,13 +2273,9 @@ header a:hover .a-disable {
   text-align: center;
 }
 
-.btn-start-learning:hover {
-  transition: 0.5s;
-  background-color: #90AB26;
-}
-
 .btn-start-learning:hover a {
-  color: #505353;
+  color: #11114E;
+  text-decoration: none;
 }
 
 @media (max-width: 1024px) {
@@ -2613,7 +2582,6 @@ header a:hover .a-disable {
 }
 
 .navs-footer a:hover span {
-  color: #B2D235;
   text-decoration: underline;
 }
 
@@ -2642,10 +2610,6 @@ header a:hover .a-disable {
   font-size: 45px;
   margin-left: 30px;
   color: #FFFFFF;
-}
-
-.contact-footer .nav .nav-link:hover {
-  color: #B2D235;
 }
 
 .style-tooltip-footer {
@@ -3069,11 +3033,31 @@ header a:hover .a-disable {
 .modal form input[type=checkbox] {
   position: relative;
   top: 5px;
-  margin-top: 10px;
-  height: 23px;
   width: 18px;
+  height: 23px;
+  margin-top: 7px;
+  border: 1px solid red;
   accent-color: #B2D235;
   cursor: pointer;
+}
+
+.modal form input[type=checkbox]:checked:after {
+  accent-color: #B2D235;
+  position: absolute;
+  border-radius: 3px;
+  width: 17.5px;
+  height: 17.5px;
+  top: 2px;
+  left: 0px;
+  font-size: 20px;
+  background-color: #B2D235;
+  content: "✔";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  color: white;
+  border: none;
 }
 
 .modal form .style-label-remember {
@@ -3103,11 +3087,8 @@ header a:hover .a-disable {
 }
 
 .modal form .submit-modal:hover {
-  background-color: transparent;
-  border: 1px solid #B2D235;
-  box-shadow: none;
-  color: #B2D235;
-  text-decoration: underline;
+  color: #11114E;
+  text-decoration: none;
 }
 
 .modal form .align-btn-register {
@@ -3176,8 +3157,8 @@ header a:hover .a-disable {
   z-index: 999;
 }
 
-.icon-close-login-register:hover i {
-  color: red;
+.icon-close-login-register:hover {
+  background-color: #11114E;
 }
 
 .hr-modal {
@@ -3188,12 +3169,13 @@ header a:hover .a-disable {
 .text-login-with {
   font-family: "UTM BryantLG";
   background-color: #FEFFFF;
-  width: 92px;
+  width: 100px;
   font-size: 20px;
   font-style: normal;
   font-weight: 700;
   line-height: 25px;
   position: relative;
+  text-align: center;
   top: -33px;
   z-index: 999;
 }
@@ -3224,7 +3206,7 @@ header a:hover .a-disable {
 }
 
 .login-with .login-facebook .size-icon-facebook-modal {
-  font-size: 40px;
+  font-size: 30px;
   margin-left: -7px;
 }
 
@@ -3258,7 +3240,7 @@ header a:hover .a-disable {
 }
 
 .login-with .login-google .size-icon-google-modal {
-  font-size: 40px;
+  font-size: 35px;
   margin-left: -7px;
 }
 
@@ -3282,6 +3264,9 @@ header a:hover .a-disable {
   .modal form input[type=checkbox] {
     height: 20px;
     width: 15px;
+  }
+  .modal form input[type=checkbox]:checked:after {
+    font-size: 17px;
   }
   .modal form .style-label-remember {
     font-size: 16px;
@@ -3348,7 +3333,7 @@ header a:hover .a-disable {
     margin-top: 10px;
   }
   .login-with .login-facebook .size-icon-facebook-modal {
-    font-size: 30px;
+    font-size: 26px;
     margin-left: -7px;
   }
   .login-with .login-facebook .style-text-login-facebook {
@@ -3381,6 +3366,11 @@ header a:hover .a-disable {
   .modal form input[type=checkbox] {
     height: 17px;
     width: 13px;
+  }
+  .modal form input[type=checkbox]:checked:after {
+    width: 14px;
+    height: 14px;
+    font-size: 12px;
   }
   .modal form .style-label-remember {
     font-size: 14px;
@@ -3442,7 +3432,7 @@ header a:hover .a-disable {
     margin-top: 10px;
   }
   .login-with .login-facebook .size-icon-facebook-modal {
-    font-size: 25px;
+    font-size: 24px;
     margin-left: -7px;
   }
   .login-with .login-facebook .style-text-login-facebook {
@@ -3455,7 +3445,7 @@ header a:hover .a-disable {
     margin-top: 0px;
   }
   .login-with .login-google .size-icon-google-modal {
-    font-size: 25px;
+    font-size: 27px;
     margin-left: -7px;
   }
   .login-with .login-google .style-text-login-google {
@@ -3468,25 +3458,8 @@ header a:hover .a-disable {
   position: fixed;
   z-index: 999;
   right: 10%;
-  top: 85%;
-}
-
-.messbox .close-mess {
-  display: none;
-  width: 18px;
-  height: 18px;
-  border-radius: 50%;
-  background-color: grey;
-  color: white;
-  font-size: 18px;
-  font-weight: 900;
-  position: absolute;
-  top: -2px;
-  right: -5px;
-}
-
-.messbox .close-mess:hover {
-  color: red;
+  bottom: 80px;
+  right: 80px;
 }
 
 .messbox .size-badge-mess {
@@ -3494,245 +3467,205 @@ header a:hover .a-disable {
   width: 60px;
   border-radius: 50%;
   border: none;
-}
-
-.messbox .size-badge-mess:hover .close-mess {
-  display: block;
+  background: #2774DF;
 }
 
 .messbox i {
-  font-size: 43px;
+  font-size: 45px;
   color: white;
 }
 
 .messbox .boxchat {
-  width: 450px;
-  height: 220px;
-  top: -240px;
-  right: -60px;
-  border: 1px solid #e7e7e7;
-  background: #e7e7e7;
-  border-radius: 20px;
+  height: 190px;
+  width: 360px;
+  border-radius: 23px;
+  top: -210px;
+  right: -55px;
+  background: #FFFFFF;
   display: none;
-}
-
-.messbox .boxchat::before {
-  content: '';
-  position: absolute;
-  bottom: -11px;
-  right: 20px;
-  width: 20px;
-  height: 20px;
-  background: #e7e7e7;
-  border-right: 1px solid #E2E2E2;
-  border-bottom: 1px solid #E2E2E2;
-  transform: rotate(45deg);
+  box-shadow: 0px 0px 8px 0px #00000040;
 }
 
 .messbox .chat-admin {
-  width: 450px;
-  margin-top: -20px;
-}
-
-.messbox .chat-admin::before {
-  content: "";
-  display: block;
   position: relative;
-  background: url(../assets/img/owl.png) no-repeat;
-  background-size: contain;
-  border-radius: 50%;
-  border: 1px solid #acacac;
-  background-color: white;
-  width: 50px;
-  height: 50px;
-  top: 50px;
-  left: 10px;
-  cursor: pointer;
-}
-
-.messbox .chat-admin .text-chat-admin {
-  padding-left: 20px;
-  float: left;
-  width: 70%;
-  margin-left: 80px;
+  height: 53px;
+  width: 256px;
   border-radius: 15px;
-  background-color: #acacac;
+  background-color: #F1F0F0;
+  top: 23px;
+  left: 50px;
+  font-family: "OpenSans";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 17px;
+  letter-spacing: -0.02em;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  padding-left: 15px;
+  color: #505353;
 }
 
 .messbox .name-chat-admin {
   position: relative;
-  top: 20px;
-  left: 102px;
+  left: 65px;
+  top: 13px;
+  font-family: "OpenSans";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 16px;
+  text-align: left;
+  color: #7F7F7F;
+}
+
+.messbox .avata-hapo {
+  position: absolute;
+  height: 28px;
+  width: 28px;
+  top: 53px;
+  left: 13px;
 }
 
 .messbox .close-chat {
+  height: 24px;
+  width: 24px;
   position: absolute;
-  width: 35px;
-  height: 35px;
+  right: 13px;
+  top: 13px;
   border-radius: 50%;
-  background-color: grey;
-  top: 8px;
-  right: 8px;
+  background-color: #C4C4C4;
   z-index: 999;
   cursor: pointer;
 }
 
-.messbox .close-chat:hover i {
-  color: red;
-}
-
 .messbox .close-chat i {
-  margin-left: 8.5px;
-  margin-top: 4px;
-  font-size: 30px;
+  margin-left: 6px;
+  margin-top: 2.5px;
+  font-size: 20px;
+  color: #11114E;
 }
 
 .messbox .login-mess {
-  text-align: center;
-  width: 370px;
-  height: 40px;
-  font-size: 17px;
-  background-color: #265bcf;
-  border-radius: 15px;
-  color: white;
-  margin-top: 20px;
-  line-height: 40px;
+  height: 37px;
+  width: 276px;
+  border-radius: 10px;
+  background-color: #3184F7;
+  margin-left: 41px;
+  margin-top: 45px;
   cursor: pointer;
+  font-family: "OpenSans";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 16px;
+  text-align: center;
+  color: white;
 }
 
 .messbox .login-mess i {
-  margin-top: 5px;
-  font-size: 30px;
+  font-size: 17px;
   color: white;
   padding-right: 10px;
 }
 
-.messbox .login-mess:hover {
-  border: 1px solid #265bcf;
-  background: transparent;
-  color: #265bcf;
-}
-
-.messbox .login-mess:hover i {
-  color: #265bcf;
-}
-
-.messbox .title-chat-hapo {
-  font-size: 15px;
-  opacity: 0.8;
-}
-
-@media (max-width: 768px) {
-  .messbox {
-    right: 15%;
-  }
-  .messbox .size-badge-mess {
-    height: 45px;
-    width: 45px;
-    border-radius: 50%;
-    border: none;
-  }
-  .messbox i {
-    font-size: 32px;
-  }
+.messbox .chat-with-hapo {
+  font-family: "OpenSans";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 16px;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: #B2B2B2;
+  margin-top: 6px;
 }
 
 @media (max-width: 575px) {
+  .messbox {
+    bottom: 70px;
+    right: 70px;
+  }
+  .messbox .size-badge-mess {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: none;
+    background: #2774DF;
+  }
+  .messbox i {
+    font-size: 37px;
+    color: white;
+  }
   .messbox .boxchat {
-    width: 320px;
-    height: 200px;
-    top: -225px;
+    height: 180px;
+    width: 300px;
+    top: -195px;
     right: -50px;
   }
-  .messbox .boxchat::before {
-    content: '';
-    position: absolute;
-    bottom: -11px;
-    right: 20px;
-    width: 20px;
-    height: 20px;
-    background: #e7e7e7;
-    border-right: 1px solid #E2E2E2;
-    border-bottom: 1px solid #E2E2E2;
-    transform: rotate(45deg);
-  }
   .messbox .chat-admin {
-    width: 300px;
-    margin-top: -20px;
-  }
-  .messbox .chat-admin::before {
-    content: "";
-    display: block;
     position: relative;
-    background-size: contain;
-    border-radius: 50%;
-    border: 1px solid #acacac;
-    background-color: white;
-    width: 50px;
-    height: 50px;
-    top: 60px;
-    left: 10px;
-    cursor: pointer;
-  }
-  .messbox .chat-admin .text-chat-admin {
-    padding-left: 20px;
-    float: left;
-    width: 70%;
-    margin-left: 80px;
+    height: 53px;
+    width: 240px;
     border-radius: 15px;
-    background-color: #acacac;
+    background-color: #F1F0F0;
+    top: 27px;
+    left: 50px;
+    font-family: "OpenSans";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 17px;
+    letter-spacing: -0.02em;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+    color: #505353;
   }
   .messbox .name-chat-admin {
     position: relative;
+    left: 65px;
     top: 20px;
-    left: 102px;
+    font-family: "OpenSans";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 16px;
+    text-align: left;
+    color: #7F7F7F;
+  }
+  .messbox .avata-hapo {
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    top: 55px;
+    left: 13px;
   }
   .messbox .close-chat {
-    position: absolute;
-    width: 35px;
-    height: 35px;
-    border-radius: 50%;
-    background-color: grey;
-    top: 8px;
+    height: 22px;
+    width: 22px;
     right: 8px;
-    z-index: 999;
-    cursor: pointer;
-  }
-  .messbox .close-chat:hover i {
-    color: red;
+    top: 8px;
   }
   .messbox .close-chat i {
-    margin-left: 8.5px;
-    margin-top: 4px;
-    font-size: 30px;
+    margin-left: 6px;
+    margin-top: -1px;
+    font-size: 17px;
+    color: #11114E;
   }
   .messbox .login-mess {
-    text-align: center;
-    width: 250px;
-    height: 40px;
-    font-size: 17px;
-    background-color: #265bcf;
-    border-radius: 15px;
-    color: white;
-    margin-top: 0px;
-    line-height: 40px;
-    cursor: pointer;
+    height: 30px;
+    width: 225px;
   }
   .messbox .login-mess i {
-    margin-top: 5px;
-    font-size: 30px;
+    font-size: 17px;
     color: white;
     padding-right: 10px;
   }
-  .messbox .login-mess:hover {
-    border: 1px solid #265bcf;
-    background: transparent;
-    color: #265bcf;
-  }
-  .messbox .login-mess:hover i {
-    color: #265bcf;
-  }
-  .messbox .hide-title-chat {
-    display: none;
+  .messbox .chat-with-hapo {
+    margin-top: 6px;
+    margin-left: 5px;
   }
 }

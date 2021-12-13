@@ -16,7 +16,11 @@
     <link rel="shortcut icon" href="/assets/img/owl.ico" />
     <title>Hapo Learn</title>
 </head>
-
+    <style>
+        div, a,li {
+            border: 0px solid;
+        }
+    </style>
 <body>
     <header>
         <nav class="container-fluid p-0 navbar navbar-expand-sm navbar-light bg-light">
@@ -30,24 +34,24 @@
                     <img class="logo-size" src="assets/img/hapo_learn.png" alt="Hapo Learn">
                 </a>
                 <div class="collapse navbar-collapse delay-collapse w-100" id="navbarResponsive">
-                    <ul class="navbar-nav container-fluid p-0 d-flex justify-content-lg-end">
+                    <ul class="navbar-nav container-fluid p-0 d-flex justify-content-xl-end justify-content-lg-around">
                         <li class="nav-item">
-                            <a class="nav-link text-center" href="#"><span class="a-disable">HOME</span></a>
+                            <a class="nav-link text-center" href="#"><span class="a-disable a-bg-active">HOME</span></a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-center" href="#"><span class="a-active a-bg-active">ALL COURSES</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-center" href="#" data-toggle="modal" data-target="#loginRegister"><span class="a-disable">LOGIN/REGISTER</span></a>
+                            <a class="nav-link text-center" href="#" data-toggle="modal" data-target="#loginRegister"><span class="a-disable a-bg-active">LOGIN/REGISTER</span></a>
                         </li>
                         <li class="nav-item a-hide text-center">
-                            <a class="nav-link" href="#"><span class="a-disable">LIST LESSON</span></a>
+                            <a class="nav-link" href="#"><span class="a-disable a-bg-active">LIST LESSON</span></a>
                         </li>
                         <li class="nav-item a-hide text-center">
-                            <a class="nav-link" href="#"><span class="a-disable">LESSON DETAIL</span></a>
+                            <a class="nav-link" href="#"><span class="a-disable a-bg-active">LESSON DETAIL</span></a>
                         </li>
                         <li class="nav-item text-center">
-                            <a class="nav-link" href="#"><span class="a-disable">PROFILE</span></a>
+                            <a class="nav-link" href="#"><span class="a-disable a-bg-active">PROFILE</span></a>
                         </li>
                     </ul>
                 </div>  
@@ -210,12 +214,16 @@
                 <a href="#">View All Our Courses<span class="position-relative"> &#10140;</span></a>
             </div>
         </div>
-
-        <div class="container-fluid p-0 align-why-hapo">
-            <div class="bg-why-hapo d-md-flex">                
-                <div class="container-fluid p-0">
-                    <img class="img-keyboard" src="assets/img/banphim.png">
-                    <div class="section-text-why-hapo">
+        <style>
+            div {
+                border: 0px solid;
+            }
+        </style>
+        <div class="container-fluid p-0 align-why-hapo position-relative">
+            <img class="img-keyboard position-absolute" src="assets/img/banphim.png">
+            <div class="bg-why-hapo d-flex">                
+                <div class="container-fluid p-0 col-md-6 d-flex justify-content-end">
+                    <div class="section-text-why-hapo d-flex flex-column align-items-end">
                         <div class="title-why-hapo">Why HapoLearn?</div>
                         <div class="text-why-hapo">
                             <div>
@@ -236,7 +244,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="w-100 d-flex">
+                <div class="w-100 d-flex col-md-6 div-laptop">
                     <img class="img-laptop float-right" src="assets/img/laptop.png">
                 </div>
             </div>
@@ -431,25 +439,22 @@
             <div class="close-chat" id="closeChat">
                 <i class="fas fa-times"></i>
             </div>
+            <img class="avata-hapo" src="assets/img/ellipse_7.png">
             <div class="d-flex flex-row">
                 <div>
-                    <div class="name-chat-admin title-chat-hapo">HapoLearn</div>
+                    <div class="name-chat-admin">HapoLearn</div>
                     <div class="chat-admin">
-                        <p class="text-chat-admin float-left"> HapoLearn xin chào bạn.<br>
-                            Bạn có cần chúng tôi hỗ trợ gì không ?
-                        </p>
+                        HapoLearn xin chào bạn.<br>
+                        Bạn có cần chúng tôi hỗ trợ gì không ?
                     </div>
                 </div>
             </div>
-            <div class="d-flex flex-column align-items-center">
-                <div class="login-mess d-flex justify-content-center"><i class="fab fa-facebook-messenger"></i>Đăng nhập vào messenger</div>
-                <div class="title-chat-hapo hide-title-chat mt-2">Chat với HapoLearn trong Messenger</div>
-            </div>
+            <div class="login-mess d-flex justify-content-center align-items-center"><i class="fab fa-facebook-messenger"></i>Đăng nhập vào messenger</div>
+            <div class="chat-with-hapo">Chat với HapoLearn trong Messenger</div>
         </div>
 
         <button class="badge badge-primary size-badge-mess position-absolute">
             <i class="fab fa-facebook-messenger" id="openMess"></i>
-            <i class="fas fa-times close-mess" id="closeMess"></i>
         </button>  
     </div>
 
